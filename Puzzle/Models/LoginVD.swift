@@ -41,7 +41,7 @@ extension LoginVD {
         textfield.layer.borderColor = UIColor.clear.cgColor
         textfield.layer.borderWidth = 1
         textfield.layer.cornerRadius = 5
-        textfield.font = UIFont (name: "Sofia Pro Regular", size: 12)
+        textfield.font = UIFont().sofiaProRegular()
         textfield.textColor = UIColor.darkGray
         
         return textfield
@@ -49,7 +49,7 @@ extension LoginVD {
     
     func designLabel(label: UILabel) -> UILabel
     {
-        label.font = UIFont (name: "Sofia Pro Regular", size: 12)
+        label.font = UIFont().sofiaProRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.darkGray
         
@@ -58,7 +58,7 @@ extension LoginVD {
     
     func designErrorLabel(label: UILabel) -> UILabel
     {
-        label.font = UIFont (name: "Sofia Pro Regular", size: 12)
+        label.font = UIFont().sofiaProRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.red
         

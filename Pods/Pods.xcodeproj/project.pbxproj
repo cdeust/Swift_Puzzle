@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */; };
+		23250B042DC2FB477CA29C01F4C6FC83 /* Pods-Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */; };
+		2904E37C2FA06B9B154F23090873B51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		2D2B9C20F6A52D7F83CE78AB55177965 /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30AF04BE1E056F4B79695032624A16B0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */; };
+		4D54606A6F4405F2771C92E6180EBDF2 /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */; };
+		4DCBB9BAE13C86977668089DE17847E2 /* NativeFeatureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */; };
+		57995B4ED2B5E41E221799CF9F5A6552 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B467D1FA8BC00321498920C21BF39C /* Step.swift */; };
+		5820D25AEABF4407220E86461E6E221D /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */; };
+		606CF2814922E73BD7CED0E609A40A69 /* NativeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */; };
+		69C00B73808EE8A7115231ECD8FA9C83 /* Pods-PuzzleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705F7A2AC5587AB5E9DB542FAC5B71BB /* NativeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */; };
+		8134EB528C73B50F38AEB4036F44EDBE /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */; };
+		83559E07239AC084D5F2F9172E762CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		8580D9552A33C5500179170A47C99564 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */; };
+		881B70B6500662B930C76A5DD70B7DA1 /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */; };
+		9AED35B7BA57E0D85CEC027F27447A36 /* NativeScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */; };
+		9FB239A2255C606015B40D9FCE01067A /* Pods-PuzzleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA82A1D22399C4830BA3C4E9FCAC5D38 /* Pods-PuzzleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */; };
+		C161AE5F573C2962FB6FA7571CC8713C /* ParseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA1028CAED3397181082E30272D1DA /* ParseState.swift */; };
+		C2FAB539F3305675ECCCC8AE3EDA8AA3 /* Pods-Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E8271C0E31317241E72409046DC259 /* NativeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */; };
+		D8E6F9E7E51DB0AE1F597C6DD949FD22 /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */; };
+		E400D010981171A00A5658546BBC8F7A /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */; };
+		E5FA27E8062F038059F62E58A8E254F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		FD16F7D03A9A3E618064E91AE46F87B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D5D2ADE51060B51ACB53612A2B0493E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F33ABF592A20F16E45B8503EC7A61B4E;
+			remoteInfo = "XCTest-Gherkin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00998C9C09C67D6A2D51166F153FB4AB /* Pods-PuzzleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHelperMethods.swift; path = Pod/Core/ClassHelperMethods.swift; sourceTree = "<group>"; };
+		09F09E0966A13B5E50EE94D9189B0E13 /* Pods-PuzzleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-resources.sh"; sourceTree = "<group>"; };
+		1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCTest_Gherkin.framework; path = "XCTest-Gherkin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Gherkin.swift"; path = "Pod/Core/XCTestCase+Gherkin.swift"; sourceTree = "<group>"; };
+		13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeature.swift; path = Pod/Native/NativeFeature.swift; sourceTree = "<group>"; };
+		1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.release.xcconfig"; sourceTree = "<group>"; };
+		19B467D1FA8BC00321498920C21BF39C /* Step.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Step.swift; path = Pod/Core/Step.swift; sourceTree = "<group>"; };
+		1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Pod/Core/Example.swift; sourceTree = "<group>"; };
+		2292D2875ABB66B950045ECE1725EF19 /* Pods-PuzzleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2ACFD85B3710DF859A8F35232A45F8CE /* Pods-PuzzleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-frameworks.sh"; sourceTree = "<group>"; };
+		318C9A03EE311609CC05BC9FBE281A6E /* Pods-PuzzleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleUITests.modulemap"; sourceTree = "<group>"; };
+		32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35420F0F3E197E3AFFB5412AF216C04F /* Pods-PuzzleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuzzleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36628A081A3D86B42DF2BE40932D5D0A /* Pods-Puzzle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Puzzle-acknowledgements.plist"; sourceTree = "<group>"; };
+		36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Puzzle-umbrella.h"; sourceTree = "<group>"; };
+		3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleUITests-umbrella.h"; sourceTree = "<group>"; };
+		45118D96DA2F7121387F4CF404FB3202 /* Pods-PuzzleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuzzleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleTests-umbrella.h"; sourceTree = "<group>"; };
+		5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleTests.release.xcconfig"; sourceTree = "<group>"; };
+		563FEE32ACDECF77CF07DFAF237B1CC0 /* Pods-Puzzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Puzzle.modulemap"; sourceTree = "<group>"; };
+		5777D7076AAEB978CE3B120BE9830C0B /* Pods-PuzzleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleTests.modulemap"; sourceTree = "<group>"; };
+		58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorLog.swift; path = Pod/Core/ColorLog.swift; sourceTree = "<group>"; };
+		61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleTests-dummy.m"; sourceTree = "<group>"; };
+		641CB69EC8E2D4823EBF10B3D7A69FB7 /* Pods-PuzzleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		69C701BDF28DA57A8E859FA9EEAF2129 /* XCTest-Gherkin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "XCTest-Gherkin.modulemap"; sourceTree = "<group>"; };
+		71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeScenario.swift; path = Pod/Native/NativeScenario.swift; sourceTree = "<group>"; };
+		73BA1028CAED3397181082E30272D1DA /* ParseState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseState.swift; path = Pod/Native/ParseState.swift; sourceTree = "<group>"; };
+		76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringGherkinExtension.swift; path = Pod/Core/StringGherkinExtension.swift; sourceTree = "<group>"; };
+		76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeatureParser.swift; path = Pod/Native/NativeFeatureParser.swift; sourceTree = "<group>"; };
+		79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepDefiner.swift; path = Pod/Core/StepDefiner.swift; sourceTree = "<group>"; };
+		795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-umbrella.h"; sourceTree = "<group>"; };
+		86F7FADF8AAE8767CA8A5C5B5E47C9C3 /* Pods-Puzzle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-resources.sh"; sourceTree = "<group>"; };
+		8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCTest-Gherkin-dummy.m"; sourceTree = "<group>"; };
+		91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTestCase.swift; path = Pod/Native/NativeTestCase.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleUITests.framework; path = "Pods-PuzzleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Puzzle.framework; path = "Pods-Puzzle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3A2744AD9E67B613A4AE0958B00039 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B721E2D7DCCBC006F7CF032C2CD7B6D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D95A5D64FECF83D4CF58FEAA0D09B4 /* Pods-Puzzle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-frameworks.sh"; sourceTree = "<group>"; };
+		BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleUITests-dummy.m"; sourceTree = "<group>"; };
+		BD105220D63E47C139A629FE9498275B /* Pods-Puzzle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Puzzle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleTests.framework; path = "Pods-PuzzleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeExample.swift; path = Pod/Native/NativeExample.swift; sourceTree = "<group>"; };
+		DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.xcconfig"; sourceTree = "<group>"; };
+		E3C75FF1522023680361F8972B812716 /* Pods-PuzzleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-resources.sh"; sourceTree = "<group>"; };
+		E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Puzzle-dummy.m"; sourceTree = "<group>"; };
+		EB9697E47F790F73B9F297602061B74F /* XCTest-Gherkin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-prefix.pch"; sourceTree = "<group>"; };
+		FA84A4FF0C7BC2A1C925525261447C13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB09CEE4A4414650A8D2B19E610C2E8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2109690D3E6AE06EB360BE988678DAF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83559E07239AC084D5F2F9172E762CE2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D83FE305B3954AEED15274841BDA4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD16F7D03A9A3E618064E91AE46F87B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D8F2F2CA3CA5DC26E884C130300A32A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2904E37C2FA06B9B154F23090873B51F /* Foundation.framework in Frameworks */,
+				8580D9552A33C5500179170A47C99564 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA268555C80CD03B36F86B83A00B898D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FA27E8062F038059F62E58A8E254F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A3D4CB6043AE778D69FF3593A7ECC57 /* Pods-Puzzle */,
+				67479F845730D1C8187005B86E487770 /* Pods-PuzzleTests */,
+				E690934EF1952B8D22CB227CFAAC97B3 /* Pods-PuzzleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		22ED8FC337F1D0EC8A1F98DDF349F488 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */,
+				58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */,
+				1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */,
+				19B467D1FA8BC00321498920C21BF39C /* Step.swift */,
+				79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */,
+				76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */,
+				11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		23E88E5C50CDC39500F61BC7555F96E1 /* XCTest-Gherkin */ = {
+			isa = PBXGroup;
+			children = (
+				22ED8FC337F1D0EC8A1F98DDF349F488 /* Core */,
+				C9B8F0EDCEF3BA0B712C2524A9E00B7E /* Native */,
+				731F0EF4CAF4CCDDB64D1FD4B1B0E6CF /* Support Files */,
+			);
+			name = "XCTest-Gherkin";
+			path = "XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A220D6BE51911ADCEACF8055B0D73A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */,
+				C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */,
+				93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */,
+				1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67479F845730D1C8187005B86E487770 /* Pods-PuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA84A4FF0C7BC2A1C925525261447C13 /* Info.plist */,
+				5777D7076AAEB978CE3B120BE9830C0B /* Pods-PuzzleTests.modulemap */,
+				641CB69EC8E2D4823EBF10B3D7A69FB7 /* Pods-PuzzleTests-acknowledgements.markdown */,
+				35420F0F3E197E3AFFB5412AF216C04F /* Pods-PuzzleTests-acknowledgements.plist */,
+				61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */,
+				2ACFD85B3710DF859A8F35232A45F8CE /* Pods-PuzzleTests-frameworks.sh */,
+				E3C75FF1522023680361F8972B812716 /* Pods-PuzzleTests-resources.sh */,
+				4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */,
+				362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */,
+				5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */,
+			);
+			name = "Pods-PuzzleTests";
+			path = "Target Support Files/Pods-PuzzleTests";
+			sourceTree = "<group>";
+		};
+		731F0EF4CAF4CCDDB64D1FD4B1B0E6CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB09CEE4A4414650A8D2B19E610C2E8F /* Info.plist */,
+				69C701BDF28DA57A8E859FA9EEAF2129 /* XCTest-Gherkin.modulemap */,
+				DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */,
+				8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */,
+				EB9697E47F790F73B9F297602061B74F /* XCTest-Gherkin-prefix.pch */,
+				795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
+		748CB0A1639AAF63BE3C569DC452A8A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23E88E5C50CDC39500F61BC7555F96E1 /* XCTest-Gherkin */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A3D4CB6043AE778D69FF3593A7ECC57 /* Pods-Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				9F3A2744AD9E67B613A4AE0958B00039 /* Info.plist */,
+				563FEE32ACDECF77CF07DFAF237B1CC0 /* Pods-Puzzle.modulemap */,
+				BD105220D63E47C139A629FE9498275B /* Pods-Puzzle-acknowledgements.markdown */,
+				36628A081A3D86B42DF2BE40932D5D0A /* Pods-Puzzle-acknowledgements.plist */,
+				E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */,
+				B9D95A5D64FECF83D4CF58FEAA0D09B4 /* Pods-Puzzle-frameworks.sh */,
+				86F7FADF8AAE8767CA8A5C5B5E47C9C3 /* Pods-Puzzle-resources.sh */,
+				37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */,
+				47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */,
+				1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */,
+			);
+			name = "Pods-Puzzle";
+			path = "Target Support Files/Pods-Puzzle";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				748CB0A1639AAF63BE3C569DC452A8A1 /* Pods */,
+				64A220D6BE51911ADCEACF8055B0D73A /* Products */,
+				1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */,
+				AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C9B8F0EDCEF3BA0B712C2524A9E00B7E /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */,
+				13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */,
+				77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */,
+				71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */,
+				91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */,
+				73BA1028CAED3397181082E30272D1DA /* ParseState.swift */,
+			);
+			name = Native;
+			sourceTree = "<group>";
+		};
+		E690934EF1952B8D22CB227CFAAC97B3 /* Pods-PuzzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B721E2D7DCCBC006F7CF032C2CD7B6D9 /* Info.plist */,
+				318C9A03EE311609CC05BC9FBE281A6E /* Pods-PuzzleUITests.modulemap */,
+				2292D2875ABB66B950045ECE1725EF19 /* Pods-PuzzleUITests-acknowledgements.markdown */,
+				45118D96DA2F7121387F4CF404FB3202 /* Pods-PuzzleUITests-acknowledgements.plist */,
+				BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */,
+				00998C9C09C67D6A2D51166F153FB4AB /* Pods-PuzzleUITests-frameworks.sh */,
+				09F09E0966A13B5E50EE94D9189B0E13 /* Pods-PuzzleUITests-resources.sh */,
+				3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */,
+				36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */,
+				76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */,
+			);
+			name = "Pods-PuzzleUITests";
+			path = "Target Support Files/Pods-PuzzleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4963DE646D8EA22E5DC01C51418A19C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FB239A2255C606015B40D9FCE01067A /* Pods-PuzzleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C1ACEF9EE2F726B1D255CF0D33E8599 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C00B73808EE8A7115231ECD8FA9C83 /* Pods-PuzzleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24A43C1935792B3D33256E89B150EA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D2B9C20F6A52D7F83CE78AB55177965 /* XCTest-Gherkin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67AA2426276F3841470B8B3662F11B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FAB539F3305675ECCCC8AE3EDA8AA3 /* Pods-Puzzle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A8D177310752E02502CAC3AB95FB8C5 /* Pods-PuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D297479985349053AEC0FDC643CA78C /* Build configuration list for PBXNativeTarget "Pods-PuzzleTests" */;
+			buildPhases = (
+				5A3ED44128EE0855AD82FA6514C22D50 /* Sources */,
+				2109690D3E6AE06EB360BE988678DAF2 /* Frameworks */,
+				4963DE646D8EA22E5DC01C51418A19C1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F83466308E980C59FF9A6E4461F403DA /* PBXTargetDependency */,
+			);
+			name = "Pods-PuzzleTests";
+			productName = "Pods-PuzzleTests";
+			productReference = C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2817440C1237BE548B4163C27C533EFA /* Build configuration list for PBXNativeTarget "Pods-PuzzleUITests" */;
+			buildPhases = (
+				688B95F475A829FB288DB4A4335CC7D6 /* Sources */,
+				EA268555C80CD03B36F86B83A00B898D /* Frameworks */,
+				6C1ACEF9EE2F726B1D255CF0D33E8599 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PuzzleUITests";
+			productName = "Pods-PuzzleUITests";
+			productReference = 93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAB1020FC8311A9B3DDE6A3C1B060F35 /* Pods-Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718B89649657362346307312BA22D97D /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */;
+			buildPhases = (
+				D7918E15B7013F928181A3BDE2886E57 /* Sources */,
+				2D83FE305B3954AEED15274841BDA4DF /* Frameworks */,
+				C67AA2426276F3841470B8B3662F11B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Puzzle";
+			productName = "Pods-Puzzle";
+			productReference = 9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F33ABF592A20F16E45B8503EC7A61B4E /* XCTest-Gherkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F093404974AD9796B3B2BE2F43EC08 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */;
+			buildPhases = (
+				A5F252BEC528DDDFC816B049D6C58286 /* Sources */,
+				3D8F2F2CA3CA5DC26E884C130300A32A /* Frameworks */,
+				C24A43C1935792B3D33256E89B150EA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XCTest-Gherkin";
+			productName = "XCTest-Gherkin";
+			productReference = 1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 64A220D6BE51911ADCEACF8055B0D73A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB1020FC8311A9B3DDE6A3C1B060F35 /* Pods-Puzzle */,
+				2A8D177310752E02502CAC3AB95FB8C5 /* Pods-PuzzleTests */,
+				D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */,
+				F33ABF592A20F16E45B8503EC7A61B4E /* XCTest-Gherkin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A3ED44128EE0855AD82FA6514C22D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA82A1D22399C4830BA3C4E9FCAC5D38 /* Pods-PuzzleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B95F475A829FB288DB4A4335CC7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F252BEC528DDDFC816B049D6C58286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5820D25AEABF4407220E86461E6E221D /* ClassHelperMethods.swift in Sources */,
+				4D54606A6F4405F2771C92E6180EBDF2 /* ColorLog.swift in Sources */,
+				30AF04BE1E056F4B79695032624A16B0 /* Example.swift in Sources */,
+				D1E8271C0E31317241E72409046DC259 /* NativeExample.swift in Sources */,
+				606CF2814922E73BD7CED0E609A40A69 /* NativeFeature.swift in Sources */,
+				4DCBB9BAE13C86977668089DE17847E2 /* NativeFeatureParser.swift in Sources */,
+				9AED35B7BA57E0D85CEC027F27447A36 /* NativeScenario.swift in Sources */,
+				705F7A2AC5587AB5E9DB542FAC5B71BB /* NativeTestCase.swift in Sources */,
+				C161AE5F573C2962FB6FA7571CC8713C /* ParseState.swift in Sources */,
+				57995B4ED2B5E41E221799CF9F5A6552 /* Step.swift in Sources */,
+				881B70B6500662B930C76A5DD70B7DA1 /* StepDefiner.swift in Sources */,
+				8134EB528C73B50F38AEB4036F44EDBE /* StringGherkinExtension.swift in Sources */,
+				D8E6F9E7E51DB0AE1F597C6DD949FD22 /* XCTest-Gherkin-dummy.m in Sources */,
+				E400D010981171A00A5658546BBC8F7A /* XCTestCase+Gherkin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7918E15B7013F928181A3BDE2886E57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23250B042DC2FB477CA29C01F4C6FC83 /* Pods-Puzzle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F83466308E980C59FF9A6E4461F403DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCTest-Gherkin";
+			target = F33ABF592A20F16E45B8503EC7A61B4E /* XCTest-Gherkin */;
+			targetProxy = 4D5D2ADE51060B51ACB53612A2B0493E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003B415B1F32A22EFFF07EA21A5E8C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = XCTest_Gherkin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BE98E3D97C0C4D0BDBD7A2148E9F5DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Puzzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FE669FCD006443FC621E4AE69E97019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		409209589E04F555C030C0999B0C2152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Puzzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68C44BCC2434CB83F5B712ACDC9FE0B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D879382E197C88FC06027C788168F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleUITests/Pods-PuzzleUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A937E6BDF5B7BF3A092181698A532D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362C3E089C67218E7B241AA6CEF11D04 /* Pods-PuzzleTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PuzzleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PuzzleTests/Pods-PuzzleTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PuzzleTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF9AAA8083CBD259FD601D103A201F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCTest-Gherkin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XCTest-Gherkin/XCTest-Gherkin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = XCTest_Gherkin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2817440C1237BE548B4163C27C533EFA /* Build configuration list for PBXNativeTarget "Pods-PuzzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D879382E197C88FC06027C788168F11 /* Debug */,
+				68C44BCC2434CB83F5B712ACDC9FE0B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D297479985349053AEC0FDC643CA78C /* Build configuration list for PBXNativeTarget "Pods-PuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A937E6BDF5B7BF3A092181698A532D01 /* Debug */,
+				1FE669FCD006443FC621E4AE69E97019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718B89649657362346307312BA22D97D /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409209589E04F555C030C0999B0C2152 /* Debug */,
+				1BE98E3D97C0C4D0BDBD7A2148E9F5DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F093404974AD9796B3B2BE2F43EC08 /* Build configuration list for PBXNativeTarget "XCTest-Gherkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9AAA8083CBD259FD601D103A201F89 /* Debug */,
+				003B415B1F32A22EFFF07EA21A5E8C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

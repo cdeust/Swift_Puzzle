@@ -1,5 +1,5 @@
 //
-//  User+CoreDataClass.swift
+//  User.swift
 //  Puzzle
 //
 //  Created by User on 23/01/2017.

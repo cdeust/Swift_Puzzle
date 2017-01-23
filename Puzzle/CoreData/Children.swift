@@ -1,5 +1,5 @@
 //
-//  Children+CoreDataClass.swift
+//  Children.swift
 //  Puzzle
 //
 //  Created by User on 23/01/2017.

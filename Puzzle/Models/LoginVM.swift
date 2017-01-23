@@ -41,24 +41,22 @@ class LoginVM: NSObject {
     
     func login() -> Void
     {
-        if let delegate = UIApplication.shared.delegate as? AppDelegate
+        let coreDataStack = CoreDataStack()
+        let managedObjectContext = coreDataStack.persistentContainer.viewContext
+        let result: NSArray = User.fetchUserWithEmail(email: self.loginText, password: self.passwordText, managedObjectContext: managedObjectContext)
+        
+        if (result.count > 0)
         {
-            let managedObjectContext = delegate.persistentContainer.viewContext
-            let result: NSArray = User.fetchUserWithEmail(email: self.loginText, password: self.passwordText, managedObjectContext: managedObjectContext)
+            self.errorText = NSLocalizedString("logged_in", comment:"You're connected !");
             
-            if (result.count > 0)
-            {
-                self.errorText = NSLocalizedString("logged_in", comment:"You're connected !");
-                
-                let user: User = result[0] as! User;
-                self.delegate.didSuccessfullyLogin(user: user);
-            }
-            else
-            {
-                self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched");
-                
-                self.delegate.didFailedToLogin();
-            }
+            let user: User = result[0] as! User;
+            self.delegate.didSuccessfullyLogin(user: user);
+        }
+        else
+        {
+            self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched");
+            
+            self.delegate.didFailedToLogin();
         }
     }
 }
