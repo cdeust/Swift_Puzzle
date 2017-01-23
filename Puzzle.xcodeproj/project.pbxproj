@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4766EA11E365E3600E53F7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EA01E365E3600E53F7F /* AppDelegate.swift */; };
-		B4766EA31E365E3600E53F7F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EA21E365E3600E53F7F /* LoginVC.swift */; };
 		B4766EA61E365E3600E53F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4766EA41E365E3600E53F7F /* Main.storyboard */; };
 		B4766EA91E365E3600E53F7F /* Puzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4766EA71E365E3600E53F7F /* Puzzle.xcdatamodeld */; };
 		B4766EAB1E365E3600E53F7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4766EAA1E365E3600E53F7F /* Assets.xcassets */; };
@@ -19,14 +18,15 @@
 		B4766EF31E36663E00E53F7F /* Children+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EEF1E36663E00E53F7F /* Children+CoreDataProperties.swift */; };
 		B4766EF41E36663E00E53F7F /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EF01E36663E00E53F7F /* User+CoreDataClass.swift */; };
 		B4766EF51E36663E00E53F7F /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EF11E36663E00E53F7F /* User+CoreDataProperties.swift */; };
-		B4766EFA1E3669A500E53F7F /* LoginVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EF91E3669A500E53F7F /* LoginVC+KeyboardNotification.swift */; };
-		B4766EFC1E366A9D00E53F7F /* LoginVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EFB1E366A9D00E53F7F /* LoginVC+TextFieldDelegate.swift */; };
-		B4766EFE1E366B6400E53F7F /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EFD1E366B6400E53F7F /* LoginVM.swift */; };
-		B4766F001E366C7900E53F7F /* LoginVD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EFF1E366C7900E53F7F /* LoginVD.swift */; };
-		B4766F031E36708700E53F7F /* LoginVC+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F021E36708700E53F7F /* LoginVC+LoginDelegate.swift */; };
-		B4766F071E36731800E53F7F /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F061E36731800E53F7F /* String+Uid.swift */; };
-		B4766F091E3673ED00E53F7F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F081E3673ED00E53F7F /* Date+Format.swift */; };
-		B4766F0B1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */; };
+		B4766F0F1E367FEA00E53F7F /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F0C1E367FEA00E53F7F /* String+Uid.swift */; };
+		B4766F101E367FEA00E53F7F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F0D1E367FEA00E53F7F /* Date+Format.swift */; };
+		B4766F111E367FEA00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F0E1E367FEA00E53F7F /* UIButton+IntrinsicContentSize.swift */; };
+		B4766F141E367FFB00E53F7F /* LoginVD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F121E367FFB00E53F7F /* LoginVD.swift */; };
+		B4766F151E367FFB00E53F7F /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F131E367FFB00E53F7F /* LoginVM.swift */; };
+		B4766F191E36800D00E53F7F /* LoginVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F161E36800D00E53F7F /* LoginVC+KeyboardNotification.swift */; };
+		B4766F1A1E36800D00E53F7F /* LoginVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F171E36800D00E53F7F /* LoginVC+TextFieldDelegate.swift */; };
+		B4766F1B1E36800D00E53F7F /* LoginVC+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F181E36800D00E53F7F /* LoginVC+LoginDelegate.swift */; };
+		B4766F1D1E36801900E53F7F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F1C1E36801900E53F7F /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 /* Begin PBXFileReference section */
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EA01E365E3600E53F7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4766EA21E365E3600E53F7F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B4766EA51E365E3600E53F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4766EA81E365E3600E53F7F /* Puzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Puzzle.xcdatamodel; sourceTree = "<group>"; };
 		B4766EAA1E365E3600E53F7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,14 +64,15 @@
 		B4766EEF1E36663E00E53F7F /* Children+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Children+CoreDataProperties.swift"; path = "CoreData/Children+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B4766EF01E36663E00E53F7F /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "CoreData/User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B4766EF11E36663E00E53F7F /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "CoreData/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B4766EF91E3669A500E53F7F /* LoginVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
-		B4766EFB1E366A9D00E53F7F /* LoginVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
-		B4766EFD1E366B6400E53F7F /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
-		B4766EFF1E366C7900E53F7F /* LoginVD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVD.swift; sourceTree = "<group>"; };
-		B4766F021E36708700E53F7F /* LoginVC+LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC+LoginDelegate.swift"; sourceTree = "<group>"; };
-		B4766F061E36731800E53F7F /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Uid.swift"; sourceTree = "<group>"; };
-		B4766F081E3673ED00E53F7F /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
-		B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
+		B4766F0C1E367FEA00E53F7F /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Utils/Extensions/String+Uid.swift"; sourceTree = "<group>"; };
+		B4766F0D1E367FEA00E53F7F /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "Utils/Extensions/Date+Format.swift"; sourceTree = "<group>"; };
+		B4766F0E1E367FEA00E53F7F /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+IntrinsicContentSize.swift"; path = "Utils/Extensions/UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
+		B4766F121E367FFB00E53F7F /* LoginVD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVD.swift; path = Models/LoginVD.swift; sourceTree = "<group>"; };
+		B4766F131E367FFB00E53F7F /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = Models/LoginVM.swift; sourceTree = "<group>"; };
+		B4766F161E36800D00E53F7F /* LoginVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+KeyboardNotification.swift"; path = "Controllers/Extensions/LoginVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
+		B4766F171E36800D00E53F7F /* LoginVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+TextFieldDelegate.swift"; path = "Controllers/Extensions/LoginVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B4766F181E36800D00E53F7F /* LoginVC+LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+LoginDelegate.swift"; path = "Controllers/Extensions/LoginVC+LoginDelegate.swift"; sourceTree = "<group>"; };
+		B4766F1C1E36801900E53F7F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Controllers/LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +170,8 @@
 		B4766EF61E36683400E53F7F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B4766F1C1E36801900E53F7F /* LoginVC.swift */,
 				B4766F011E366ECB00E53F7F /* Extensions */,
-				B4766EA21E365E3600E53F7F /* LoginVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -179,8 +179,8 @@
 		B4766EF71E36683F00E53F7F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B4766EFD1E366B6400E53F7F /* LoginVM.swift */,
-				B4766EFF1E366C7900E53F7F /* LoginVD.swift */,
+				B4766F121E367FFB00E53F7F /* LoginVD.swift */,
+				B4766F131E367FFB00E53F7F /* LoginVM.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 		B4766F011E366ECB00E53F7F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B4766EF91E3669A500E53F7F /* LoginVC+KeyboardNotification.swift */,
-				B4766EFB1E366A9D00E53F7F /* LoginVC+TextFieldDelegate.swift */,
-				B4766F021E36708700E53F7F /* LoginVC+LoginDelegate.swift */,
+				B4766F161E36800D00E53F7F /* LoginVC+KeyboardNotification.swift */,
+				B4766F171E36800D00E53F7F /* LoginVC+TextFieldDelegate.swift */,
+				B4766F181E36800D00E53F7F /* LoginVC+LoginDelegate.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 		B4766F051E3672E700E53F7F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B4766F061E36731800E53F7F /* String+Uid.swift */,
-				B4766F081E3673ED00E53F7F /* Date+Format.swift */,
-				B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */,
+				B4766F0C1E367FEA00E53F7F /* String+Uid.swift */,
+				B4766F0D1E367FEA00E53F7F /* Date+Format.swift */,
+				B4766F0E1E367FEA00E53F7F /* UIButton+IntrinsicContentSize.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -357,21 +357,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4766F191E36800D00E53F7F /* LoginVC+KeyboardNotification.swift in Sources */,
 				B4766EF21E36663E00E53F7F /* Children+CoreDataClass.swift in Sources */,
 				B4766EA91E365E3600E53F7F /* Puzzle.xcdatamodeld in Sources */,
-				B4766F001E366C7900E53F7F /* LoginVD.swift in Sources */,
-				B4766F091E3673ED00E53F7F /* Date+Format.swift in Sources */,
+				B4766F1A1E36800D00E53F7F /* LoginVC+TextFieldDelegate.swift in Sources */,
+				B4766F101E367FEA00E53F7F /* Date+Format.swift in Sources */,
+				B4766F0F1E367FEA00E53F7F /* String+Uid.swift in Sources */,
 				B4766EF41E36663E00E53F7F /* User+CoreDataClass.swift in Sources */,
-				B4766F071E36731800E53F7F /* String+Uid.swift in Sources */,
 				B4766EF51E36663E00E53F7F /* User+CoreDataProperties.swift in Sources */,
-				B4766EA31E365E3600E53F7F /* LoginVC.swift in Sources */,
-				B4766EFC1E366A9D00E53F7F /* LoginVC+TextFieldDelegate.swift in Sources */,
-				B4766EFA1E3669A500E53F7F /* LoginVC+KeyboardNotification.swift in Sources */,
 				B4766EA11E365E3600E53F7F /* AppDelegate.swift in Sources */,
-				B4766EFE1E366B6400E53F7F /* LoginVM.swift in Sources */,
 				B4766EF31E36663E00E53F7F /* Children+CoreDataProperties.swift in Sources */,
-				B4766F0B1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */,
-				B4766F031E36708700E53F7F /* LoginVC+LoginDelegate.swift in Sources */,
+				B4766F1B1E36800D00E53F7F /* LoginVC+LoginDelegate.swift in Sources */,
+				B4766F111E367FEA00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */,
+				B4766F141E367FFB00E53F7F /* LoginVD.swift in Sources */,
+				B4766F151E367FFB00E53F7F /* LoginVM.swift in Sources */,
+				B4766F1D1E36801900E53F7F /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
