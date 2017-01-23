@@ -19,5 +19,4 @@ extension User {
     @NSManaged public var password: String?
     @NSManaged public var role: String?
     @NSManaged public var uid: String?
-
 }

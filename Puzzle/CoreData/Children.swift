@@ -28,7 +28,6 @@ public class Children: NSManagedObject {
         
         return results
     }
-    
     @nonobjc public class func fetchChildrenWithFirstname(firstname: String, lastname: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
@@ -46,7 +45,6 @@ public class Children: NSManagedObject {
         
         return results
     }
-    
     @nonobjc public class func createChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Children", into: managedObjectContext)
@@ -64,7 +62,6 @@ public class Children: NSManagedObject {
             print("Save failed: \(error.localizedDescription)")
         }
     }
-    
     @nonobjc public class func updateChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
     {
         managedObject.setValue(email, forKey: "email")
@@ -81,7 +78,6 @@ public class Children: NSManagedObject {
             print("Save failed: \(error.localizedDescription)")
         }
     }
-    
     @nonobjc public class func deleteChildrenWithManagedObject(managedObject:NSManagedObject, managedObjectContext:NSManagedObjectContext) -> Void
     {
         managedObjectContext.delete(managedObject)

@@ -1,19 +1,19 @@
 //
-//  LoginVC+KeyboardNotification.swift
+//  Setup+KeyboardNotification.swift
 //  Puzzle
 //
-//  Created by User on 23/01/2017.
+//  Created by Clément DEUST on 23/01/2017.
 //  Copyright © 2017 cdeust. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-// TODO: Refactor both Keyboard Notification extensions inside a single one
+// TODO: Refactor both Keyboard Notification extensions inside a single one 
 
 // MARK: Keyboard notification methods
 
-extension LoginVC {
+extension SetupVC {
     func registerForKeyboardNotifications() -> Void
     {
         NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)

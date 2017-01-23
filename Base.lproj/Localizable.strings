@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Puzzle
+
+  Created by Clément DEUST on 23/01/2017.
+  Copyright © 2017 cdeust. All rights reserved.
+*/
+
+"logged_in" = "You're connected !";
+"failed_to_login" = "Email or password mismatched";
+
+"created_account" = "Your account was successfully created !";
+"creation_failed" = "Your account failed to create !";
+
+"children_added" = "Your children was successfully added to your account !";
+"children_failed_adding" = "Your children was not added due to error";

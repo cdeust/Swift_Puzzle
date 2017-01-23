@@ -17,12 +17,10 @@ extension LoginVC: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true;
     }
-    
     func textFieldDidBeginEditing(_ textField: UITextField)
     {
         self.activeField = textField;
     }
-    
     func textFieldDidEndEditing(_ textField: UITextField)
     {
         self.activeField = nil;

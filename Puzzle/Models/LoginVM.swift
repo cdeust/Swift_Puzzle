@@ -29,16 +29,14 @@ class LoginVM: NSObject {
         
         return self
     }
-    
     func initWithEmailPasswordDelegate(email: String, password: String, delegate: LoginVCDelegate) -> AnyObject
     {
-        self.loginText = email;
-        self.passwordText = password;
-        self.delegate = delegate;
+        self.loginText = email
+        self.passwordText = password
+        self.delegate = delegate
         
-        return self;
+        return self
     }
-    
     func login() -> Void
     {
         let coreDataStack = CoreDataStack()
@@ -47,16 +45,15 @@ class LoginVM: NSObject {
         
         if (result.count > 0)
         {
-            self.errorText = NSLocalizedString("logged_in", comment:"You're connected !");
+            self.errorText = NSLocalizedString("logged_in", comment:"You're connected !")
             
-            let user: User = result[0] as! User;
-            self.delegate.didSuccessfullyLogin(user: user);
+            let user: User = result[0] as! User
+            self.delegate.didSuccessfullyLogin(user: user)
         }
         else
         {
-            self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched");
-            
-            self.delegate.didFailedToLogin();
+            self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched")
+            self.delegate.didFailedToLogin()
         }
     }
 }

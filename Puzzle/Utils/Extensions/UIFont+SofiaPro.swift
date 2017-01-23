@@ -1,5 +1,5 @@
 //
-//  UIFont+SofiaProRegular.swift
+//  UIFont+SofiaPro.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -15,7 +15,6 @@ extension UIFont {
         let font = UIFont(name: "Sofia Pro Semi-Bold", size: 12)
         return font!
     }
-    
     public func sofiaProRegular() -> UIFont
     {
         let font = UIFont(name: "Sofia Pro Regular", size: 12)

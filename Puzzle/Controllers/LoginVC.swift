@@ -14,16 +14,15 @@ import UIKit
 class LoginVC: UIViewController {
     var activeField: UITextField!
     var user: User?
-    var viewDesign: LoginVD!
     var viewModel: LoginVM!
     var delegate: LoginVCDelegate!
     
-    @IBOutlet var email: UITextField!
-    @IBOutlet var password: UITextField!
-    @IBOutlet var create: UIButton!
-    @IBOutlet var login: UIButton!
-    @IBOutlet var error: UILabel!
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var create: UIButton!
+    @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var error: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
 }
 
 // MARK: View initialization
@@ -32,9 +31,6 @@ extension LoginVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        
-        self.viewDesign = LoginVD()
-        self.viewDesign.doBaseInitialization()
         
         self.initView()
         
@@ -46,18 +42,18 @@ extension LoginVC {
 
 extension LoginVC {
     func initView() {
-        self.email = self.viewDesign.designTextfield(textfield: self.email)
-        self.password = self.viewDesign.designTextfield(textfield: self.password)
-        self.create = self.viewDesign.designButton(button: self.create)
-        self.login = self.viewDesign.designButton(button: self.login)
-        self.error = self.viewDesign.designErrorLabel(label: self.error)
+        self.email = UITextField().designTextfield(textfield: self.email)
+        self.password = UITextField().designTextfield(textfield: self.password)
+        self.create = UIButton().designButton(button: self.create)
+        self.login = UIButton().designButton(button: self.login)
+        self.error = UILabel().designErrorLabel(label: self.error)
     }
 }
 
-// MARK: UIButton
+// MARK: Action
 
 extension LoginVC {
-    @IBAction func tryToLogin(sender: AnyObject)
+    @IBAction func tryToLogin(sender: UIButton)
     {
         if let email = self.email.text, let password = self.password.text {
             self.viewModel = LoginVM().initWithEmailPasswordDelegate(email: email, password: password, delegate: self.delegate) as! LoginVM

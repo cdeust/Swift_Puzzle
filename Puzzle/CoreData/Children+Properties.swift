@@ -17,5 +17,4 @@ extension Children {
     @NSManaged public var role: String?
     @NSManaged public var sex: String?
     @NSManaged public var uid: String?
-
 }
