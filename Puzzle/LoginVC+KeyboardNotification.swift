@@ -12,7 +12,6 @@ import UIKit
 // MARK: Keyboard notification methods
 
 extension LoginVC {
-    
     func registerForKeyboardNotifications() -> Void
     {
         NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)

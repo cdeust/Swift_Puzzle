@@ -16,13 +16,11 @@ protocol LoginVCDelegate
 }
 
 class LoginVM: NSObject {
-    
     var loginText: String!
     var passwordText: String!
     var errorText: String!
     var signinText: String!
     var createText: String!
-    
     var delegate: LoginVCDelegate!
     
     func initWithDelegate(delegate:LoginVCDelegate) -> AnyObject

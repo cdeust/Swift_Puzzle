@@ -11,7 +11,6 @@ import CoreData
 
 @objc(Children)
 public class Children: NSManagedObject {
-    
     @nonobjc public class func fetchChildrenWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")

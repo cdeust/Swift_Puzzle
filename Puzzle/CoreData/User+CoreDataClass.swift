@@ -11,7 +11,6 @@ import CoreData
 
 @objc(User)
 public class User: NSManagedObject {
-    
     @nonobjc public class func fetchUserWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")

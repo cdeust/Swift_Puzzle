@@ -11,7 +11,6 @@ import CoreData
 
 
 extension User {
-
     @NSManaged public var children: Int16
     @NSManaged public var email: String?
     @NSManaged public var firstname: String?

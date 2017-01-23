@@ -26,6 +26,7 @@
 		B4766F031E36708700E53F7F /* LoginVC+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F021E36708700E53F7F /* LoginVC+LoginDelegate.swift */; };
 		B4766F071E36731800E53F7F /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F061E36731800E53F7F /* String+Uid.swift */; };
 		B4766F091E3673ED00E53F7F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F081E3673ED00E53F7F /* Date+Format.swift */; };
+		B4766F0B1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B4766F021E36708700E53F7F /* LoginVC+LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC+LoginDelegate.swift"; sourceTree = "<group>"; };
 		B4766F061E36731800E53F7F /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Uid.swift"; sourceTree = "<group>"; };
 		B4766F081E3673ED00E53F7F /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			children = (
 				B4766F061E36731800E53F7F /* String+Uid.swift */,
 				B4766F081E3673ED00E53F7F /* Date+Format.swift */,
+				B4766F0A1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				B4766EA11E365E3600E53F7F /* AppDelegate.swift in Sources */,
 				B4766EFE1E366B6400E53F7F /* LoginVM.swift in Sources */,
 				B4766EF31E36663E00E53F7F /* Children+CoreDataProperties.swift in Sources */,
+				B4766F0B1E3679DE00E53F7F /* UIButton+IntrinsicContentSize.swift in Sources */,
 				B4766F031E36708700E53F7F /* LoginVC+LoginDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

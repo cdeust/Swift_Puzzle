@@ -11,7 +11,6 @@ import CoreData
 
 
 extension Children {
-
     @NSManaged public var birthdate: String?
     @NSManaged public var firstname: String?
     @NSManaged public var lastname: String?

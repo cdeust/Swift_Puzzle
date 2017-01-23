@@ -12,7 +12,6 @@ import UIKit
 // MARK: Color methods
 
 class LoginVD: NSObject {
-    
     func designTextfieldWithOkColor() -> CGColor
     {
         return UIColor.clear.cgColor
@@ -37,7 +36,6 @@ class LoginVD: NSObject {
 // MARK: Design UIElements
 
 extension LoginVD {
-    
     func designTextfield(textfield:UITextField) -> UITextField
     {
         textfield.layer.borderColor = UIColor.clear.cgColor
@@ -80,7 +78,6 @@ extension LoginVD {
 // MARK: App initialization
 
 extension LoginVD {
-    
     func doBaseInitialization() -> Void
     {
         

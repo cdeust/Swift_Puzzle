@@ -12,7 +12,6 @@ import UIKit
 // MARK: UITextfield delegate methods
 
 extension LoginVC: UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         textField.resignFirstResponder()

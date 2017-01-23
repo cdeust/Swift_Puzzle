@@ -9,7 +9,6 @@
 import Foundation
 
 extension Date {
-    
     public func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .short

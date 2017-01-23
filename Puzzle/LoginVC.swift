@@ -12,7 +12,6 @@ import UIKit
 // MARK: Vars & Outlets
 
 class LoginVC: UIViewController {
-
     var activeField: UITextField!
     var user: User?
     var viewDesign: LoginVD!
@@ -30,8 +29,6 @@ class LoginVC: UIViewController {
 // MARK: View initialization
 
 extension LoginVC {
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -60,7 +57,6 @@ extension LoginVC {
 // MARK: UIButton
 
 extension LoginVC {
-    
     @IBAction func tryToLogin(sender: AnyObject)
     {
         if let email = self.email.text, let password = self.password.text {
