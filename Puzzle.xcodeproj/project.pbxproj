@@ -32,10 +32,6 @@
 		B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A951E36A75000AB0D87 /* LoginVC.swift */; };
 		B1D05A9B1E36A75800AB0D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A971E36A75800AB0D87 /* LaunchScreen.storyboard */; };
 		B1D05A9C1E36A75800AB0D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A991E36A75800AB0D87 /* Main.storyboard */; };
-		B1D05AAE1E36AE2900AB0D87 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A8A1E36A73D00AB0D87 /* User.swift */; };
-		B1D05AAF1E36AE2C00AB0D87 /* Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A871E36A73D00AB0D87 /* Children.swift */; };
-		B1D05AB01E36AE2F00AB0D87 /* User+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A881E36A73D00AB0D87 /* User+Properties.swift */; };
-		B1D05AB11E36AE3200AB0D87 /* Children+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A891E36A73D00AB0D87 /* Children+Properties.swift */; };
 		B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */; };
 		B1D05AB31E36AE4100AB0D87 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7D1E36A72800AB0D87 /* CoreDataStack.swift */; };
 		B1D05AC61E36BABD00AB0D87 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */; };
@@ -667,17 +663,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D05AB11E36AE3200AB0D87 /* Children+Properties.swift in Sources */,
-				B1D05AAF1E36AE2C00AB0D87 /* Children.swift in Sources */,
 				B1D05A571E36953C00AB0D87 /* Register.swift in Sources */,
 				B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */,
-				B1D05AAE1E36AE2900AB0D87 /* User.swift in Sources */,
 				B1D05A551E36953500AB0D87 /* Login.swift in Sources */,
 				B1D05AB31E36AE4100AB0D87 /* CoreDataStack.swift in Sources */,
 				B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */,
 				B1D05A5B1E36956D00AB0D87 /* RegisterSteps.swift in Sources */,
 				B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */,
-				B1D05AB01E36AE2F00AB0D87 /* User+Properties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

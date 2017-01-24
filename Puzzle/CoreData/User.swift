@@ -9,9 +9,8 @@
 import Foundation
 import CoreData
 
-@objc(User)
 public class User: NSManagedObject {
-    @nonobjc public class func fetchUserWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchUserWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         let predicate = NSPredicate(format: "uid == \"\(uid)\"")
@@ -31,7 +30,7 @@ public class User: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func fetchUserWithPassword(password:String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchUserWithPassword(password:String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         let predicate = NSPredicate(format: "password == \"\(password)\"")
@@ -52,7 +51,7 @@ public class User: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func fetchUserWithEmail(email: String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchUserWithEmail(email: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         let predicate = NSPredicate(format: "email == \"\(email)\"")
@@ -72,7 +71,7 @@ public class User: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func fetchUserWithEmail(email: String, password: String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchUserWithEmail(email: String, password: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         let predicate = NSPredicate(format: "email == \"\(email)\" && password == \"\(password)\"")
@@ -92,7 +91,7 @@ public class User: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func createUserWithUid(uid: String, email: String, firstname: String, lastname: String, lock: String, password: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
+    public class func createUserWithUid(uid: String, email: String, firstname: String, lastname: String, lock: String, password: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "User", into: managedObjectContext)
         managedObject.setValue(email, forKey: "email")
@@ -113,7 +112,7 @@ public class User: NSManagedObject {
         }
     }
     
-    @nonobjc public class func updateUserWithUid(uid: String, email: String, firstname: String, lastname: String, lock: String, password: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
+    public class func updateUserWithUid(uid: String, email: String, firstname: String, lastname: String, lock: String, password: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
     {
         managedObject.setValue(email, forKey: "email")
         managedObject.setValue(firstname, forKey: "firstname")
@@ -133,7 +132,7 @@ public class User: NSManagedObject {
         }
     }
     
-    @nonobjc public class func deleteUserWithManagedObject(managedObject:NSManagedObject, managedObjectContext:NSManagedObjectContext) -> Void
+    public class func deleteUserWithManagedObject(managedObject:NSManagedObject, managedObjectContext:NSManagedObjectContext) -> Void
     {
         managedObjectContext.delete(managedObject)
         

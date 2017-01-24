@@ -9,9 +9,8 @@
 import Foundation
 import CoreData
 
-@objc(Children)
 public class Children: NSManagedObject {
-    @nonobjc public class func fetchChildrenWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchChildrenWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
         let predicate = NSPredicate(format: "uid == \"\(uid)\"")
@@ -31,7 +30,7 @@ public class Children: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func fetchChildrenWithFirstname(firstname: String, lastname: String, managedObjectContext: NSManagedObjectContext) -> NSArray
+    public class func fetchChildrenWithFirstname(firstname: String, lastname: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
         let predicate = NSPredicate(format: "firstname == \"\(firstname)\" && lastname == \"\(lastname)\"")
@@ -51,7 +50,7 @@ public class Children: NSManagedObject {
         return results
     }
     
-    @nonobjc public class func createChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
+    public class func createChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Children", into: managedObjectContext)
         managedObject.setValue(email, forKey: "email")
@@ -72,7 +71,7 @@ public class Children: NSManagedObject {
         }
     }
     
-    @nonobjc public class func updateChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
+    public class func updateChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
     {
         managedObject.setValue(email, forKey: "email")
         managedObject.setValue(firstname, forKey: "firstname")
@@ -91,7 +90,7 @@ public class Children: NSManagedObject {
             print("Save failed: \(error.localizedDescription)")
         }
     }
-    @nonobjc public class func deleteChildrenWithManagedObject(managedObject:NSManagedObject, managedObjectContext:NSManagedObjectContext) -> Void
+    public class func deleteChildrenWithManagedObject(managedObject:NSManagedObject, managedObjectContext:NSManagedObjectContext) -> Void
     {
         managedObjectContext.delete(managedObject)
         

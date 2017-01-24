@@ -9,7 +9,7 @@
 import XCTest
 import XCTest_Gherkin
 
-// TODO : Fix the crash on the User casting to make the Register tests pass
+@testable import Puzzle
 
 class RegisterSteps : StepDefiner {
     

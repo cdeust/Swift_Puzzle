@@ -12,6 +12,8 @@ import XCTest_Gherkin
 // TODO : Fix the crash on the User retrieval to make the Login tests pass
 // Most probably because RegisterSteps are executed before LoginSteps
 
+@testable import Puzzle
+
 class LoginSteps : StepDefiner {
     
     var firstname: String!

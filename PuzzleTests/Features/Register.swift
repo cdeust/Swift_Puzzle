@@ -9,6 +9,8 @@
 import XCTest
 import XCTest_Gherkin
 
+@testable import Puzzle
+
 class Register : XCTestCase {
     
     override func setUp() {
