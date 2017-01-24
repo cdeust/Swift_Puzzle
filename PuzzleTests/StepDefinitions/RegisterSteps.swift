@@ -170,7 +170,7 @@ class RegisterSteps : StepDefiner {
             let coreDataStack = CoreDataStack()
             let managedObjectContext = coreDataStack.persistentContainer.viewContext
             let results = Children.fetchChildrenWithFirstname(firstname: self.firstname, lastname:self.lastname, managedObjectContext:managedObjectContext)
-            let user = results[0] as! User
+            let user = results[0] as! Children
             Children.deleteChildrenWithManagedObject(managedObject: user, managedObjectContext:managedObjectContext)
         }
         
