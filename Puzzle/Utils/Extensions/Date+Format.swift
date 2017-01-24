@@ -17,6 +17,7 @@ extension Date {
         let formattedString = formatter.string(from: date)
         return formattedString
     }
+    
     public func formatString(string: String) -> Date
     {
         let formatter = DateFormatter()

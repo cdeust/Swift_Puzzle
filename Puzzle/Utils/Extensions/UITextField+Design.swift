@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 extension UITextField {
-    public func designTextfield(textfield:UITextField) -> UITextField
+    public class func designTextfield(textfield:UITextField) -> UITextField
     {
         textfield.layer.borderColor = UIColor.clear.cgColor
         textfield.layer.borderWidth = 1
         textfield.layer.cornerRadius = 5
-        textfield.font = UIFont().sofiaProRegular()
+        textfield.font = UIFont.helveticaNeueRegular()
         textfield.textColor = UIColor.darkGray
         
         return textfield

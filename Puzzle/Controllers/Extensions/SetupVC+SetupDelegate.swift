@@ -12,25 +12,26 @@ import UIKit
 extension SetupVC: SetupVCDelegate {
     func didSuccessfullyCreateAccount(user: User) {
         self.error.text = self.viewModel.errorText;
-        self.error.textColor = UIColor().getColorForSuccess()
+        self.error.textColor = UIColor.getColorForSuccess()
         
         self.user = user;
         
-        self.firstname.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
-        self.lastname.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
-        self.email.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
-        self.lock.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
-        self.password.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
+        self.firstname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.lastname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.lock.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         
 //        self.performSegue(withIdentifier: "loadSetupSecondStep", sender: self)
     }
+    
     func didFailedToCreateAccount() {
         self.error.text = self.viewModel.errorText;
-        self.error.textColor = UIColor().getColorForFailure()
-        self.firstname.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
-        self.lastname.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
-        self.email.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
-        self.lock.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
-        self.password.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
+        self.error.textColor = UIColor.getColorForFailure()
+        self.firstname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.lastname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.email.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.lock.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.password.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
     }
 }

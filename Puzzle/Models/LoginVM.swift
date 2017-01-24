@@ -29,6 +29,7 @@ class LoginVM: NSObject {
         
         return self
     }
+    
     func initWithEmailPasswordDelegate(email: String, password: String, delegate: LoginVCDelegate) -> AnyObject
     {
         self.loginText = email
@@ -37,6 +38,7 @@ class LoginVM: NSObject {
         
         return self
     }
+    
     func login() -> Void
     {
         let coreDataStack = CoreDataStack()
@@ -52,7 +54,7 @@ class LoginVM: NSObject {
         }
         else
         {
-            self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched")
+            self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched.")
             self.delegate.didFailedToLogin()
         }
     }

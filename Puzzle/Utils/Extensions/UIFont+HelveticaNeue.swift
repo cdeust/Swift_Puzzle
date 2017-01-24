@@ -10,17 +10,19 @@ import Foundation
 import UIKit
 
 extension UIFont {
-    public func sofiaProSemiBold() -> UIFont
+    public class func helveticaNeueMedium() -> UIFont
     {
         let font = UIFont(name: "HelveticaNeue-Medium", size: 12)
         return font!
     }
-    public func sofiaProRegular() -> UIFont
+    
+    public class func helveticaNeueRegular() -> UIFont
     {
         let font = UIFont(name: "HelveticaNeue", size: 12)
         return font!
     }
-    public func sofiaProBold() -> UIFont
+    
+    public class func helveticaNeueBold() -> UIFont
     {
         let font = UIFont(name: "HelveticaNeue-Bold", size: 12)
         return font!

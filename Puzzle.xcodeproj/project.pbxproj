@@ -45,13 +45,14 @@
 		B1D05ACB1E36BAC700AB0D87 /* SetupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACA1E36BAC700AB0D87 /* SetupVM.swift */; };
 		B1D05ACF1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACC1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift */; };
 		B1D05AD01E36BAD200AB0D87 /* SetupVC+SetupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACD1E36BAD200AB0D87 /* SetupVC+SetupDelegate.swift */; };
-		B1D05AD11E36BAD200AB0D87 /* Setup+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACE1E36BAD200AB0D87 /* Setup+KeyboardNotification.swift */; };
+		B1D05AD11E36BAD200AB0D87 /* SetupVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACE1E36BAD200AB0D87 /* SetupVC+KeyboardNotification.swift */; };
 		B1D05AD31E36BADD00AB0D87 /* SetupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AD21E36BADD00AB0D87 /* SetupVC.swift */; };
 		B1D05AF81E36C5E400AB0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */; };
 		B1D05AFB1E36CC0A00AB0D87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF91E36CC0A00AB0D87 /* Localizable.strings */; };
 		B3380680E7BA085A56A2207F /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
+		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,7 @@
 		B1D05ACA1E36BAC700AB0D87 /* SetupVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupVM.swift; path = Puzzle/Models/SetupVM.swift; sourceTree = "<group>"; };
 		B1D05ACC1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SetupVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/SetupVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		B1D05ACD1E36BAD200AB0D87 /* SetupVC+SetupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SetupVC+SetupDelegate.swift"; path = "Puzzle/Controllers/Extensions/SetupVC+SetupDelegate.swift"; sourceTree = "<group>"; };
-		B1D05ACE1E36BAD200AB0D87 /* Setup+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Setup+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/Setup+KeyboardNotification.swift"; sourceTree = "<group>"; };
+		B1D05ACE1E36BAD200AB0D87 /* SetupVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SetupVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/SetupVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B1D05AD21E36BADD00AB0D87 /* SetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupVC.swift; path = Puzzle/Controllers/SetupVC.swift; sourceTree = "<group>"; };
 		B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Puzzle/Assets.xcassets; sourceTree = "<group>"; };
 		B1D05AFA1E36CC0A00AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Puzzle/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -121,6 +122,7 @@
 		B4766EBF1E365E3700E53F7F /* PuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleUITests.swift; sourceTree = "<group>"; };
 		B4766EC51E365E3700E53F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4862B8C1E375EA500E58564 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Puzzle/Utils/Extensions/String+Validation.swift"; sourceTree = "<group>"; };
 		FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -256,6 +258,7 @@
 		B1D05A701E36A6E000AB0D87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B4862B8C1E375EA500E58564 /* String+Validation.swift */,
 				B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */,
 				B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */,
 				B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */,
@@ -271,7 +274,7 @@
 		B1D05A711E36A6FB00AB0D87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B1D05ACE1E36BAD200AB0D87 /* Setup+KeyboardNotification.swift */,
+				B1D05ACE1E36BAD200AB0D87 /* SetupVC+KeyboardNotification.swift */,
 				B1D05ACC1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift */,
 				B1D05ACD1E36BAD200AB0D87 /* SetupVC+SetupDelegate.swift */,
 				B1D05A8F1E36A74700AB0D87 /* LoginVC+KeyboardNotification.swift */,
@@ -634,6 +637,7 @@
 				B1D05A8E1E36A73D00AB0D87 /* User.swift in Sources */,
 				B1D05A811E36A72800AB0D87 /* CoreDataStack.swift in Sources */,
 				B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */,
+				B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */,
 				B1D05AC91E36BABD00AB0D87 /* UIButton+Design.swift in Sources */,
 				B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */,
 				B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */,
@@ -646,7 +650,7 @@
 				B1D05A781E36A71C00AB0D87 /* Date+Format.swift in Sources */,
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
 				B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */,
-				B1D05AD11E36BAD200AB0D87 /* Setup+KeyboardNotification.swift in Sources */,
+				B1D05AD11E36BAD200AB0D87 /* SetupVC+KeyboardNotification.swift in Sources */,
 				B1D05A761E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift in Sources */,
 				B1D05ACF1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift in Sources */,
 				B1D05A941E36A74700AB0D87 /* LoginVC+TextFieldDelegate.swift in Sources */,

@@ -10,17 +10,18 @@ import Foundation
 import UIKit
 
 extension UILabel {
-    public func designLabel(label: UILabel) -> UILabel
+    public class func designLabel(label: UILabel) -> UILabel
     {
-        label.font = UIFont().sofiaProRegular()
+        label.font = UIFont.helveticaNeueRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.darkGray
         
         return label
     }
-    public func designErrorLabel(label: UILabel) -> UILabel
+    
+    public class func designErrorLabel(label: UILabel) -> UILabel
     {
-        label.font = UIFont().sofiaProRegular()
+        label.font = UIFont.helveticaNeueRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.red
         

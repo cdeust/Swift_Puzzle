@@ -17,17 +17,20 @@ public class Children: NSManagedObject {
         let predicate = NSPredicate(format: "uid == \"\(uid)\"")
         fetchRequest.predicate = predicate
         
-        
         var results = NSArray()
-        do {
+        do
+        {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
-        } catch let error as NSError {
+        }
+        catch let error as NSError
+        {
             print("Fetch failed: \(error.localizedDescription)")
         }
         
         return results
     }
+    
     @nonobjc public class func fetchChildrenWithFirstname(firstname: String, lastname: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
@@ -35,16 +38,19 @@ public class Children: NSManagedObject {
         fetchRequest.predicate = predicate
         
         var results = NSArray()
-        
-        do {
+        do
+        {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
-        } catch let error as NSError {
+        }
+        catch let error as NSError
+        {
             print ("Fetch failed \(error.localizedDescription)")
         }
         
         return results
     }
+    
     @nonobjc public class func createChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext) -> Void
     {
         let managedObject: NSManagedObject = NSEntityDescription.insertNewObject(forEntityName: "Children", into: managedObjectContext)
@@ -56,12 +62,16 @@ public class Children: NSManagedObject {
         managedObject.setValue(role, forKey: "role")
         managedObject.setValue(uid, forKey: "uid")
         
-        do {
+        do
+        {
             try managedObjectContext.save()
-        } catch let error as NSError {
+        }
+        catch let error as NSError
+        {
             print("Save failed: \(error.localizedDescription)")
         }
     }
+    
     @nonobjc public class func updateChildrenWithUid(uid: String, email: String, firstname: String, lastname: String, sex: String, birthdate: String, role: String, managedObjectContext: NSManagedObjectContext, managedObject: NSManagedObject) -> Void
     {
         managedObject.setValue(email, forKey: "email")
@@ -72,9 +82,12 @@ public class Children: NSManagedObject {
         managedObject.setValue(role, forKey: "role")
         managedObject.setValue(uid, forKey: "uid")
         
-        do {
+        do
+        {
             try managedObjectContext.save()
-        } catch let error as NSError {
+        }
+        catch let error as NSError
+        {
             print("Save failed: \(error.localizedDescription)")
         }
     }
@@ -82,9 +95,12 @@ public class Children: NSManagedObject {
     {
         managedObjectContext.delete(managedObject)
         
-        do {
+        do
+        {
             try managedObjectContext.save()
-        } catch let error as NSError {
+        }
+        catch let error as NSError
+        {
             print ("Delete failed: \(error.localizedDescription)")
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
-    class func intrinsicContentSize() -> CGSize
+    public class func intrinsicContentSize() -> CGSize
     {
         let s = self.intrinsicContentSize()
         return CGSize(width: s.width + self.init().titleEdgeInsets.left + self.init().titleEdgeInsets.right, height: s.height + self.init().titleEdgeInsets.top + self.init().titleEdgeInsets.bottom)

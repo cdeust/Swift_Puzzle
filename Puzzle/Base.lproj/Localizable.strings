@@ -6,11 +6,20 @@
   Copyright © 2017 cdeust. All rights reserved.
 */
 
-"logged_in" = "You're connected !";
-"failed_to_login" = "Email or password mismatched";
+//Error
+"invalid_values" = "Invalid values sent";
+"fill_form_correctly" = "Please make sure you have filled the present form correctly.";
+"fill_credentials_correctly" = "Please make sure your email and password are filled correctly.";
+"ok" = "OK";
 
+//Login
+"logged_in" = "You're connected !";
+"failed_to_login" = "Email or password mismatched.";
+
+//Register
 "created_account" = "Your account was successfully created !";
 "creation_failed" = "Your account failed to create !";
 
+//Child
 "children_added" = "Your children was successfully added to your account !";
-"children_failed_adding" = "Your children was not added due to error";
+"children_failed_adding" = "Your children was not added due to error.";

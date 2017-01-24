@@ -19,6 +19,7 @@ extension LoginVC {
         NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
     func keyboardWillShow(note:NSNotification) -> Void
     {
         if let keyboardSize = (note.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
@@ -50,6 +51,7 @@ extension LoginVC {
             UIView.commitAnimations()
         }
     }
+    
     func keyboardWillHide(note: NSNotification) -> Void
     {
         if let keyboardSize = (note.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue

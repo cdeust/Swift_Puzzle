@@ -67,6 +67,8 @@ class RegisterSteps : StepDefiner {
             User.createUserWithUid(uid: "integration", email:email, firstname:firstname, lastname:lastname, lock:lock, password:password, role:"master", managedObjectContext:managedObjectContext)
         }
         
+        // TODO : Fix the crash on this test and make it pass
+        
         step("I should be able to retrieve the user by its email ([A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}) and its password ([a-zA-Z0-9]*)") {
             (matches:[String]) in
             

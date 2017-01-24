@@ -32,6 +32,7 @@ class SetupVM: NSObject {
         
         return self
     }
+    
     func initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:SetupVCDelegate) -> AnyObject
     {
         self.firstnameText = firstname
@@ -46,12 +47,13 @@ class SetupVM: NSObject {
         
         return self
     }
+    
     func createAccount() -> Void
     {
         let coreDataStack = CoreDataStack()
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
-        
         var result = User.fetchUserWithEmail(email: self.emailText, managedObjectContext: managedObjectContext)
+        
         if (result.count > 0)
         {
             let managedObject = result[0] as! User

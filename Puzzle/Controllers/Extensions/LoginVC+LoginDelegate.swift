@@ -15,19 +15,20 @@ extension LoginVC: LoginVCDelegate {
     func didSuccessfullyLogin(user: User) -> Void
     {
         self.error.text = self.viewModel.errorText
-        self.error.textColor = UIColor().getColorForSuccess()
+        self.error.textColor = UIColor.getColorForSuccess()
         
         self.user = user;
         
-        self.email.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
-        self.password.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
+        self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         
 //        self.performSegue(withIdentifier: "loadLoginSecondStep", sender:self)
     }
+    
     func didFailedToLogin() -> Void
     {
-        self.email.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
-        self.password.layer.borderColor = UIColor().designTextfieldWithErrorColor().cgColor
+        self.email.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.password.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         
         self.password.text = ""
         self.error.text = self.viewModel.errorText

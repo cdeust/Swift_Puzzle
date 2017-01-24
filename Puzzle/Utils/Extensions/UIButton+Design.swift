@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIButton {
-    public func designButton(button: UIButton) -> UIButton
+    public class func designButton(button: UIButton) -> UIButton
     {
         button.layer.borderWidth = 1
         button.layer.cornerRadius = 5
