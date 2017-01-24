@@ -51,13 +51,15 @@ class PuzzleUITests: XCTestCase {
     }
     
     func testLoginFailMessage() {
-        let email = app.textFields["email"]
+        let email = app.textFields.element(matching: .textField, identifier: "email")
         email.tap()
         email.typeText("test@integration.com")
+        email.typeText("\n")
         
-        let password = app.textFields["password"]
+        let password = app.textFields.element(matching: .textField, identifier: "password")
         password.tap()
         password.typeText("testme")
+        password.typeText("\n")
         
         let errorMessage = self.app.staticTexts["Email or password mismatched."]
         let exists = NSPredicate(format: "exists == true")
