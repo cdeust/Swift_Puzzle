@@ -14,11 +14,11 @@ public class Children: NSManagedObject {
     @nonobjc public class func fetchChildrenWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
-        let predicate = NSPredicate(format: "uid == %@", uid)
+        let predicate = NSPredicate(format: "uid == \"\(uid)\"")
         fetchRequest.predicate = predicate
         
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
@@ -31,10 +31,10 @@ public class Children: NSManagedObject {
     @nonobjc public class func fetchChildrenWithFirstname(firstname: String, lastname: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<Children>(entityName: "Children")
-        let predicate = NSPredicate(format: "firstname == %@ && lastname == %@", firstname, lastname)
+        let predicate = NSPredicate(format: "firstname == \"\(firstname)\" && lastname == \"\(lastname)\"")
         fetchRequest.predicate = predicate
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!

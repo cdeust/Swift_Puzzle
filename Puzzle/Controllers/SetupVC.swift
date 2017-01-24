@@ -65,7 +65,7 @@ extension SetupVC {
     @IBAction func createAccount(sender: UIButton) {
         if let firstname = self.firstname.text, let lastname = self.lastname.text, let email = self.email.text, let password = self.password.text, let lock = self.lock.text
         {
-            self.viewModel = SetupVM().initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self.delegate) as! SetupVM
+            self.viewModel = SetupVM().initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self) as! SetupVM
             self.viewModel.createAccount()
         }
     }

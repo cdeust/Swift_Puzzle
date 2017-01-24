@@ -41,7 +41,7 @@ class LoginVM: NSObject {
     {
         let coreDataStack = CoreDataStack()
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
-        let result: NSArray = User.fetchUserWithEmail(email: self.loginText, password: self.passwordText, managedObjectContext: managedObjectContext)
+        let result = User.fetchUserWithEmail(email: self.loginText, password: self.passwordText, managedObjectContext: managedObjectContext)
         
         if (result.count > 0)
         {

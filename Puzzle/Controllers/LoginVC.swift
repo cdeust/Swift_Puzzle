@@ -56,8 +56,18 @@ extension LoginVC {
     @IBAction func tryToLogin(sender: UIButton)
     {
         if let email = self.email.text, let password = self.password.text {
-            self.viewModel = LoginVM().initWithEmailPasswordDelegate(email: email, password: password, delegate: self.delegate) as! LoginVM
+            self.viewModel = LoginVM().initWithEmailPasswordDelegate(email: email, password: password, delegate: self) as! LoginVM
             self.viewModel.login();
+        }
+    }
+}
+
+extension LoginVC {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loadLoginSecondStep"
+        {
+            //            let secondStep = segue.destination as LoginSecondStepVC
+            //            secondStep.user = self.user
         }
     }
 }

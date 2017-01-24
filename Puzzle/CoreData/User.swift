@@ -14,11 +14,11 @@ public class User: NSManagedObject {
     @nonobjc public class func fetchUserWithUid(uid: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
-        let predicate = NSPredicate(format: "uid == %@", uid)
+        let predicate = NSPredicate(format: "uid == \"\(uid)\"")
         fetchRequest.predicate = predicate
         
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
@@ -32,11 +32,11 @@ public class User: NSManagedObject {
     {
         
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
-        let predicate = NSPredicate(format: "password == %@", password)
+        let predicate = NSPredicate(format: "password == \"\(password)\"")
         fetchRequest.predicate = predicate
         
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
@@ -49,11 +49,11 @@ public class User: NSManagedObject {
     @nonobjc public class func fetchUserWithEmail(email: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
-        let predicate = NSPredicate(format: "email == %@", email)
+        let predicate = NSPredicate(format: "email == \"\(email)\"")
         fetchRequest.predicate = predicate
         
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results
@@ -65,12 +65,12 @@ public class User: NSManagedObject {
     }
     @nonobjc public class func fetchUserWithEmail(email: String, password: String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-        let predicate = NSPredicate(format: "email == %@ && password == %@", email, password)
+        let fetchRequest = NSFetchRequest<User>(entityName: "User")
+        let predicate = NSPredicate(format: "email == \"\(email)\" && password == \"\(password)\"")
         fetchRequest.predicate = predicate
         
         
-        var results: NSArray! = NSArray()
+        var results = NSArray()
         do {
             results = try managedObjectContext.fetch(fetchRequest) as NSArray!
             return results

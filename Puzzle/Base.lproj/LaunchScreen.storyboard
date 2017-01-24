@@ -1,27 +1,65 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo8-S5-q7f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icone" translatesAutoresizingMaskIntoConstraints="NO" id="icM-bV-Oox">
+                                <rect key="frame" x="79" y="98" width="218" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="4wU-bg-upL"/>
+                                    <constraint firstAttribute="height" constant="218" id="ayI-p4-eGo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slogan" translatesAutoresizingMaskIntoConstraints="NO" id="Syo-xf-EM5">
+                                <rect key="frame" x="25" y="391" width="326" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="179" id="EFo-dr-mgh"/>
+                                    <constraint firstAttribute="width" constant="326" id="RIY-c6-QEa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bo8-S5-q7f" secondAttribute="trailing" id="3Rc-dQ-gKO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Bo8-S5-q7f" secondAttribute="bottom" id="KUy-LA-oRT"/>
+                            <constraint firstItem="icM-bV-Oox" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KyC-Pq-a7g"/>
+                            <constraint firstItem="Bo8-S5-q7f" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lRC-w4-OZp"/>
+                            <constraint firstItem="Syo-xf-EM5" firstAttribute="top" secondItem="icM-bV-Oox" secondAttribute="bottom" constant="75" id="pMp-Z9-6tA"/>
+                            <constraint firstItem="icM-bV-Oox" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="78" id="rcq-hO-e5A"/>
+                            <constraint firstItem="Bo8-S5-q7f" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tyy-x5-kGO"/>
+                            <constraint firstItem="Syo-xf-EM5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zmp-5N-oVP"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icone" width="229" height="229"/>
+        <image name="Slogan" width="333" height="187"/>
+    </resources>
 </document>

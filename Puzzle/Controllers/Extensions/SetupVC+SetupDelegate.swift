@@ -22,7 +22,7 @@ extension SetupVC: SetupVCDelegate {
         self.lock.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
         self.password.layer.borderColor = UIColor().designTextfieldWithOkColor().cgColor
         
-        self.performSegue(withIdentifier: "loadSetupSecondStep", sender: self)
+//        self.performSegue(withIdentifier: "loadSetupSecondStep", sender: self)
     }
     func didFailedToCreateAccount() {
         self.error.text = self.viewModel.errorText;

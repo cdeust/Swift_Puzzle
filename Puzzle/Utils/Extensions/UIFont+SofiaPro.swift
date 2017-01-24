@@ -12,18 +12,18 @@ import UIKit
 extension UIFont {
     public func sofiaProSemiBold() -> UIFont
     {
-        let font = UIFont(name: "Sofia Pro Semi-Bold", size: 12)
+        let font = UIFont(name: "HelveticaNeue-Medium", size: 12)
         return font!
     }
     public func sofiaProRegular() -> UIFont
     {
-        let font = UIFont(name: "Sofia Pro Regular", size: 12)
+        let font = UIFont(name: "HelveticaNeue", size: 12)
         return font!
     }
     
     public func sofiaProBold() -> UIFont
     {
-        let font = UIFont(name: "Sofia Pro Bold", size: 12)
+        let font = UIFont(name: "HelveticaNeue-Bold", size: 12)
         return font!
     }
 }
