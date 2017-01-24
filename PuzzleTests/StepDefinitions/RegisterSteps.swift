@@ -139,6 +139,8 @@ class RegisterSteps : StepDefiner {
             XCTAssertEqual(self.children.birthdate, self.birthdate, "Birthdate \(self.children.birthdate) should be \(self.birthdate)")
         }
         
+        /* Cleaning user database */
+        
         step("Cleaning database") {
             XCTAssertTrue(true)
         }
@@ -161,6 +163,8 @@ class RegisterSteps : StepDefiner {
             let results = User.fetchUserWithEmail(email: self.email, password:self.password, managedObjectContext:managedObjectContext)
             XCTAssertEqual(results.count, 0, "\(results.count) should be equal to 0")
         }
+        
+        /* Cleaning children database */
         
         step("I delete child with firstname ([a-zA-Z0-9]*) and lastname ([a-zA-Z0-9]*)") {
             (matches:[String]) in
