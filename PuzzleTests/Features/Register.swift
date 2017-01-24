@@ -40,8 +40,8 @@ class Register : XCTestCase {
     func testCreatingChildren()
     {
         Examples(
-            [ "firstname", "lastname", "sex", "birthdate" ],
-            [ "chloe", "DEUST", "Female", "03042016" ]
+            [ "firstname", "lastname", "email", "sex", "birthdate" ],
+            [ "chloe", "DEUST", "test@integration.com", "Female", "03042016" ]
         )
         
         Outline {
@@ -49,6 +49,7 @@ class Register : XCTestCase {
             When("I give its child firstname <firstname>")
             And("I give its child lastname <lastname>")
             And("I give its child sex <sex>")
+            And("I give its parent email <email>")
             And("I give its child birthdate <birthdate>")
             When("I save child information")
             Then("I should be able to retrieve the child by its firstname <firstname> and its lastname <lastname>")

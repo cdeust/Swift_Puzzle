@@ -9,6 +9,8 @@
 import XCTest
 import XCTest_Gherkin
 
+// TODO : Fix the crash on the User casting to make the Register tests pass
+
 class RegisterSteps : StepDefiner {
     
     var firstname: String!
@@ -67,8 +69,6 @@ class RegisterSteps : StepDefiner {
             User.createUserWithUid(uid: "integration", email:email, firstname:firstname, lastname:lastname, lock:lock, password:password, role:"master", managedObjectContext:managedObjectContext)
         }
         
-        // TODO : Fix the crash on this test and make it pass
-        
         step("I should be able to retrieve the user by its email ([A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}) and its password ([a-zA-Z0-9]*)") {
             (matches:[String]) in
             
@@ -110,6 +110,11 @@ class RegisterSteps : StepDefiner {
         step("I give its child birthdate ([a-zA-Z0-9]*)") {
             (matches:[String]) in
             self.birthdate = matches.first!
+        }
+        
+        step("I give its parent email ([A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6})") {
+            (matches:[String]) in
+            self.email = matches.first!
         }
         
         step("I save child information") {
