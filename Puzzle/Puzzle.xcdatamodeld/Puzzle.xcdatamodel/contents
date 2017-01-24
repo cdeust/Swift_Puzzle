@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Children" representedClassName=".Children" syncable="YES">
         <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,7 +22,7 @@
         <relationship name="hasChildren" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Children" inverseName="hasUser" inverseEntity="Children" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Children" positionX="-63" positionY="-40" width="128" height="150"/>
+        <element name="Children" positionX="-63" positionY="-40" width="128" height="165"/>
         <element name="User" positionX="-297" positionY="-54" width="128" height="180"/>
     </elements>
 </model>
