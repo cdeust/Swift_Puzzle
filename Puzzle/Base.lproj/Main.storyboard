@@ -257,6 +257,7 @@
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-SQ-7z4">
                                                 <rect key="frame" x="100" y="168.5" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="firstname" label="firstname"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Xfu-Z9-Hcp"/>
                                                 </constraints>
@@ -269,6 +270,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67q-jM-UAD">
                                                 <rect key="frame" x="100" y="218" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lastname" label="lastname"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="2Zz-L3-fmy"/>
                                                 </constraints>
@@ -281,6 +283,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X43-lN-8hM">
                                                 <rect key="frame" x="100" y="268.5" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="email" label="email"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="QIi-B2-fZh"/>
                                                 </constraints>
@@ -293,6 +296,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyx-nD-5RG">
                                                 <rect key="frame" x="100" y="318" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="password" label="password"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="C4j-2i-2ha"/>
                                                 </constraints>
@@ -305,6 +309,7 @@
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your lock code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Xb-6C-mE8">
                                                 <rect key="frame" x="100" y="368.5" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="lock" label="lock"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="KpJ-nd-uqx"/>
                                                 </constraints>

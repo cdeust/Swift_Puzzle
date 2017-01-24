@@ -54,7 +54,7 @@ class PuzzleUITests: XCTestCase {
     func testLoginFailMessage() {
         let email = app.textFields.element(matching: .textField, identifier: "email")
         email.tap()
-        email.typeText("test@integration.com")
+        email.typeText("test@test.com")
         email.typeText("\n")
         
         let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
@@ -63,6 +63,67 @@ class PuzzleUITests: XCTestCase {
         password.typeText("\n")
         
         let errorMessage = self.app.staticTexts["Email or password mismatched."]
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
+        
+        app.buttons["Login"].tap()
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssert(errorMessage.exists)
+    }
+    
+    func testCreateSuccessMessage() {
+        app.buttons["Create"].tap()
+        
+        let firstname = app.textFields.element(matching: .textField, identifier: "firstname")
+        firstname.tap()
+        firstname.typeText("test")
+        firstname.typeText("\n")
+        
+        let lastname = app.textFields.element(matching: .textField, identifier: "lastname")
+        lastname.tap()
+        lastname.typeText("test")
+        lastname.typeText("\n")
+        
+        let email = app.textFields.element(matching: .textField, identifier: "email")
+        email.tap()
+        email.typeText("test@integration.com")
+        email.typeText("\n")
+        
+        let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
+        password.tap()
+        password.typeText("testme")
+        password.typeText("\n")
+        
+        let lock = app.secureTextFields.element(matching: .secureTextField, identifier: "lock")
+        lock.tap()
+        lock.typeText("1234")
+        lock.typeText("\n")
+        
+        let errorMessage = self.app.staticTexts["Your account was successfully created !"]
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
+        
+        app.buttons["Create"].tap()
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssert(errorMessage.exists)
+    }
+    
+    func testLoginSuccessMessage() {
+        let email = app.textFields.element(matching: .textField, identifier: "email")
+        email.tap()
+        email.typeText("test@integration.com")
+        email.typeText("\n")
+        
+        let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
+        password.tap()
+        password.typeText("testme")
+        password.typeText("\n")
+        
+        let errorMessage = self.app.staticTexts["You're connected !"]
         let exists = NSPredicate(format: "exists == true")
         expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
         
