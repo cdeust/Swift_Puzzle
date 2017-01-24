@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y5W-Hr-HMT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y5W-Hr-HMT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="y5W-Hr-HMT" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e4C-LT-RvW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e4C-LT-RvW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -87,8 +87,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-xb-HYf">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-xb-HYf">
                                                 <rect key="frame" x="100" y="276" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="email"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="FKg-jX-ERe"/>
                                                 </constraints>
@@ -99,8 +100,9 @@
                                                     <outlet property="delegate" destination="E8A-ny-u7R" id="iAc-TE-Dae"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzz-fZ-9v1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzz-fZ-9v1">
                                                 <rect key="frame" x="100" y="341" width="255" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="password"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Zoo-O4-r2v"/>
                                                 </constraints>
@@ -118,7 +120,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.63137254901960782" green="0.77254901960784317" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Guz-qM-lI0" firstAttribute="centerX" secondItem="DZ1-GD-Laf" secondAttribute="centerX" multiplier="1.5" id="373-i4-qCk"/>
                                             <constraint firstItem="jZh-jd-Ffa" firstAttribute="leading" secondItem="DZ1-GD-Laf" secondAttribute="leading" id="5Kq-Qa-IYR"/>
@@ -253,7 +255,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Login"/>
                                             </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-SQ-7z4">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-SQ-7z4">
                                                 <rect key="frame" x="100" y="168.5" width="255" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Xfu-Z9-Hcp"/>
@@ -265,7 +267,7 @@
                                                     <outlet property="delegate" destination="pnE-nP-NfB" id="Cqx-sQ-MXi"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67q-jM-UAD">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67q-jM-UAD">
                                                 <rect key="frame" x="100" y="218" width="255" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="2Zz-L3-fmy"/>
@@ -277,7 +279,7 @@
                                                     <outlet property="delegate" destination="pnE-nP-NfB" id="gV7-fy-wJJ"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X43-lN-8hM">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X43-lN-8hM">
                                                 <rect key="frame" x="100" y="268.5" width="255" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="QIi-B2-fZh"/>
@@ -289,7 +291,7 @@
                                                     <outlet property="delegate" destination="pnE-nP-NfB" id="cB0-Yv-RpD"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyx-nD-5RG">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyx-nD-5RG">
                                                 <rect key="frame" x="100" y="318" width="255" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="C4j-2i-2ha"/>
@@ -301,7 +303,7 @@
                                                     <outlet property="delegate" destination="pnE-nP-NfB" id="QKE-Nt-CZZ"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Xb-6C-mE8">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your lock code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Xb-6C-mE8">
                                                 <rect key="frame" x="100" y="368.5" width="255" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="KpJ-nd-uqx"/>
@@ -330,7 +332,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.63137254899999995" green="0.7725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="Cyx-nD-5RG" firstAttribute="centerY" secondItem="2dq-zn-1q4" secondAttribute="centerY" id="2nd-Fr-FVz"/>
                                             <constraint firstItem="67q-jM-UAD" firstAttribute="centerY" secondItem="vHS-sr-kHk" secondAttribute="centerY" id="3Y8-Dc-4BV"/>

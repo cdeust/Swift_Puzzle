@@ -46,6 +46,7 @@
 		B1D05AF81E36C5E400AB0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */; };
 		B1D05AFB1E36CC0A00AB0D87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF91E36CC0A00AB0D87 /* Localizable.strings */; };
 		B3380680E7BA085A56A2207F /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */; };
+		B41447801E37B7B4003064C0 /* XCUIElement+Paste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
 		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
@@ -111,6 +112,7 @@
 		B1D05AD21E36BADD00AB0D87 /* SetupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetupVC.swift; path = Puzzle/Controllers/SetupVC.swift; sourceTree = "<group>"; };
 		B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Puzzle/Assets.xcassets; sourceTree = "<group>"; };
 		B1D05AFA1E36CC0A00AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Puzzle/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCUIElement+Paste.swift"; path = "Extensions/XCUIElement+Paste.swift"; sourceTree = "<group>"; };
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB41E365E3700E53F7F /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB81E365E3700E53F7F /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
@@ -287,6 +289,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B414477E1E37B77B003064C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		B4766E941E365E3600E53F7F = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +334,7 @@
 		B4766EC21E365E3700E53F7F /* PuzzleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B414477E1E37B77B003064C0 /* Extensions */,
 				B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */,
 				B4766EC51E365E3700E53F7F /* Info.plist */,
 			);
@@ -678,6 +689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */,
+				B41447801E37B7B4003064C0 /* XCUIElement+Paste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,28 +9,68 @@
 import XCTest
 
 class PuzzleUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launch()
+    }
+    
+    func testLoginViewUIElementsExists() {
+        XCTAssert(app.staticTexts["Email"].exists)
+        XCTAssert(app.staticTexts["Password"].exists)
+        XCTAssert(app.buttons["Create"].exists)
+        XCTAssert(app.buttons["Login"].exists)
+    }
+    
+    func testRegisterViewUIElementsExists() {
+        app.buttons["Create"].tap()
+        XCTAssert(app.staticTexts["Firstname"].exists)
+        XCTAssert(app.staticTexts["Lastname"].exists)
+        XCTAssert(app.staticTexts["Email"].exists)
+        XCTAssert(app.staticTexts["Password"].exists)
+        XCTAssert(app.staticTexts["Lock"].exists)
+        XCTAssert(app.buttons["Create"].exists)
+        XCTAssert(app.buttons["Login"].exists)
+    }
+    
+    func testLoginErrorPopup() {
+        app.buttons["Login"].tap()
+        XCTAssertEqual(app.alerts.element.label, "Invalid values sent")
+        app.alerts["Invalid values sent"].buttons["OK"].tap()
+    }
+    
+    func testRegisterErrorPopup() {
+        app.buttons["Create"].tap()
+        app.buttons["Create"].tap()
+        XCTAssertEqual(app.alerts.element.label, "Invalid values sent")
+        app.alerts["Invalid values sent"].buttons["OK"].tap()
+    }
+    
+    func testLoginFailMessage() {
+        let email = app.textFields["email"]
+        email.tap()
+        email.typeText("test@integration.com")
+        
+        let password = app.textFields["password"]
+        password.tap()
+        password.typeText("testme")
+        
+        let errorMessage = self.app.staticTexts["Email or password mismatched."]
+        let exists = NSPredicate(format: "exists == true")
+        expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
+        
+        app.buttons["Login"].tap()
+        
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        XCTAssert(errorMessage.exists)
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
 }
