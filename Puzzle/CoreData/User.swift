@@ -30,7 +30,6 @@ public class User: NSManagedObject {
     }
     @nonobjc public class func fetchUserWithPassword(password:String, managedObjectContext: NSManagedObjectContext) -> NSArray
     {
-        
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         let predicate = NSPredicate(format: "password == \"\(password)\"")
         fetchRequest.predicate = predicate

@@ -13,7 +13,7 @@
 		B1D05A571E36953C00AB0D87 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A561E36953C00AB0D87 /* Register.swift */; };
 		B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A581E36956D00AB0D87 /* LoginSteps.swift */; };
 		B1D05A5B1E36956D00AB0D87 /* RegisterSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A591E36956D00AB0D87 /* RegisterSteps.swift */; };
-		B1D05A761E36A71C00AB0D87 /* UIFont+SofiaPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A721E36A71C00AB0D87 /* UIFont+SofiaPro.swift */; };
+		B1D05A761E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */; };
 		B1D05A771E36A71C00AB0D87 /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A731E36A71C00AB0D87 /* String+Uid.swift */; };
 		B1D05A781E36A71C00AB0D87 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A741E36A71C00AB0D87 /* Date+Format.swift */; };
 		B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */; };
@@ -84,7 +84,7 @@
 		B1D05A561E36953C00AB0D87 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = Features/Register.swift; sourceTree = "<group>"; };
 		B1D05A581E36956D00AB0D87 /* LoginSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSteps.swift; path = StepDefinitions/LoginSteps.swift; sourceTree = "<group>"; };
 		B1D05A591E36956D00AB0D87 /* RegisterSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterSteps.swift; path = StepDefinitions/RegisterSteps.swift; sourceTree = "<group>"; };
-		B1D05A721E36A71C00AB0D87 /* UIFont+SofiaPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+SofiaPro.swift"; path = "Puzzle/Utils/Extensions/UIFont+SofiaPro.swift"; sourceTree = "<group>"; };
+		B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+HelveticaNeue.swift"; path = "Puzzle/Utils/Extensions/UIFont+HelveticaNeue.swift"; sourceTree = "<group>"; };
 		B1D05A731E36A71C00AB0D87 /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String+Uid.swift"; sourceTree = "<group>"; };
 		B1D05A741E36A71C00AB0D87 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "Puzzle/Utils/Extensions/Date+Format.swift"; sourceTree = "<group>"; };
 		B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+IntrinsicContentSize.swift"; path = "Puzzle/Utils/Extensions/UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
@@ -260,7 +260,7 @@
 				B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */,
 				B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */,
 				B1D05AC51E36BABD00AB0D87 /* UIButton+Design.swift */,
-				B1D05A721E36A71C00AB0D87 /* UIFont+SofiaPro.swift */,
+				B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */,
 				B1D05A731E36A71C00AB0D87 /* String+Uid.swift */,
 				B1D05A741E36A71C00AB0D87 /* Date+Format.swift */,
 				B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */,
@@ -647,7 +647,7 @@
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
 				B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */,
 				B1D05AD11E36BAD200AB0D87 /* Setup+KeyboardNotification.swift in Sources */,
-				B1D05A761E36A71C00AB0D87 /* UIFont+SofiaPro.swift in Sources */,
+				B1D05A761E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift in Sources */,
 				B1D05ACF1E36BAD200AB0D87 /* SetupVC+TextFieldDelegate.swift in Sources */,
 				B1D05A941E36A74700AB0D87 /* LoginVC+TextFieldDelegate.swift in Sources */,
 				B1D05A931E36A74700AB0D87 /* LoginVC+LoginDelegate.swift in Sources */,

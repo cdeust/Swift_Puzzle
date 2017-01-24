@@ -20,7 +20,6 @@ extension UIFont {
         let font = UIFont(name: "HelveticaNeue", size: 12)
         return font!
     }
-    
     public func sofiaProBold() -> UIFont
     {
         let font = UIFont(name: "HelveticaNeue-Bold", size: 12)
