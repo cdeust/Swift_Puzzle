@@ -17,6 +17,7 @@ class PuzzleUITests: XCTestCase {
         
         continueAfterFailure = false
         app.launch()
+        print(app.debugDescription)
     }
     
     func testLoginViewUIElementsExists() {
@@ -56,7 +57,7 @@ class PuzzleUITests: XCTestCase {
         email.typeText("test@integration.com")
         email.typeText("\n")
         
-        let password = app.textFields.element(matching: .textField, identifier: "password")
+        let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
         password.tap()
         password.typeText("testme")
         password.typeText("\n")
