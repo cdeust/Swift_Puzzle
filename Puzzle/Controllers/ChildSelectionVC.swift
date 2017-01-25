@@ -64,18 +64,17 @@ extension ChildSelectionVC {
             let btn = UIButton.createWithTitleTargetAction(title: c.firstname!, target: self, action: #selector(ChildSelectionVC.initializeMenuChildren(sender:)))
             btn.tag = i
             self.view.addSubview(btn)
-            
-            self.viewModel.setConstraintsForUIElementWithParentView(element: btn, parentView: self.view, verticalValue: origin)
+            self.setConstraintsForUIElementWithParentView(element: btn, parentView: self.view, verticalValue: origin)
         }
         origin += 50
         
         let addBtn = UIButton.createWithTitleTargetAction(title: "Add children", target: self, action: #selector(ChildSelectionVC.showChildCreation(sender:)))
         self.view.addSubview(addBtn)
-        self.viewModel.setConstraintsForUIElementWithParentView(element: addBtn, parentView: self.view, verticalAlign: "top")
+        self.setConstraintsForUIElementWithParentView(element: addBtn, parentView: self.view, verticalAlign: "top")
         
         let logoutBtn = UIButton.createWithTitleTargetAction(title: "Log out", target: self, action: #selector(ChildSelectionVC.showLogin(sender:)))
         self.view.addSubview(logoutBtn)
-        self.viewModel.setConstraintsForUIElementWithParentView(element: logoutBtn, parentView: self.view, verticalAlign: "bottom")
+        self.setConstraintsForUIElementWithParentView(element: logoutBtn, parentView: self.view, verticalAlign: "bottom")
     }
     
     func initializeMenuChildren(sender: UIButton) {
