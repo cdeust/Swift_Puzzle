@@ -37,6 +37,11 @@ extension LoginVC {
         
         self.registerForKeyboardNotifications()
     }
+    
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
 }
 
 // MARK: Design initialization
@@ -85,10 +90,10 @@ extension LoginVC {
 extension LoginVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "loadLoginSecondStep"
+        if segue.identifier == "loadChildSelection"
         {
-            //            let secondStep = segue.destination as LoginSecondStepVC
-            //            secondStep.user = self.user
+            let childSelection = segue.destination as! ChildSelectionVC
+            childSelection.user = self.user
         }
     }
 }

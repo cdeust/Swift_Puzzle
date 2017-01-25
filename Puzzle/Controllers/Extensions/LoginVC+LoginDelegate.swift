@@ -22,7 +22,7 @@ extension LoginVC: LoginVCDelegate {
         self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         
-//        self.performSegue(withIdentifier: "loadLoginSecondStep", sender:self)
+        self.performSegue(withIdentifier: "loadChildSelection", sender:self)
     }
     
     func didFailedToLogin() -> Void

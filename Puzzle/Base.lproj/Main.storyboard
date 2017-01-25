@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y5W-Hr-HMT">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y5W-Hr-HMT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -172,11 +172,78 @@
                         <outlet property="login" destination="nHz-QQ-AQY" id="VRc-J0-rzp"/>
                         <outlet property="password" destination="fzz-fZ-9v1" id="gqi-Z4-q3w"/>
                         <outlet property="scrollView" destination="IwZ-Jz-G99" id="K1O-Hj-nV9"/>
+                        <segue destination="ZIz-U3-RvE" kind="show" identifier="loadChildSelection" id="Pdl-J1-cLQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfn-Ie-h5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="135.38230884557723"/>
+        </scene>
+        <!--Child SelectionVC-->
+        <scene sceneID="kC8-uM-IrK">
+            <objects>
+                <viewController id="ZIz-U3-RvE" customClass="ChildSelectionVC" customModule="Puzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dYY-qp-ddR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jga-sq-fwe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1q-Pt-Ofd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HB4-Cu-Pmq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-hk-I6w">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGK-PM-quH">
+                                                <rect key="frame" x="25" y="20" width="325" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="sJ2-tz-nOw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.63137254899999995" green="0.7725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OGK-PM-quH" secondAttribute="trailing" constant="25" id="beH-hT-Jcf"/>
+                                            <constraint firstItem="OGK-PM-quH" firstAttribute="leading" secondItem="Xig-hk-I6w" secondAttribute="leading" constant="25" id="jiX-Ej-bvd"/>
+                                            <constraint firstItem="OGK-PM-quH" firstAttribute="top" secondItem="Xig-hk-I6w" secondAttribute="top" constant="20" id="oPI-b1-sw8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xig-hk-I6w" firstAttribute="height" secondItem="HB4-Cu-Pmq" secondAttribute="height" id="1Pk-Sg-7Qe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xig-hk-I6w" secondAttribute="trailing" id="6tD-WQ-7E2"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xig-hk-I6w" secondAttribute="bottom" id="NXS-lj-ZEw"/>
+                                    <constraint firstItem="Xig-hk-I6w" firstAttribute="leading" secondItem="HB4-Cu-Pmq" secondAttribute="leading" id="Ska-Bh-Zfi"/>
+                                    <constraint firstItem="Xig-hk-I6w" firstAttribute="top" secondItem="HB4-Cu-Pmq" secondAttribute="top" id="aIj-qK-kuZ"/>
+                                    <constraint firstItem="Xig-hk-I6w" firstAttribute="width" secondItem="HB4-Cu-Pmq" secondAttribute="width" id="j1G-vO-6r8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="ZIz-U3-RvE" id="phe-lq-qJI"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jga-sq-fwe" firstAttribute="top" secondItem="HB4-Cu-Pmq" secondAttribute="bottom" id="SeF-45-8pb"/>
+                            <constraint firstAttribute="trailing" secondItem="HB4-Cu-Pmq" secondAttribute="trailing" id="TA1-3Z-e0u"/>
+                            <constraint firstItem="HB4-Cu-Pmq" firstAttribute="leading" secondItem="f1q-Pt-Ofd" secondAttribute="leading" id="gUe-Bb-NYH"/>
+                            <constraint firstItem="HB4-Cu-Pmq" firstAttribute="top" secondItem="f1q-Pt-Ofd" secondAttribute="top" id="hrH-cD-3Ds"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="HB4-Cu-Pmq" id="UAN-BI-2IE"/>
+                        <outlet property="welcome" destination="OGK-PM-quH" id="STt-wC-r0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0p3-ly-htY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="884.70764617691157"/>
         </scene>
         <!--SetupVC-->
         <scene sceneID="DJw-Rk-U41">

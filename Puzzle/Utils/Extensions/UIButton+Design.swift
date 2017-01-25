@@ -18,4 +18,18 @@ extension UIButton {
         
         return button
     }
+    
+    public class func createWithTitleTargetAction(title: String, target: Any, action: Selector) -> UIButton
+    {
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.layer.borderColor = UIColor.gray.cgColor
+        btn.layer.borderWidth = 1
+        btn.layer.cornerRadius = 5
+        btn.setTitle(title, for: .normal)
+        btn.setTitleColor(UIColor.gray, for: .normal)
+        btn.addTarget(target, action: action, for: .touchUpInside)
+        
+        return btn
+    }
 }
