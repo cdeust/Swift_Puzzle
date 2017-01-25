@@ -19,7 +19,6 @@
 		B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */; };
 		B1D05A7F1E36A72800AB0D87 /* Puzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7A1E36A72800AB0D87 /* Puzzle.xcdatamodeld */; };
 		B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */; };
-		B1D05A811E36A72800AB0D87 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7D1E36A72800AB0D87 /* CoreDataStack.swift */; };
 		B1D05A821E36A72800AB0D87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A7E1E36A72800AB0D87 /* Info.plist */; };
 		B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A841E36A73400AB0D87 /* LoginVM.swift */; };
 		B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A871E36A73D00AB0D87 /* Children.swift */; };
@@ -33,7 +32,6 @@
 		B1D05A9B1E36A75800AB0D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A971E36A75800AB0D87 /* LaunchScreen.storyboard */; };
 		B1D05A9C1E36A75800AB0D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A991E36A75800AB0D87 /* Main.storyboard */; };
 		B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */; };
-		B1D05AB31E36AE4100AB0D87 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7D1E36A72800AB0D87 /* CoreDataStack.swift */; };
 		B1D05AC61E36BABD00AB0D87 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */; };
 		B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */; };
 		B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */; };
@@ -55,6 +53,7 @@
 		B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */; };
 		B457EBB01E391D0700A72CF3 /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */; };
 		B457EBB21E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBB11E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift */; };
+		B457EBB41E3921DD00A72CF3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
 		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
@@ -96,7 +95,6 @@
 		B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+IntrinsicContentSize.swift"; path = "Puzzle/Utils/Extensions/UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
 		B1D05A7B1E36A72800AB0D87 /* Puzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Puzzle.xcdatamodel; sourceTree = "<group>"; };
 		B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Puzzle/AppDelegate.swift; sourceTree = "<group>"; };
-		B1D05A7D1E36A72800AB0D87 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Puzzle/CoreDataStack.swift; sourceTree = "<group>"; };
 		B1D05A7E1E36A72800AB0D87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Puzzle/Info.plist; sourceTree = "<group>"; };
 		B1D05A841E36A73400AB0D87 /* LoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVM.swift; path = Puzzle/Models/LoginVM.swift; sourceTree = "<group>"; };
 		B1D05A871E36A73D00AB0D87 /* Children.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Children.swift; path = Puzzle/CoreData/Children.swift; sourceTree = "<group>"; };
@@ -129,6 +127,7 @@
 		B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "Puzzle/Utils/Extensions/UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B457EBB11E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildSelectionVC+AutoLayout.swift"; path = "Puzzle/Controllers/Extensions/ChildSelectionVC+AutoLayout.swift"; sourceTree = "<group>"; };
+		B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Puzzle/CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB41E365E3700E53F7F /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB81E365E3700E53F7F /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
@@ -209,9 +208,8 @@
 				B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */,
 				B1D05A6B1E36A69E00AB0D87 /* Base.lproj */,
 				B1D05A7A1E36A72800AB0D87 /* Puzzle.xcdatamodeld */,
-				B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */,
-				B1D05A7D1E36A72800AB0D87 /* CoreDataStack.swift */,
 				B1D05A7E1E36A72800AB0D87 /* Info.plist */,
+				B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */,
 				B1D05A6D1E36A6B400AB0D87 /* CoreData */,
 				B1D05A6F1E36A6C300AB0D87 /* Utils */,
 				B1D05A6E1E36A6BB00AB0D87 /* Models */,
@@ -245,6 +243,7 @@
 		B1D05A6D1E36A6B400AB0D87 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */,
 				B1D05A871E36A73D00AB0D87 /* Children.swift */,
 				B1D05A891E36A73D00AB0D87 /* Children+Properties.swift */,
 				B1D05A8A1E36A73D00AB0D87 /* User.swift */,
@@ -666,7 +665,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D05A8E1E36A73D00AB0D87 /* User.swift in Sources */,
-				B1D05A811E36A72800AB0D87 /* CoreDataStack.swift in Sources */,
 				B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */,
 				B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */,
 				B1D05AC91E36BABD00AB0D87 /* UIButton+Design.swift in Sources */,
@@ -675,6 +673,7 @@
 				B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* SetupVM.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
+				B457EBB41E3921DD00A72CF3 /* CoreDataStack.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
 				B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */,
 				B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */,
@@ -706,7 +705,6 @@
 				B1D05A571E36953C00AB0D87 /* Register.swift in Sources */,
 				B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */,
 				B1D05A551E36953500AB0D87 /* Login.swift in Sources */,
-				B1D05AB31E36AE4100AB0D87 /* CoreDataStack.swift in Sources */,
 				B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */,
 				B1D05A5B1E36956D00AB0D87 /* RegisterSteps.swift in Sources */,
 				B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */,

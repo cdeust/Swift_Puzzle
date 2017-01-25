@@ -62,7 +62,8 @@ extension LoginVC {
 extension LoginVC {
     @IBAction func tryToLogin(sender: UIButton)
     {
-        if let email = self.email.text, let password = self.password.text {
+        if let email = self.email.text, let password = self.password.text
+        {
             if  String().isNotEmptyNorNil(string: email) &&
                 String().isNotEmptyNorNil(string: password)
             {
@@ -78,7 +79,8 @@ extension LoginVC {
 }
 
 extension LoginVC {
-    func presentErrorPopup() {
+    func presentErrorPopup()
+    {
         let errorPopup = UIAlertController(title: NSLocalizedString("invalid_values", comment: "Invalid values sent"), message: NSLocalizedString("fill_credentials_correctly", comment: "Please make sure your email and password are filled in."), preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: "OK"), style: UIAlertActionStyle.cancel) { UIAlertAction in }
         errorPopup.addAction(okAction)

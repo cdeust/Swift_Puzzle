@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 extension SetupVC: SetupVCDelegate {
-    func didSuccessfullyCreateAccount(user: User) {
+    func didSuccessfullyCreateAccount(user: User)
+    {
         self.error.text = self.viewModel.errorText;
         self.error.textColor = UIColor.getColorForSuccess()
         
@@ -25,7 +26,8 @@ extension SetupVC: SetupVCDelegate {
 //        self.performSegue(withIdentifier: "loadSetupSecondStep", sender: self)
     }
     
-    func didFailedToCreateAccount() {
+    func didFailedToCreateAccount()
+    {
         self.error.text = self.viewModel.errorText;
         self.error.textColor = UIColor.getColorForFailure()
         self.firstname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor

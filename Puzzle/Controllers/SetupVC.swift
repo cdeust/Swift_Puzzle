@@ -90,7 +90,8 @@ extension SetupVC {
 // MARK: Alert message
 
 extension SetupVC {
-    func presentErrorPopup() {
+    func presentErrorPopup()
+    {
         let errorPopup = UIAlertController(title: NSLocalizedString("invalid_values", comment: "Invalid values sent"), message: NSLocalizedString("fill_form_correctly", comment: "Please make sure you filled the present form correctly."), preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: "OK"), style: UIAlertActionStyle.cancel) { UIAlertAction in }
         errorPopup.addAction(okAction)

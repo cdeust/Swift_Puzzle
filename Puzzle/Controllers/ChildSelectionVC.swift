@@ -51,10 +51,10 @@ extension ChildSelectionVC {
 // MARK: Dynamic design initialization
 
 extension ChildSelectionVC {
-    func presentMenuWithUser(user: User) {
+    func presentMenuWithUser(user: User)
+    {
         self.viewModel = ChildSelectionVM().initWithUser(user: self.user) as! ChildSelectionVM
         self.welcome.text = self.viewModel.welcomeText
-        
         self.child = self.viewModel.getChildrenForPresentAccount()
         
         var origin = 100
@@ -77,16 +77,19 @@ extension ChildSelectionVC {
         self.setConstraintsForUIElementWithParentView(element: logoutBtn, parentView: self.view, verticalAlign: "bottom")
     }
     
-    func initializeMenuChildren(sender: UIButton) {
+    func initializeMenuChildren(sender: UIButton)
+    {
         self.children = child[sender.tag] as! Children
         self.performSegue(withIdentifier: "loadMenu", sender: self)
     }
     
-    func showChildCreation(sender: UIButton) {
+    func showChildCreation(sender: UIButton)
+    {
         self.performSegue(withIdentifier: "loadChildCreation", sender: self)
     }
     
-    func showLogin(sender: UIButton) {
+    func showLogin(sender: UIButton)
+    {
         guard let navigationController = self.navigationController else { return }
         navigationController.popToRootViewController(animated: true)
     }
