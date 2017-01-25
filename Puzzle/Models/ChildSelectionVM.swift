@@ -16,7 +16,8 @@ class ChildSelectionVM: NSObject {
     func initWithUser(user: User) -> AnyObject
     {
         self.user = user
-        if let firstname = self.user.firstname {
+        if let firstname = self.user.firstname
+        {
             self.welcomeText = "Welcome \(firstname)!"
         }
         
@@ -28,32 +29,65 @@ class ChildSelectionVM: NSObject {
         let coreDataStack = CoreDataStack()
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         
-        let results = Children.fetchChildrenWithUid(uid: self.user.uid!, managedObjectContext: managedObjectContext)
-        let children = NSMutableArray()
-        if results.count > 0
-        {
-            for object in results
+        if let uid = self.user.uid {
+            let results = Children.fetchChildrenWithUid(uid: uid, managedObjectContext: managedObjectContext)
+            let children = NSMutableArray()
+            if results.count > 0
             {
-                children.add(object as! Children)
+                for object in results
+                {
+                    children.add(object as! Children)
+                }
             }
+            return children
         }
-        
-        return children
+        return NSMutableArray()
+    }
+}
+
+// MARK: Auto Layout initialization
+
+extension ChildSelectionVM {
+    func setConstraintsForUIElementWithParentView(element: Any, parentView: UIView, verticalValue: Int)
+    {
+        parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getDynamicVerticalVisualFormat(verticalValue: verticalValue))
+        parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getHorizontalVisualFormatCenter())
     }
     
-    func setupConstraintsForButtonWithParentViewVerticalValue(button: UIButton, parentView: UIView, verticalValue: Int)
+    func setConstraintsForUIElementWithParentView(element: Any, parentView: UIView, verticalAlign: String)
     {
-        let string = String(format: "V:|-(%i)-[button(30)]", verticalValue)
-        
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: string, options: .directionLeadingToTrailing, metrics: nil, views: [ "button" : button ]))
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(25)-[button]-(25)-|", options: .directionLeadingToTrailing, metrics: nil, views: [ "button" : button ]))
+        switch verticalAlign
+        {
+            case "top":
+                parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getVerticalVisualFormatTop())
+                parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getHorizontalVisualFormatCenter())
+                break
+            case "bottom":
+                parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getVerticalVisualFormatBottom())
+                parentView.setupConstraintsUsingVisualFormatForUIElementWithParentView(element: element, parentView: parentView, visualFormat: self.getHorizontalVisualFormatCenter())
+                break
+            default:
+                break
+        }
     }
     
-    func setupConstraintsForLogoutButtonWithParentViewVerticalValue(button: UIButton, parentView: UIView, verticalValue: Int)
+    func getDynamicVerticalVisualFormat(verticalValue: Int) -> String
     {
-        let string = String(format: "V:[button(30)]-(%i)-|", verticalValue)
-        
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: string, options: .directionLeadingToTrailing, metrics: nil, views: [ "button" : button ]))
-        parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(25)-[button]-(25)-|", options: .directionLeadingToTrailing, metrics: nil, views: [ "button" : button ]))
+        return String(format: "V:|-(%i)-[element(30)]", verticalValue)
+    }
+    
+    func getVerticalVisualFormatBottom() -> String
+    {
+        return String(format: "V:[element(30)]-(25)-|")
+    }
+    
+    func getVerticalVisualFormatTop() -> String
+    {
+        return String(format: "V:|-(80)-[element(30)]")
+    }
+    
+    func getHorizontalVisualFormatCenter() -> String
+    {
+        return String(format: "H:|-(25)-[element]-(25)-|")
     }
 }

@@ -52,6 +52,7 @@
 		B457EBA81E38E24F00A72CF3 /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA71E38E24F00A72CF3 /* LoginUITests.swift */; };
 		B457EBAA1E38E28700A72CF3 /* RegisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA91E38E28700A72CF3 /* RegisterUITests.swift */; };
 		B457EBAC1E38E2EE00A72CF3 /* ChildSelectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAB1E38E2EE00A72CF3 /* ChildSelectionUITests.swift */; };
+		B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
 		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
@@ -123,6 +124,7 @@
 		B457EBA71E38E24F00A72CF3 /* LoginUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		B457EBA91E38E28700A72CF3 /* RegisterUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUITests.swift; sourceTree = "<group>"; };
 		B457EBAB1E38E2EE00A72CF3 /* ChildSelectionUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSelectionUITests.swift; sourceTree = "<group>"; };
+		B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "Puzzle/Utils/Extensions/UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB41E365E3700E53F7F /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB81E365E3700E53F7F /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				B1D05A731E36A71C00AB0D87 /* String+Uid.swift */,
 				B1D05A741E36A71C00AB0D87 /* Date+Format.swift */,
 				B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */,
+				B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -666,6 +669,7 @@
 				B1D05ACB1E36BAC700AB0D87 /* SetupVM.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
+				B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */,
 				B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */,
 				B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */,
 				B1D05A921E36A74700AB0D87 /* LoginVC+KeyboardNotification.swift in Sources */,
