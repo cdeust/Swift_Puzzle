@@ -1,5 +1,5 @@
 //
-//  SetupVM.swift
+//  AccountCreationVM.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-protocol SetupVCDelegate
+protocol AccountCreationVCDelegate
 {
     func didSuccessfullyCreateAccount(user: User) -> Void
     func didFailedToCreateAccount() -> Void
 }
 
-class SetupVM: NSObject {
+class AccountCreationVM: NSObject {
     var firstnameText: String!
     var lastnameText: String!
     var emailText: String!
@@ -23,9 +23,9 @@ class SetupVM: NSObject {
     var lockText: String!
     var uidText: String!
     var errorText: String!
-    var delegate: SetupVCDelegate!
+    var delegate: AccountCreationVCDelegate!
     
-    func initWithDelegate(delegate:SetupVCDelegate) -> AnyObject
+    func initWithDelegate(delegate:AccountCreationVCDelegate) -> AnyObject
     {
         self.delegate = delegate
         self.errorText = ""
@@ -33,7 +33,7 @@ class SetupVM: NSObject {
         return self
     }
     
-    func initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:SetupVCDelegate) -> AnyObject
+    func initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:AccountCreationVCDelegate) -> AnyObject
     {
         self.firstnameText = firstname
         self.lastnameText = lastname

@@ -1,5 +1,5 @@
 //
-//  RegisterSteps.swift
+//  AccountCreationSteps.swift
 //  Evokid
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -11,7 +11,7 @@ import XCTest_Gherkin
 
 @testable import Puzzle
 
-class RegisterSteps : StepDefiner {
+class AccountCreationSteps : StepDefiner {
     
     var firstname: String!
     var lastname: String!

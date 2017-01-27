@@ -1,5 +1,5 @@
 //
-//  SetupVC.swift
+//  AccountCreationVC.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -11,11 +11,11 @@ import UIKit
 
 // MARK: Vars & Outlets
 
-class SetupVC: UIViewController {
+class AccountCreationVC: UIViewController {
     var activeField: UITextField!
     var user: User?
-    var viewModel: SetupVM!
-    var delegate: SetupVCDelegate!
+    var viewModel: AccountCreationVM!
+    var delegate: AccountCreationVCDelegate!
     
     @IBOutlet weak var firstname: UITextField!
     @IBOutlet weak var lastname: UITextField!
@@ -30,7 +30,7 @@ class SetupVC: UIViewController {
 
 // MARK: View initialization
 
-extension SetupVC {
+extension AccountCreationVC {
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ extension SetupVC {
 
 // MARK: Design initialization
 
-extension SetupVC {
+extension AccountCreationVC {
     func initView()
     {
         self.firstname = UITextField.designTextfield(textfield: self.firstname)
@@ -65,7 +65,7 @@ extension SetupVC {
 
 // MARK: Action
 
-extension SetupVC {
+extension AccountCreationVC {
     @IBAction func createAccount(sender: UIButton)
     {
         if let firstname = self.firstname.text, let lastname = self.lastname.text, let email = self.email.text, let password = self.password.text, let lock = self.lock.text
@@ -76,7 +76,7 @@ extension SetupVC {
                 String().isNotEmptyNorNil(string: password) == true &&
                 String().isNotEmptyNorNil(string: lock) == true
             {
-                self.viewModel = SetupVM().initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self) as! SetupVM
+                self.viewModel = AccountCreationVM().initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self) as! AccountCreationVM
                 self.viewModel.createAccount()
             }
             else
@@ -89,7 +89,7 @@ extension SetupVC {
 
 // MARK: Alert message
 
-extension SetupVC {
+extension AccountCreationVC {
     func presentErrorPopup()
     {
         let errorPopup = UIAlertController(title: NSLocalizedString("invalid_values", comment: "Invalid values sent"), message: NSLocalizedString("fill_form_correctly", comment: "Please make sure you filled the present form correctly."), preferredStyle: .alert)
@@ -100,7 +100,7 @@ extension SetupVC {
     }
 }
 
-extension SetupVC {
+extension AccountCreationVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "loadSetupSecondStep"

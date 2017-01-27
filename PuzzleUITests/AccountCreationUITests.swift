@@ -1,5 +1,5 @@
 //
-//  RegisterUITests.swift
+//  AccountCreationUITests.swift
 //  Puzzle
 //
 //  Created by User on 25/01/2017.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class RegisterUITests: XCTestCase {
+class AccountCreationUITests: XCTestCase {
         
     let app = XCUIApplication()
     

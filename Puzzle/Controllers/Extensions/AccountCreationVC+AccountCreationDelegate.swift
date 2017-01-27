@@ -1,5 +1,5 @@
 //
-//  SetupVC+SetupDelegate.swift
+//  AccountCreationVC+AccountCreationDelegate.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension SetupVC: SetupVCDelegate {
+extension AccountCreationVC: AccountCreationVCDelegate {
     func didSuccessfullyCreateAccount(user: User)
     {
         self.error.text = self.viewModel.errorText;

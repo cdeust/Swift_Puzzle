@@ -1,5 +1,5 @@
 //
-//  Setup+KeyboardNotification.swift
+//  AccountCreationVC+KeyboardNotification.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -13,7 +13,7 @@ import UIKit
 
 // MARK: Keyboard notification methods
 
-extension SetupVC {
+extension AccountCreationVC {
     func registerForKeyboardNotifications() -> Void
     {
         NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)

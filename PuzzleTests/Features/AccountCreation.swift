@@ -1,5 +1,5 @@
 //
-//  Register.swift
+//  AccountCreation.swift
 //  Evokid
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -11,7 +11,7 @@ import XCTest_Gherkin
 
 @testable import Puzzle
 
-class Register : XCTestCase {
+class AccountCreation : XCTestCase {
     
     override func setUp() {
         super.setUp()

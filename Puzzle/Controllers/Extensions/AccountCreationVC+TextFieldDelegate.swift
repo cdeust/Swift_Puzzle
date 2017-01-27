@@ -1,5 +1,5 @@
 //
-//  SetupVC+TextFieldDelegate.swift
+//  AccountCreationVC+TextFieldDelegate.swift
 //  Puzzle
 //
 //  Created by Clément DEUST on 23/01/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension SetupVC: UITextFieldDelegate {
+extension AccountCreationVC: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
     {
         return true
