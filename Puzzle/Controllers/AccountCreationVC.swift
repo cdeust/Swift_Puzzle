@@ -103,10 +103,10 @@ extension AccountCreationVC {
 extension AccountCreationVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "loadSetupSecondStep"
+        if segue.identifier == "loadChildCreation"
         {
-//            let secondStep = segue.destination as SetupSecondStepVC
-//            secondStep.user = self.user
+            let childCreation = segue.destination as! ChildCreationVC
+            childCreation.user = self.user
         }
     }
 }

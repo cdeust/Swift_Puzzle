@@ -41,7 +41,7 @@ class LoginVM: NSObject {
     
     func login() -> Void
     {
-        let coreDataStack = CoreDataStack()
+        let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         let result = User.fetchUserWithEmail(email: self.loginText, password: self.passwordText, managedObjectContext: managedObjectContext)
         

@@ -13,9 +13,8 @@ import UIKit
 
 class LoginVC: UIViewController {
     var activeField: UITextField!
-    var user: User?
+    var user: User!
     var viewModel: LoginVM!
-    var delegate: LoginVCDelegate!
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!

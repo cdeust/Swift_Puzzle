@@ -31,7 +31,6 @@
 		B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A951E36A75000AB0D87 /* LoginVC.swift */; };
 		B1D05A9B1E36A75800AB0D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A971E36A75800AB0D87 /* LaunchScreen.storyboard */; };
 		B1D05A9C1E36A75800AB0D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A991E36A75800AB0D87 /* Main.storyboard */; };
-		B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */; };
 		B1D05AC61E36BABD00AB0D87 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */; };
 		B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */; };
 		B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */; };
@@ -53,11 +52,16 @@
 		B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */; };
 		B457EBB01E391D0700A72CF3 /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */; };
 		B457EBB21E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBB11E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift */; };
-		B457EBB41E3921DD00A72CF3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */; };
 		B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466263F1E3B61EB00B372CB /* ChildCreationVC.swift */; };
+		B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */; };
+		B46626441E3B6C5C00B372CB /* ChildCreationVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46626431E3B6C5C00B372CB /* ChildCreationVC+KeyboardNotification.swift */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
 		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
+		B49B06FA1E3B7B32009A1B1B /* ChildCreationVC+ChildCreationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B06F91E3B7B32009A1B1B /* ChildCreationVC+ChildCreationDelegate.swift */; };
+		B49B06FC1E3B7DF2009A1B1B /* ChildCreationVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B06FB1E3B7DF2009A1B1B /* ChildCreationVC+TextFieldDelegate.swift */; };
+		B49B06FE1E3B8998009A1B1B /* ChildCreationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B06FD1E3B8998009A1B1B /* ChildCreationUITests.swift */; };
+		B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B07011E3B95CF009A1B1B /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +132,9 @@
 		B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "Puzzle/Utils/Extensions/UIView+Constraints.swift"; sourceTree = "<group>"; };
 		B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B457EBB11E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildSelectionVC+AutoLayout.swift"; path = "Puzzle/Controllers/Extensions/ChildSelectionVC+AutoLayout.swift"; sourceTree = "<group>"; };
-		B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Puzzle/CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
 		B466263F1E3B61EB00B372CB /* ChildCreationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVC.swift; path = Puzzle/Controllers/ChildCreationVC.swift; sourceTree = "<group>"; };
+		B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVM.swift; path = Puzzle/Models/ChildCreationVM.swift; sourceTree = "<group>"; };
+		B46626431E3B6C5C00B372CB /* ChildCreationVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/ChildCreationVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB41E365E3700E53F7F /* PuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EB81E365E3700E53F7F /* PuzzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTests.swift; sourceTree = "<group>"; };
@@ -138,6 +143,10 @@
 		B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleUITests.swift; sourceTree = "<group>"; };
 		B4766EC51E365E3700E53F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4862B8C1E375EA500E58564 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Puzzle/Utils/Extensions/String+Validation.swift"; sourceTree = "<group>"; };
+		B49B06F91E3B7B32009A1B1B /* ChildCreationVC+ChildCreationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+ChildCreationDelegate.swift"; path = "Puzzle/Controllers/Extensions/ChildCreationVC+ChildCreationDelegate.swift"; sourceTree = "<group>"; };
+		B49B06FB1E3B7DF2009A1B1B /* ChildCreationVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/ChildCreationVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B49B06FD1E3B8998009A1B1B /* ChildCreationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildCreationUITests.swift; sourceTree = "<group>"; };
+		B49B07011E3B95CF009A1B1B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Puzzle/CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
 		FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -246,7 +255,7 @@
 		B1D05A6D1E36A6B400AB0D87 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				B457EBB31E3921DD00A72CF3 /* CoreDataStack.swift */,
+				B49B07011E3B95CF009A1B1B /* CoreDataStack.swift */,
 				B1D05A871E36A73D00AB0D87 /* Children.swift */,
 				B1D05A891E36A73D00AB0D87 /* Children+Properties.swift */,
 				B1D05A8A1E36A73D00AB0D87 /* User.swift */,
@@ -261,6 +270,7 @@
 				B1D05ACA1E36BAC700AB0D87 /* AccountCreationVM.swift */,
 				B1D05A841E36A73400AB0D87 /* LoginVM.swift */,
 				B457EBA51E38C5F200A72CF3 /* ChildSelectionVM.swift */,
+				B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -301,6 +311,9 @@
 				B1D05A911E36A74700AB0D87 /* LoginVC+TextFieldDelegate.swift */,
 				B1D05A901E36A74700AB0D87 /* LoginVC+LoginDelegate.swift */,
 				B457EBB11E391D7900A72CF3 /* ChildSelectionVC+AutoLayout.swift */,
+				B46626431E3B6C5C00B372CB /* ChildCreationVC+KeyboardNotification.swift */,
+				B49B06F91E3B7B32009A1B1B /* ChildCreationVC+ChildCreationDelegate.swift */,
+				B49B06FB1E3B7DF2009A1B1B /* ChildCreationVC+TextFieldDelegate.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +376,7 @@
 				B457EBA91E38E28700A72CF3 /* AccountCreationUITests.swift */,
 				B457EBA71E38E24F00A72CF3 /* LoginUITests.swift */,
 				B457EBAB1E38E2EE00A72CF3 /* ChildSelectionUITests.swift */,
+				B49B06FD1E3B8998009A1B1B /* ChildCreationUITests.swift */,
 			);
 			path = PuzzleUITests;
 			sourceTree = "<group>";
@@ -670,14 +684,16 @@
 				B1D05A8E1E36A73D00AB0D87 /* User.swift in Sources */,
 				B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */,
 				B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */,
+				B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */,
 				B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */,
 				B1D05AC91E36BABD00AB0D87 /* UIButton+Design.swift in Sources */,
+				B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */,
 				B457EBB01E391D0700A72CF3 /* String+VisualFormat.swift in Sources */,
+				B49B06FC1E3B7DF2009A1B1B /* ChildCreationVC+TextFieldDelegate.swift in Sources */,
 				B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */,
 				B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
-				B457EBB41E3921DD00A72CF3 /* CoreDataStack.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
 				B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */,
 				B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */,
@@ -685,7 +701,9 @@
 				B1D05A921E36A74700AB0D87 /* LoginVC+KeyboardNotification.swift in Sources */,
 				B1D05AD31E36BADD00AB0D87 /* AccountCreationVC.swift in Sources */,
 				B1D05A781E36A71C00AB0D87 /* Date+Format.swift in Sources */,
+				B49B06FA1E3B7B32009A1B1B /* ChildCreationVC+ChildCreationDelegate.swift in Sources */,
 				B457EBA41E38C2C200A72CF3 /* ChildSelectionVC.swift in Sources */,
+				B46626441E3B6C5C00B372CB /* ChildCreationVC+KeyboardNotification.swift in Sources */,
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
 				B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */,
 				B1D05AD11E36BAD200AB0D87 /* AccountCreationVC+KeyboardNotification.swift in Sources */,
@@ -711,7 +729,6 @@
 				B1D05A551E36953500AB0D87 /* Login.swift in Sources */,
 				B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */,
 				B1D05A5B1E36956D00AB0D87 /* AccountCreationSteps.swift in Sources */,
-				B1D05AB21E36AE3E00AB0D87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B457EBAC1E38E2EE00A72CF3 /* ChildSelectionUITests.swift in Sources */,
+				B49B06FE1E3B8998009A1B1B /* ChildCreationUITests.swift in Sources */,
 				B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */,
 				B41447801E37B7B4003064C0 /* XCUIElement+Paste.swift in Sources */,
 				B457EBAA1E38E28700A72CF3 /* AccountCreationUITests.swift in Sources */,

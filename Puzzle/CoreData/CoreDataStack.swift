@@ -9,9 +9,10 @@
 import Foundation
 import CoreData
 
-class CoreDataStack {
+final class CoreDataStack {
     
     // MARK: - Core Data stack
+    static let sharedStack = CoreDataStack()
     
     lazy var persistentContainer: NSPersistentContainer = {
         /*

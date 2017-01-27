@@ -50,7 +50,7 @@ class AccountCreationVM: NSObject {
     
     func createAccount() -> Void
     {
-        let coreDataStack = CoreDataStack()
+        let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         var result = User.fetchUserWithEmail(email: self.emailText, managedObjectContext: managedObjectContext)
         

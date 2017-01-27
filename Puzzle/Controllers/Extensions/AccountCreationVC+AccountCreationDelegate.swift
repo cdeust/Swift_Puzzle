@@ -20,10 +20,10 @@ extension AccountCreationVC: AccountCreationVCDelegate {
         self.firstname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.lastname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
-        self.lock.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
+        self.lock.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         
-//        self.performSegue(withIdentifier: "loadSetupSecondStep", sender: self)
+        self.performSegue(withIdentifier: "loadChildCreation", sender: self)
     }
     
     func didFailedToCreateAccount()
@@ -33,7 +33,7 @@ extension AccountCreationVC: AccountCreationVCDelegate {
         self.firstname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         self.lastname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         self.email.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
-        self.lock.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
+        self.lock.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
     }
 }

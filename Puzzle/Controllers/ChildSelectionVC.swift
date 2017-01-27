@@ -14,9 +14,9 @@ import UIKit
 class ChildSelectionVC: UIViewController {
     var child: NSArray!
     var activeField: UITextField!
-    var viewModel: ChildSelectionVM!
-    var children: Children!
     var user: User!
+    var children: Children!
+    var viewModel: ChildSelectionVM!
     
     @IBOutlet weak var welcome: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -29,7 +29,9 @@ extension ChildSelectionVC {
     {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         self.initView()
+        
         self.presentMenuWithUser(user: self.user)
     }
 
@@ -108,10 +110,8 @@ extension ChildSelectionVC {
         }
         if segue.identifier == "loadChildCreation"
         {
-            /*
             let childCreation = segue.destination as! ChildCreationVC
             childCreation.user = self.user
-            */
         }
     }
 }

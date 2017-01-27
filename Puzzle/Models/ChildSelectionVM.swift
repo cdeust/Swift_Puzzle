@@ -26,7 +26,7 @@ class ChildSelectionVM: NSObject {
     
     func getChildrenForPresentAccount() -> NSArray
     {
-        let coreDataStack = CoreDataStack()
+        let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         
         if let uid = self.user.uid {
