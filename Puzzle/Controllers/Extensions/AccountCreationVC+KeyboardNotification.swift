@@ -16,8 +16,8 @@ import UIKit
 extension AccountCreationVC {
     func registerForKeyboardNotifications() -> Void
     {
-        NotificationCenter.default.addObserver(self, selector: #selector(SetupVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(SetupVC.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AccountCreationVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AccountCreationVC.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     func keyboardWillShow(note:NSNotification) -> Void

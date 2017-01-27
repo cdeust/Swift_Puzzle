@@ -16,8 +16,8 @@ import UIKit
 extension ChildCreationVC {
     func registerForKeyboardNotifications() -> Void
     {
-        NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(LoginVC.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChildCreationVC.keyboardWillShow), name:NSNotification.Name.UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChildCreationVC.keyboardWillHide), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     func keyboardWillShow(note:NSNotification) -> Void
