@@ -9,9 +9,12 @@
 import Foundation
 import CoreData
 
-final class CoreDataStack {
+// TODO: Rework CoreDataStack to make it working with multi threading
+
+class CoreDataStack {
     
     // MARK: - Core Data stack
+    
     static let sharedStack = CoreDataStack()
     
     lazy var persistentContainer: NSPersistentContainer = {
