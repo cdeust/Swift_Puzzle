@@ -120,6 +120,8 @@ extension ChildCreationVC {
     }
 }
 
+// MARK: Navigation
+
 extension ChildCreationVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "loadChildSelection"

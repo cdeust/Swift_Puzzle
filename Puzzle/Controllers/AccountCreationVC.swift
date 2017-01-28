@@ -100,6 +100,8 @@ extension AccountCreationVC {
     }
 }
 
+// MARK: Navigation
+
 extension AccountCreationVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {

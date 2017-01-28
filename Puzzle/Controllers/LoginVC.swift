@@ -77,6 +77,8 @@ extension LoginVC {
     }
 }
 
+// MARK: Alert message
+
 extension LoginVC {
     func presentErrorPopup()
     {
@@ -87,6 +89,8 @@ extension LoginVC {
         self.present(errorPopup, animated: true, completion: nil)
     }
 }
+
+// MARK: Navigation
 
 extension LoginVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
