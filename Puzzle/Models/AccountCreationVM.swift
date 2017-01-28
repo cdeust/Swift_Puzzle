@@ -16,34 +16,106 @@ protocol AccountCreationVCDelegate
 }
 
 class AccountCreationVM: NSObject {
-    var firstnameText: String!
-    var lastnameText: String!
-    var emailText: String!
-    var passwordText: String!
-    var lockText: String!
-    var uidText: String!
-    var errorText: String!
-    var delegate: AccountCreationVCDelegate!
+    private var _firstnameText: String!
+    private var _lastnameText: String!
+    private var _emailText: String!
+    private var _passwordText: String!
+    private var _lockText: String!
+    private var _uidText: String!
+    private var _errorText: String!
+    private var _delegate: AccountCreationVCDelegate!
+    
+    var firstnameText: String {
+        get {
+            return _firstnameText
+        }
+        set {
+            _firstnameText = newValue
+        }
+    }
+    
+    var lastnameText: String {
+        get {
+            return _lastnameText
+        }
+        set {
+            _lastnameText = newValue
+        }
+    }
+    
+    var emailText: String {
+        get {
+            return _emailText
+        }
+        set {
+            _emailText = newValue
+        }
+    }
+    
+    var passwordText: String {
+        get {
+            return _passwordText
+        }
+        set {
+            _passwordText = newValue
+        }
+    }
+    
+    var lockText: String {
+        get {
+            return _lockText
+        }
+        set {
+            _lockText = newValue
+        }
+    }
+    
+    var uidText: String {
+        get {
+            return _uidText
+        }
+        set {
+            _uidText = newValue
+        }
+    }
+    
+    var errorText: String {
+        get {
+            return _errorText
+        }
+        set {
+            _errorText = newValue
+        }
+    }
+    
+    var delegate: AccountCreationVCDelegate {
+        get {
+            return _delegate
+        }
+        set {
+            _delegate = newValue
+        }
+    }
     
     func initWithDelegate(delegate:AccountCreationVCDelegate) -> AnyObject
     {
-        self.delegate = delegate
-        self.errorText = ""
+        self._delegate = delegate
+        self._errorText = ""
         
         return self
     }
     
     func initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:AccountCreationVCDelegate) -> AnyObject
     {
-        self.firstnameText = firstname
-        self.lastnameText = lastname
-        self.emailText = email
-        self.passwordText = password
-        self.lockText = lock
-        self.delegate = delegate
-        self.uidText = String().uid()
+        self._firstnameText = firstname
+        self._lastnameText = lastname
+        self._emailText = email
+        self._passwordText = password
+        self._lockText = lock
+        self._delegate = delegate
+        self._uidText = String().uid()
         
-        self.errorText = ""
+        self._errorText = ""
         
         return self
     }

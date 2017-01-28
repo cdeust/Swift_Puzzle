@@ -10,15 +10,34 @@ import Foundation
 import UIKit
 
 class ChildSelectionVM: NSObject {
-    var welcomeText: String!
-    var user: User!
+    private var _welcomeText: String!
+    private var _user: User!
+    
+    var welcomeText: String {
+        get {
+            return _welcomeText
+        }
+        set {
+            _welcomeText = newValue
+        }
+    }
+    
+    var user: User {
+        get {
+            return _user
+        }
+        set {
+            _user = newValue
+        }
+    }
+    
     
     func initWithUser(user: User) -> AnyObject
     {
-        self.user = user
-        if let firstname = self.user.firstname
+        self._user = user
+        if let firstname = user.firstname
         {
-            self.welcomeText = "Welcome \(firstname)!"
+            self._welcomeText = "Welcome \(firstname)!"
         }
         
         return self

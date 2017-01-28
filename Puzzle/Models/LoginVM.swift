@@ -16,25 +16,69 @@ protocol LoginVCDelegate
 }
 
 class LoginVM: NSObject {
-    var loginText: String!
-    var passwordText: String!
-    var errorText: String!
-    var signinText: String!
-    var createText: String!
-    var delegate: LoginVCDelegate!
+    private var _loginText: String!
+    private var _passwordText: String!
+    private var _errorText: String!
+    private var _createText: String!
+    private var _delegate: LoginVCDelegate!
+    
+    var loginText: String {
+        get {
+            return _loginText
+        }
+        set {
+            _loginText = newValue
+        }
+    }
+    
+    var passwordText: String {
+        get {
+            return _passwordText
+        }
+        set {
+            _passwordText = newValue
+        }
+    }
+    
+    var errorText: String {
+        get {
+            return _errorText
+        }
+        set {
+            _errorText = newValue
+        }
+    }
+    
+    var createText: String {
+        get {
+            return _createText
+        }
+        set {
+            _createText = newValue
+        }
+    }
+    
+    var delegate: LoginVCDelegate {
+        get {
+            return _delegate
+        }
+        set {
+            _delegate = newValue
+        }
+    }
     
     func initWithDelegate(delegate:LoginVCDelegate) -> AnyObject
     {
-        self.delegate = delegate
+        self._delegate = delegate
         
         return self
     }
     
     func initWithEmailPasswordDelegate(email: String, password: String, delegate: LoginVCDelegate) -> AnyObject
     {
-        self.loginText = email
-        self.passwordText = password
-        self.delegate = delegate
+        self._loginText = email
+        self._passwordText = password
+        self._delegate = delegate
         
         return self
     }

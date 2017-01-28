@@ -15,24 +15,96 @@ protocol ChildCreationVCDelegate {
 }
 
 class ChildCreationVM: NSObject {
-    var birthdateText: String!
-    var firstnameText: String!
-    var lastnameText: String!
-    var emailText: String!
-    var sexText: String!
-    var uidText: String!
-    var errorText: String!
-    var delegate: ChildCreationVCDelegate!
+    private var _birthdateText: String!
+    private var _firstnameText: String!
+    private var _lastnameText: String!
+    private var _emailText: String!
+    private var _sexText: String!
+    private var _uidText: String!
+    private var _errorText: String!
+    private var _delegate: ChildCreationVCDelegate!
+    
+    var birthdateText: String {
+        get {
+            return _birthdateText
+        }
+        set {
+            _birthdateText = newValue
+        }
+    }
+    
+    var firstnameText: String {
+        get {
+            return _firstnameText
+        }
+        set {
+            _firstnameText = newValue
+        }
+    }
+    
+    var lastnameText: String {
+        get {
+            return _lastnameText
+        }
+        set {
+            _lastnameText = newValue
+        }
+    }
+    
+    var emailText: String {
+        get {
+            return _emailText
+        }
+        set {
+            _emailText = newValue
+        }
+    }
+    
+    var sexText: String {
+        get {
+            return _sexText
+        }
+        set {
+            _sexText = newValue
+        }
+    }
+    
+    var uidText: String {
+        get {
+            return _uidText
+        }
+        set {
+            _uidText = newValue
+        }
+    }
+    
+    var errorText: String {
+        get {
+            return _errorText
+        }
+        set {
+            _errorText = newValue
+        }
+    }
+    
+    var delegate: ChildCreationVCDelegate {
+        get {
+            return _delegate
+        }
+        set {
+            _delegate = newValue
+        }
+    }
     
     func initWithFirstnameLastnameEmailSexBirthdateUidDelegate(firstname: String, lastname: String, email: String, sex: String, birthdate: String, uid: String, delegate: ChildCreationVCDelegate) -> AnyObject
     {
-        self.firstnameText = firstname
-        self.lastnameText = lastname
-        self.emailText = email
-        self.sexText = sex
-        self.birthdateText = birthdate
-        self.uidText = uid
-        self.delegate = delegate
+        self._firstnameText = firstname
+        self._lastnameText = lastname
+        self._emailText = email
+        self._sexText = sex
+        self._birthdateText = birthdate
+        self._uidText = uid
+        self._delegate = delegate
         
         return self
     }
