@@ -19,14 +19,21 @@
 		B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D151E3CC88A004600AB /* LoginVC+LoginDelegate.swift */; };
 		B1673D191E3CC88A004600AB /* LoginVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D161E3CC88A004600AB /* LoginVC+KeyboardNotification.swift */; };
 		B1673D1A1E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D171E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift */; };
+		B1673D251E3CF091004600AB /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D231E3CF091004600AB /* UIButton+Design.swift */; };
+		B1673D261E3CF091004600AB /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D241E3CF091004600AB /* UIButton+IntrinsicContentSize.swift */; };
+		B1673D281E3CF09F004600AB /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D271E3CF09F004600AB /* UIColor+Design.swift */; };
+		B1673D2A1E3CF0AF004600AB /* UIFont+HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D291E3CF0AF004600AB /* UIFont+HelveticaNeue.swift */; };
+		B1673D2C1E3CF0BC004600AB /* UILabel+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D2B1E3CF0BC004600AB /* UILabel+Design.swift */; };
+		B1673D2E1E3CF0C9004600AB /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D2D1E3CF0C9004600AB /* UITextField+Design.swift */; };
+		B1673D301E3CF0D8004600AB /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D2F1E3CF0D8004600AB /* UIView+Constraints.swift */; };
+		B1673D321E3CF0E7004600AB /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D311E3CF0E7004600AB /* Date+Format.swift */; };
+		B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D331E3CF0FE004600AB /* String+Validation.swift */; };
+		B1673D371E3CF0FE004600AB /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */; };
+		B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D351E3CF0FE004600AB /* String+Uid.swift */; };
 		B1D05A551E36953500AB0D87 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A541E36953500AB0D87 /* Login.swift */; };
 		B1D05A571E36953C00AB0D87 /* AccountCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A561E36953C00AB0D87 /* AccountCreation.swift */; };
 		B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A581E36956D00AB0D87 /* LoginSteps.swift */; };
 		B1D05A5B1E36956D00AB0D87 /* AccountCreationSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A591E36956D00AB0D87 /* AccountCreationSteps.swift */; };
-		B1D05A761E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */; };
-		B1D05A771E36A71C00AB0D87 /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A731E36A71C00AB0D87 /* String+Uid.swift */; };
-		B1D05A781E36A71C00AB0D87 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A741E36A71C00AB0D87 /* Date+Format.swift */; };
-		B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */; };
 		B1D05A7F1E36A72800AB0D87 /* Puzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7A1E36A72800AB0D87 /* Puzzle.xcdatamodeld */; };
 		B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */; };
 		B1D05A821E36A72800AB0D87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A7E1E36A72800AB0D87 /* Info.plist */; };
@@ -38,10 +45,6 @@
 		B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A951E36A75000AB0D87 /* LoginVC.swift */; };
 		B1D05A9B1E36A75800AB0D87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A971E36A75800AB0D87 /* LaunchScreen.storyboard */; };
 		B1D05A9C1E36A75800AB0D87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1D05A991E36A75800AB0D87 /* Main.storyboard */; };
-		B1D05AC61E36BABD00AB0D87 /* UIColor+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */; };
-		B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */; };
-		B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */; };
-		B1D05AC91E36BABD00AB0D87 /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AC51E36BABD00AB0D87 /* UIButton+Design.swift */; };
 		B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05ACA1E36BAC700AB0D87 /* AccountCreationVM.swift */; };
 		B1D05AD31E36BADD00AB0D87 /* AccountCreationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AD21E36BADD00AB0D87 /* AccountCreationVC.swift */; };
 		B1D05AF81E36C5E400AB0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */; };
@@ -53,13 +56,10 @@
 		B457EBA81E38E24F00A72CF3 /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA71E38E24F00A72CF3 /* LoginUITests.swift */; };
 		B457EBAA1E38E28700A72CF3 /* AccountCreationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA91E38E28700A72CF3 /* AccountCreationUITests.swift */; };
 		B457EBAC1E38E2EE00A72CF3 /* ChildSelectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAB1E38E2EE00A72CF3 /* ChildSelectionUITests.swift */; };
-		B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */; };
-		B457EBB01E391D0700A72CF3 /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */; };
 		B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466263F1E3B61EB00B372CB /* ChildCreationVC.swift */; };
 		B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */; };
 		B4766EB91E365E3700E53F7F /* PuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EB81E365E3700E53F7F /* PuzzleTests.swift */; };
 		B4766EC41E365E3700E53F7F /* PuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */; };
-		B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4862B8C1E375EA500E58564 /* String+Validation.swift */; };
 		B49B06FE1E3B8998009A1B1B /* ChildCreationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B06FD1E3B8998009A1B1B /* ChildCreationUITests.swift */; };
 		B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B07011E3B95CF009A1B1B /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
@@ -100,14 +100,21 @@
 		B1673D151E3CC88A004600AB /* LoginVC+LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+LoginDelegate.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+LoginDelegate.swift"; sourceTree = "<group>"; };
 		B1673D161E3CC88A004600AB /* LoginVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B1673D171E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B1673D231E3CF091004600AB /* UIButton+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Design.swift"; path = "Puzzle/Utils/Extensions/UIButton/UIButton+Design.swift"; sourceTree = "<group>"; };
+		B1673D241E3CF091004600AB /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+IntrinsicContentSize.swift"; path = "Puzzle/Utils/Extensions/UIButton/UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
+		B1673D271E3CF09F004600AB /* UIColor+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Design.swift"; path = "Puzzle/Utils/Extensions/UIColor/UIColor+Design.swift"; sourceTree = "<group>"; };
+		B1673D291E3CF0AF004600AB /* UIFont+HelveticaNeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+HelveticaNeue.swift"; path = "Puzzle/Utils/Extensions/UIFont/UIFont+HelveticaNeue.swift"; sourceTree = "<group>"; };
+		B1673D2B1E3CF0BC004600AB /* UILabel+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+Design.swift"; path = "Puzzle/Utils/Extensions/UILabel/UILabel+Design.swift"; sourceTree = "<group>"; };
+		B1673D2D1E3CF0C9004600AB /* UITextField+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+Design.swift"; path = "Puzzle/Utils/Extensions/UITextField/UITextField+Design.swift"; sourceTree = "<group>"; };
+		B1673D2F1E3CF0D8004600AB /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "Puzzle/Utils/Extensions/UIView/UIView+Constraints.swift"; sourceTree = "<group>"; };
+		B1673D311E3CF0E7004600AB /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "Puzzle/Utils/Extensions/Date/Date+Format.swift"; sourceTree = "<group>"; };
+		B1673D331E3CF0FE004600AB /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Puzzle/Utils/Extensions/String/String+Validation.swift"; sourceTree = "<group>"; };
+		B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String/String+VisualFormat.swift"; sourceTree = "<group>"; };
+		B1673D351E3CF0FE004600AB /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String/String+Uid.swift"; sourceTree = "<group>"; };
 		B1D05A541E36953500AB0D87 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Features/Login.swift; sourceTree = "<group>"; };
 		B1D05A561E36953C00AB0D87 /* AccountCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreation.swift; path = Features/AccountCreation.swift; sourceTree = "<group>"; };
 		B1D05A581E36956D00AB0D87 /* LoginSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSteps.swift; path = StepDefinitions/LoginSteps.swift; sourceTree = "<group>"; };
 		B1D05A591E36956D00AB0D87 /* AccountCreationSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationSteps.swift; path = StepDefinitions/AccountCreationSteps.swift; sourceTree = "<group>"; };
-		B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+HelveticaNeue.swift"; path = "Puzzle/Utils/Extensions/UIFont+HelveticaNeue.swift"; sourceTree = "<group>"; };
-		B1D05A731E36A71C00AB0D87 /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String+Uid.swift"; sourceTree = "<group>"; };
-		B1D05A741E36A71C00AB0D87 /* Date+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "Puzzle/Utils/Extensions/Date+Format.swift"; sourceTree = "<group>"; };
-		B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+IntrinsicContentSize.swift"; path = "Puzzle/Utils/Extensions/UIButton+IntrinsicContentSize.swift"; sourceTree = "<group>"; };
 		B1D05A7B1E36A72800AB0D87 /* Puzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Puzzle.xcdatamodel; sourceTree = "<group>"; };
 		B1D05A7C1E36A72800AB0D87 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Puzzle/AppDelegate.swift; sourceTree = "<group>"; };
 		B1D05A7E1E36A72800AB0D87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Puzzle/Info.plist; sourceTree = "<group>"; };
@@ -119,10 +126,6 @@
 		B1D05A951E36A75000AB0D87 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = Puzzle/Controllers/LoginVC.swift; sourceTree = "<group>"; };
 		B1D05A981E36A75800AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Puzzle/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1D05A9A1E36A75800AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Puzzle/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Design.swift"; path = "Puzzle/Utils/Extensions/UIColor+Design.swift"; sourceTree = "<group>"; };
-		B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+Design.swift"; path = "Puzzle/Utils/Extensions/UILabel+Design.swift"; sourceTree = "<group>"; };
-		B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+Design.swift"; path = "Puzzle/Utils/Extensions/UITextField+Design.swift"; sourceTree = "<group>"; };
-		B1D05AC51E36BABD00AB0D87 /* UIButton+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Design.swift"; path = "Puzzle/Utils/Extensions/UIButton+Design.swift"; sourceTree = "<group>"; };
 		B1D05ACA1E36BAC700AB0D87 /* AccountCreationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVM.swift; path = Puzzle/Models/AccountCreationVM.swift; sourceTree = "<group>"; };
 		B1D05AD21E36BADD00AB0D87 /* AccountCreationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVC.swift; path = Puzzle/Controllers/AccountCreationVC.swift; sourceTree = "<group>"; };
 		B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Puzzle/Assets.xcassets; sourceTree = "<group>"; };
@@ -133,8 +136,6 @@
 		B457EBA71E38E24F00A72CF3 /* LoginUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 		B457EBA91E38E28700A72CF3 /* AccountCreationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCreationUITests.swift; sourceTree = "<group>"; };
 		B457EBAB1E38E2EE00A72CF3 /* ChildSelectionUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSelectionUITests.swift; sourceTree = "<group>"; };
-		B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Constraints.swift"; path = "Puzzle/Utils/Extensions/UIView+Constraints.swift"; sourceTree = "<group>"; };
-		B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B466263F1E3B61EB00B372CB /* ChildCreationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVC.swift; path = Puzzle/Controllers/ChildCreationVC.swift; sourceTree = "<group>"; };
 		B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVM.swift; path = Puzzle/Models/ChildCreationVM.swift; sourceTree = "<group>"; };
 		B4766E9D1E365E3600E53F7F /* Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +145,6 @@
 		B4766EBF1E365E3700E53F7F /* PuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4766EC31E365E3700E53F7F /* PuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleUITests.swift; sourceTree = "<group>"; };
 		B4766EC51E365E3700E53F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4862B8C1E375EA500E58564 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Puzzle/Utils/Extensions/String+Validation.swift"; sourceTree = "<group>"; };
 		B49B06FD1E3B8998009A1B1B /* ChildCreationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildCreationUITests.swift; sourceTree = "<group>"; };
 		B49B07011E3B95CF009A1B1B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = Puzzle/CoreData/CoreDataStack.swift; sourceTree = "<group>"; };
 		FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +224,73 @@
 				B1673D0D1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift */,
 			);
 			name = ChildSelection;
+			sourceTree = "<group>";
+		};
+		B1673D1B1E3CEF82004600AB /* String */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D331E3CF0FE004600AB /* String+Validation.swift */,
+				B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */,
+				B1673D351E3CF0FE004600AB /* String+Uid.swift */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		B1673D1C1E3CEF8B004600AB /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D2B1E3CF0BC004600AB /* UILabel+Design.swift */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		B1673D1D1E3CEF95004600AB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D231E3CF091004600AB /* UIButton+Design.swift */,
+				B1673D241E3CF091004600AB /* UIButton+IntrinsicContentSize.swift */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		B1673D1E1E3CEF9C004600AB /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D271E3CF09F004600AB /* UIColor+Design.swift */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		B1673D1F1E3CEFA2004600AB /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D311E3CF0E7004600AB /* Date+Format.swift */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		B1673D201E3CEFA8004600AB /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D2F1E3CF0D8004600AB /* UIView+Constraints.swift */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		B1673D211E3CEFFD004600AB /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D2D1E3CF0C9004600AB /* UITextField+Design.swift */,
+			);
+			name = UITextField;
+			sourceTree = "<group>";
+		};
+		B1673D221E3CF006004600AB /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				B1673D291E3CF0AF004600AB /* UIFont+HelveticaNeue.swift */,
+			);
+			name = UIFont;
 			sourceTree = "<group>";
 		};
 		B1D05A511E3694FA00AB0D87 /* Specs */ = {
@@ -324,17 +391,14 @@
 		B1D05A701E36A6E000AB0D87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B4862B8C1E375EA500E58564 /* String+Validation.swift */,
-				B1D05AC21E36BABD00AB0D87 /* UIColor+Design.swift */,
-				B1D05AC31E36BABD00AB0D87 /* UILabel+Design.swift */,
-				B1D05AC41E36BABD00AB0D87 /* UITextField+Design.swift */,
-				B1D05AC51E36BABD00AB0D87 /* UIButton+Design.swift */,
-				B1D05A721E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift */,
-				B1D05A731E36A71C00AB0D87 /* String+Uid.swift */,
-				B1D05A741E36A71C00AB0D87 /* Date+Format.swift */,
-				B1D05A751E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift */,
-				B457EBAD1E390E5200A72CF3 /* UIView+Constraints.swift */,
-				B457EBAF1E391D0700A72CF3 /* String+VisualFormat.swift */,
+				B1673D1D1E3CEF95004600AB /* UIButton */,
+				B1673D1E1E3CEF9C004600AB /* UIColor */,
+				B1673D221E3CF006004600AB /* UIFont */,
+				B1673D1C1E3CEF8B004600AB /* UILabel */,
+				B1673D211E3CEFFD004600AB /* UITextField */,
+				B1673D201E3CEFA8004600AB /* UIView */,
+				B1673D1F1E3CEFA2004600AB /* Date */,
+				B1673D1B1E3CEF82004600AB /* String */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -342,9 +406,9 @@
 		B1D05A711E36A6FB00AB0D87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B1673D001E3CC809004600AB /* ChildSelection */,
 				B1673CFF1E3CC7ED004600AB /* AccountCreation */,
 				B1673CFE1E3CC7DF004600AB /* ChildCreation */,
+				B1673D001E3CC809004600AB /* ChildSelection */,
 				B1673CFD1E3CC7D7004600AB /* Login */,
 			);
 			name = Extensions;
@@ -714,40 +778,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1D05A8E1E36A73D00AB0D87 /* User.swift in Sources */,
+				B1673D281E3CF09F004600AB /* UIColor+Design.swift in Sources */,
+				B1673D2C1E3CF0BC004600AB /* UILabel+Design.swift in Sources */,
+				B1673D301E3CF0D8004600AB /* UIView+Constraints.swift in Sources */,
 				B1673D0B1E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift in Sources */,
-				B1D05AC71E36BABD00AB0D87 /* UILabel+Design.swift in Sources */,
 				B1673D1A1E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift in Sources */,
 				B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */,
+				B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */,
 				B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */,
-				B4862B8D1E375EA500E58564 /* String+Validation.swift in Sources */,
-				B1D05AC91E36BABD00AB0D87 /* UIButton+Design.swift in Sources */,
+				B1673D2E1E3CF0C9004600AB /* UITextField+Design.swift in Sources */,
 				B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */,
 				B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift in Sources */,
 				B1673D121E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift in Sources */,
 				B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */,
 				B1673D141E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift in Sources */,
-				B457EBB01E391D0700A72CF3 /* String+VisualFormat.swift in Sources */,
 				B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */,
+				B1673D371E3CF0FE004600AB /* String+VisualFormat.swift in Sources */,
+				B1673D2A1E3CF0AF004600AB /* UIFont+HelveticaNeue.swift in Sources */,
+				B1673D321E3CF0E7004600AB /* Date+Format.swift in Sources */,
 				B1673D0E1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift in Sources */,
 				B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */,
+				B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
 				B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
-				B457EBAE1E390E5200A72CF3 /* UIView+Constraints.swift in Sources */,
-				B1D05A791E36A71C00AB0D87 /* UIButton+IntrinsicContentSize.swift in Sources */,
 				B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */,
 				B1D05AD31E36BADD00AB0D87 /* AccountCreationVC.swift in Sources */,
-				B1D05A781E36A71C00AB0D87 /* Date+Format.swift in Sources */,
 				B457EBA41E38C2C200A72CF3 /* ChildSelectionVC.swift in Sources */,
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
-				B1D05AC81E36BABD00AB0D87 /* UITextField+Design.swift in Sources */,
 				B1673D131E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift in Sources */,
-				B1D05A761E36A71C00AB0D87 /* UIFont+HelveticaNeue.swift in Sources */,
-				B1D05AC61E36BABD00AB0D87 /* UIColor+Design.swift in Sources */,
+				B1673D261E3CF091004600AB /* UIButton+IntrinsicContentSize.swift in Sources */,
+				B1673D251E3CF091004600AB /* UIButton+Design.swift in Sources */,
 				B1D05A8D1E36A73D00AB0D87 /* Children+Properties.swift in Sources */,
 				B1D05A7F1E36A72800AB0D87 /* Puzzle.xcdatamodeld in Sources */,
-				B1D05A771E36A71C00AB0D87 /* String+Uid.swift in Sources */,
 				B1673D191E3CC88A004600AB /* LoginVC+KeyboardNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
