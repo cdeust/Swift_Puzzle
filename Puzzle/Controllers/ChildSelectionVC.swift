@@ -59,7 +59,7 @@ extension ChildSelectionVC {
         self.welcome.text = self.viewModel.welcomeText
         self.child = self.viewModel.getChildrenForPresentAccount()
         
-        var origin = 100
+        var origin = 120
         for i in 0..<child.count
         {
             let c = child[i] as! Children

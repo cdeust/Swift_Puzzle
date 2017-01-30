@@ -71,6 +71,7 @@ class LoginUITests: XCTestCase {
         expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
         
         app.buttons["Login"].tap()
+        app.buttons["Log out"].tap()
         
         waitForExpectations(timeout: 5, handler: nil)
         
