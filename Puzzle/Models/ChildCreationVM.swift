@@ -96,7 +96,7 @@ class ChildCreationVM: NSObject {
         }
     }
     
-    func initWithFirstnameLastnameEmailSexBirthdateUidDelegate(firstname: String, lastname: String, email: String, sex: String, birthdate: String, uid: String, delegate: ChildCreationVCDelegate) -> AnyObject
+    init(firstname: String, lastname: String, email: String, sex: String, birthdate: String, uid: String, delegate: ChildCreationVCDelegate)
     {
         self._firstnameText = firstname
         self._lastnameText = lastname
@@ -105,8 +105,6 @@ class ChildCreationVM: NSObject {
         self._birthdateText = birthdate
         self._uidText = uid
         self._delegate = delegate
-        
-        return self
     }
     
     func createChild()

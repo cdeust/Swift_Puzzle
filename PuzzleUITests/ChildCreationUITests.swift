@@ -42,6 +42,25 @@ class ChildCreationUITests: XCTestCase {
         XCTAssert(app.buttons["End"].exists)
     }
     
+    func testChildCreationPopupErrorMessage() {
+        let email = app.textFields.element(matching: .textField, identifier: "email")
+        email.tap()
+        email.typeText("test@integration.com")
+        email.typeText("\n")
+        
+        let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
+        password.tap()
+        password.typeText("test@integration.com")
+        password.typeText("\n")
+        
+        app.buttons["Login"].tap()
+        app.buttons["Add children"].tap()
+        app.buttons["Add"].tap()
+        
+        XCTAssertEqual(app.alerts.element.label, "Invalid values sent")
+        app.alerts["Invalid values sent"].buttons["OK"].tap()
+    }
+    
     func testChildCreationAddButton() {
         let email = app.textFields.element(matching: .textField, identifier: "email")
         email.tap()

@@ -97,15 +97,13 @@ class AccountCreationVM: NSObject {
         }
     }
     
-    func initWithDelegate(delegate:AccountCreationVCDelegate) -> AnyObject
+    init(delegate:AccountCreationVCDelegate)
     {
         self._delegate = delegate
         self._errorText = ""
-        
-        return self
     }
     
-    func initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:AccountCreationVCDelegate) -> AnyObject
+    init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:AccountCreationVCDelegate)
     {
         self._firstnameText = firstname
         self._lastnameText = lastname
@@ -116,8 +114,6 @@ class AccountCreationVM: NSObject {
         self._uidText = String().uid()
         
         self._errorText = ""
-        
-        return self
     }
     
     func createAccount() -> Void

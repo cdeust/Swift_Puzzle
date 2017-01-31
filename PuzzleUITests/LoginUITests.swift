@@ -66,12 +66,11 @@ class LoginUITests: XCTestCase {
         password.typeText("testme")
         password.typeText("\n")
         
-        let errorMessage = self.app.staticTexts["You're connected !"]
+        let errorMessage = self.app.staticTexts["Welcome test!"]
         let exists = NSPredicate(format: "exists == true")
         expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
         
         app.buttons["Login"].tap()
-        app.buttons["Log out"].tap()
         
         waitForExpectations(timeout: 5, handler: nil)
         

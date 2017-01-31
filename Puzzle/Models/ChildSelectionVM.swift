@@ -32,15 +32,13 @@ class ChildSelectionVM: NSObject {
     }
     
     
-    func initWithUser(user: User) -> AnyObject
+    init(user: User)
     {
         self._user = user
         if let firstname = user.firstname
         {
             self._welcomeText = "Welcome \(firstname)!"
         }
-        
-        return self
     }
     
     func getChildrenForPresentAccount() -> NSArray

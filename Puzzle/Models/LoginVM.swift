@@ -67,20 +67,16 @@ class LoginVM: NSObject {
         }
     }
     
-    func initWithDelegate(delegate:LoginVCDelegate) -> AnyObject
+    init(delegate:LoginVCDelegate)
     {
         self._delegate = delegate
-        
-        return self
     }
     
-    func initWithEmailPasswordDelegate(email: String, password: String, delegate: LoginVCDelegate) -> AnyObject
+    init(email: String, password: String, delegate: LoginVCDelegate)
     {
         self._loginText = email
         self._passwordText = password
         self._delegate = delegate
-        
-        return self
     }
     
     func login() -> Void
