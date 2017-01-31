@@ -55,7 +55,7 @@ extension ChildSelectionVC {
 extension ChildSelectionVC {
     func presentMenuWithUser(user: User)
     {
-        self.viewModel = ChildSelectionVM().initWithUser(user: self.user) as! ChildSelectionVM
+        self.viewModel = ChildSelectionVM.init(user: self.user)
         self.welcome.text = self.viewModel.welcomeText
         self.child = self.viewModel.getChildrenForPresentAccount()
         

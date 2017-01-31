@@ -76,7 +76,7 @@ extension AccountCreationVC {
                 String().isNotEmptyNorNil(string: password) == true &&
                 String().isNotEmptyNorNil(string: lock) == true
             {
-                self.viewModel = AccountCreationVM().initWithFirstnameLastnameEmailPasswordLockDelegate(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self) as! AccountCreationVM
+                self.viewModel = AccountCreationVM.init(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self)
                 self.viewModel.createAccount()
             }
             else

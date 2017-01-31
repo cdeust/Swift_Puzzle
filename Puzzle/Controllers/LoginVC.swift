@@ -66,7 +66,7 @@ extension LoginVC {
             if  String().isNotEmptyNorNil(string: email) &&
                 String().isNotEmptyNorNil(string: password)
             {
-                self.viewModel = LoginVM().initWithEmailPasswordDelegate(email: email, password: password, delegate: self) as! LoginVM
+                self.viewModel = LoginVM.init(email: email, password: password, delegate: self)
                 self.viewModel.login()
             }
             else

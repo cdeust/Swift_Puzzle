@@ -86,7 +86,7 @@ extension ChildCreationVC {
                 String().isNotEmptyNorNil(string: birthdate) &&
                 String().isNotEmptyNorNil(string: uid)
             {
-                self.viewModel = ChildCreationVM().initWithFirstnameLastnameEmailSexBirthdateUidDelegate(firstname: firstname, lastname: lastname, email: email, sex: sex, birthdate: birthdate, uid: uid, delegate: self) as! ChildCreationVM
+                self.viewModel = ChildCreationVM.init(firstname: firstname, lastname: lastname, email: email, sex: sex, birthdate: birthdate, uid: uid, delegate: self)
                 self.viewModel.createChild()
             }
             else
