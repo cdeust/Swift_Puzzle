@@ -54,10 +54,9 @@ extension AccountCreationVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // TODO create user singleton
-        
-        if let lockCode = self.userObject.lock {
-            self.lock.text = lockCode
+        if self.userObject.lock != nil
+        {
+            self.lock.text = self.userObject.lock
         }
     }
 }
