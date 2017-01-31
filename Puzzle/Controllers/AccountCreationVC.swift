@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import PasscodeLock
 
 // MARK: Vars & Outlets
 
@@ -24,6 +25,7 @@ class AccountCreationVC: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var create: UIButton!
     @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var createLock: UIButton!
     @IBOutlet weak var error: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
 }
@@ -44,6 +46,17 @@ extension AccountCreationVC {
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // TODO create user singleton
+        
+        let userConfig = UserDefaults.init()
+        if let lockCode = userConfig.object(forKey: "lockCode") as? String {
+            self.lock.text = lockCode
+        }
     }
 }
 
@@ -84,6 +97,13 @@ extension AccountCreationVC {
                 self.presentErrorPopup()
             }
         }
+    }
+    
+    @IBAction func createLockCode(sender: UIButton)
+    {
+        let configuration = PasscodeLockConfiguration()
+        let passcodeViewController = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
+        self.present(passcodeViewController, animated: true, completion: nil)
     }
 }
 

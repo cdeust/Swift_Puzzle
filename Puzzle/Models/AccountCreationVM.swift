@@ -13,6 +13,7 @@ protocol AccountCreationVCDelegate
 {
     func didSuccessfullyCreateAccount(user: User) -> Void
     func didFailedToCreateAccount() -> Void
+    func didSetLockCodeSuccessfully(lockCode: String)
 }
 
 class AccountCreationVM: NSObject {

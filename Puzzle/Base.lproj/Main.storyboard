@@ -611,6 +611,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAi-lJ-Zhz">
+                                                <rect key="frame" x="100" y="332" width="255" height="30"/>
+                                                <connections>
+                                                    <action selector="createLockCodeWithSender:" destination="pnE-nP-NfB" eventType="touchUpInside" id="Ifx-Yh-L8d"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.63137254899999995" green="0.7725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -621,10 +627,12 @@
                                             <constraint firstItem="vHS-sr-kHk" firstAttribute="centerY" secondItem="Avv-kI-cip" secondAttribute="centerY" multiplier="0.7" id="BlD-dk-Lwj"/>
                                             <constraint firstItem="U39-0n-Tl1" firstAttribute="centerY" secondItem="Avv-kI-cip" secondAttribute="centerY" multiplier="1.15" id="Btq-z9-GfQ"/>
                                             <constraint firstAttribute="bottom" secondItem="DhV-xt-VAr" secondAttribute="bottom" constant="40" id="CtF-zj-JGL"/>
+                                            <constraint firstItem="BAi-lJ-Zhz" firstAttribute="height" secondItem="5Xb-6C-mE8" secondAttribute="height" id="Frr-6c-2gn"/>
                                             <constraint firstItem="wCX-SQ-7z4" firstAttribute="centerY" secondItem="kUl-qY-Gn7" secondAttribute="centerY" id="GXs-u2-vom"/>
                                             <constraint firstAttribute="trailing" secondItem="67q-jM-UAD" secondAttribute="trailing" constant="20" id="IDC-8z-8ce"/>
                                             <constraint firstItem="2dq-zn-1q4" firstAttribute="leading" secondItem="Avv-kI-cip" secondAttribute="leading" id="JDF-YR-pEi"/>
                                             <constraint firstAttribute="trailing" secondItem="Cyx-nD-5RG" secondAttribute="trailing" constant="20" id="KXf-gq-Xix"/>
+                                            <constraint firstItem="BAi-lJ-Zhz" firstAttribute="width" secondItem="5Xb-6C-mE8" secondAttribute="width" id="KfX-rG-JfU"/>
                                             <constraint firstItem="X43-lN-8hM" firstAttribute="leading" secondItem="Spf-Go-uyt" secondAttribute="trailing" constant="20" id="La2-5t-f7s"/>
                                             <constraint firstItem="X43-lN-8hM" firstAttribute="centerY" secondItem="Spf-Go-uyt" secondAttribute="centerY" id="Mfl-VF-gMU"/>
                                             <constraint firstItem="Spf-Go-uyt" firstAttribute="leading" secondItem="Avv-kI-cip" secondAttribute="leading" id="QCo-M8-ywZ"/>
@@ -635,12 +643,14 @@
                                             <constraint firstAttribute="trailing" secondItem="X43-lN-8hM" secondAttribute="trailing" constant="20" id="W5P-yC-v3Q"/>
                                             <constraint firstItem="kUl-qY-Gn7" firstAttribute="leading" secondItem="Avv-kI-cip" secondAttribute="leading" id="Wex-0d-5pD"/>
                                             <constraint firstItem="67q-jM-UAD" firstAttribute="leading" secondItem="vHS-sr-kHk" secondAttribute="trailing" constant="20" id="XXl-TZ-RnN"/>
+                                            <constraint firstItem="BAi-lJ-Zhz" firstAttribute="centerX" secondItem="5Xb-6C-mE8" secondAttribute="centerX" id="XyK-DT-aOW"/>
                                             <constraint firstItem="Spf-Go-uyt" firstAttribute="centerY" secondItem="Avv-kI-cip" secondAttribute="centerY" multiplier="0.85" id="dj0-sC-fef"/>
                                             <constraint firstItem="wCX-SQ-7z4" firstAttribute="leading" secondItem="kUl-qY-Gn7" secondAttribute="trailing" constant="20" id="dpc-ca-PX1"/>
                                             <constraint firstItem="DhV-xt-VAr" firstAttribute="centerX" secondItem="Avv-kI-cip" secondAttribute="centerX" multiplier="1.5" id="eAq-45-ZE6"/>
                                             <constraint firstItem="U39-0n-Tl1" firstAttribute="leading" secondItem="Avv-kI-cip" secondAttribute="leading" id="erT-jV-PeM"/>
                                             <constraint firstAttribute="trailing" secondItem="wCX-SQ-7z4" secondAttribute="trailing" constant="20" id="fNN-ge-CoU"/>
                                             <constraint firstItem="f83-hx-b8g" firstAttribute="leading" secondItem="Avv-kI-cip" secondAttribute="leading" constant="20" id="hMG-Lz-emt"/>
+                                            <constraint firstItem="BAi-lJ-Zhz" firstAttribute="centerY" secondItem="5Xb-6C-mE8" secondAttribute="centerY" id="mcf-v7-euX"/>
                                             <constraint firstItem="tqD-Kk-drP" firstAttribute="centerX" secondItem="Avv-kI-cip" secondAttribute="centerX" multiplier="0.5" id="n8r-Xc-Ska"/>
                                             <constraint firstItem="f83-hx-b8g" firstAttribute="top" secondItem="Avv-kI-cip" secondAttribute="top" constant="20" id="nPY-5c-UhI"/>
                                             <constraint firstAttribute="bottom" secondItem="tqD-Kk-drP" secondAttribute="bottom" constant="40" id="nbF-fu-KBA"/>
@@ -674,6 +684,7 @@
                     <navigationItem key="navigationItem" title="EvoKid" id="Gp9-O7-zmL"/>
                     <connections>
                         <outlet property="create" destination="DhV-xt-VAr" id="1z8-hE-Zzl"/>
+                        <outlet property="createLock" destination="BAi-lJ-Zhz" id="4A6-Lz-zuT"/>
                         <outlet property="email" destination="X43-lN-8hM" id="OEL-sg-Vip"/>
                         <outlet property="error" destination="f83-hx-b8g" id="nit-gh-okZ"/>
                         <outlet property="firstname" destination="wCX-SQ-7z4" id="WRU-Vu-xYT"/>
@@ -687,11 +698,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thb-02-ryw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="-703"/>
+            <point key="canvasLocation" x="872.79999999999995" y="-703.89805097451278"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pdl-J1-cLQ"/>
-        <segue reference="ssL-ha-ZMA"/>
+        <segue reference="J7e-HZ-Nb4"/>
+        <segue reference="pYH-mh-IVi"/>
     </inferredMetricsTieBreakers>
 </document>

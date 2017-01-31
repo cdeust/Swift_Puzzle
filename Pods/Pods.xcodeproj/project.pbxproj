@@ -7,35 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1488D3722A4355A13C3110EC99300658 /* PasscodeSignPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A074683549B9A676CB1FEBA47526DF /* PasscodeSignPlaceholderView.swift */; };
 		166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */; };
-		23250B042DC2FB477CA29C01F4C6FC83 /* Pods-Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */; };
+		16EB43B831A064E1849E1473607E5219 /* PasscodeLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63919D74F551D7522DC73B1ACEDD67F /* PasscodeLock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D2117D7DBAFCAF649154794E725585 /* PasscodeLockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7303601109D974F7B28B7EC8197B90 /* PasscodeLockView.xib */; };
+		1CF62B0F616EDDF03869F8BD747C11F3 /* EnterPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68870ED441CB3FA6A4DF3361D799AA0 /* EnterPasscodeState.swift */; };
 		2904E37C2FA06B9B154F23090873B51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
-		2D2B9C20F6A52D7F83CE78AB55177965 /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30AF04BE1E056F4B79695032624A16B0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */; };
-		4D54606A6F4405F2771C92E6180EBDF2 /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */; };
-		4DCBB9BAE13C86977668089DE17847E2 /* NativeFeatureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */; };
-		57995B4ED2B5E41E221799CF9F5A6552 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B467D1FA8BC00321498920C21BF39C /* Step.swift */; };
-		5820D25AEABF4407220E86461E6E221D /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */; };
-		606CF2814922E73BD7CED0E609A40A69 /* NativeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */; };
+		2A188343A5CEB7FA338B1E1EC48BC070 /* PasscodeLockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4D91926B4210A67F96CDB8F12A425 /* PasscodeLockType.swift */; };
+		2D2B9C20F6A52D7F83CE78AB55177965 /* XCTest-Gherkin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E41191FC6449F45BDC5823D44CBF3BF0 /* XCTest-Gherkin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30AF04BE1E056F4B79695032624A16B0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB4A7ED5939340094986B789B23B1C /* Example.swift */; };
+		37FD35E0949E678C7C2A3552B8354BAC /* PasscodeRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40693922C1A5E43DBAD9C2F3EC29AD8 /* PasscodeRepositoryType.swift */; };
+		3D7DEED50858018D346A17124AD5A192 /* PasscodeLock.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4706F7DF40751B36432FFB7AFBD99F4 /* PasscodeLock.strings */; };
+		4B224D8D2488B0EC2EDCF12D20DACC55 /* ChangePasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3434299B97AC40086A9BB834F738528 /* ChangePasscodeState.swift */; };
+		4D54606A6F4405F2771C92E6180EBDF2 /* ColorLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FC3E4C9EDAE80C0253EB383D1B8D2C /* ColorLog.swift */; };
+		4DCBB9BAE13C86977668089DE17847E2 /* NativeFeatureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02082F722C41878D02C07ADFE78E1CE0 /* NativeFeatureParser.swift */; };
+		57995B4ED2B5E41E221799CF9F5A6552 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957466FF98138326BE8C34129993350A /* Step.swift */; };
+		5820D25AEABF4407220E86461E6E221D /* ClassHelperMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D71B7FAF388A2D7650219422CB75CD /* ClassHelperMethods.swift */; };
+		5B9500EAF79E29F411F27910BE857AF5 /* PasscodeLockConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE154F3C1A79F0D0B097313F3041DC83 /* PasscodeLockConfigurationType.swift */; };
+		5E2356433AB15D2CE9DF5174DA613368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		606CF2814922E73BD7CED0E609A40A69 /* NativeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106ACEDA5E422EA88F33A49DDE2E583D /* NativeFeature.swift */; };
 		69C00B73808EE8A7115231ECD8FA9C83 /* Pods-PuzzleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		705F7A2AC5587AB5E9DB542FAC5B71BB /* NativeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */; };
-		8134EB528C73B50F38AEB4036F44EDBE /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */; };
+		7033E86C830D2817F3F427B7F7A6DC5B /* Pods-Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		705F7A2AC5587AB5E9DB542FAC5B71BB /* NativeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B5C859581A0F73FF3F48D6640724D5 /* NativeTestCase.swift */; };
+		72B903246D6863EE52A09F984FE72446 /* PasscodeLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90037226D9249E2950D757CABEF3F172 /* PasscodeLockViewController.swift */; };
+		7AF138645893649033CD271F107666C0 /* PasscodeLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91531FBC6143C6B03F0BADFE31CEB1A /* PasscodeLock.swift */; };
+		812C114A89453F36CEA110B648437E32 /* Pods-Puzzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */; };
+		8134EB528C73B50F38AEB4036F44EDBE /* StringGherkinExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6956ABEABB3E16BFAAFEE32B9E8CB /* StringGherkinExtension.swift */; };
 		83559E07239AC084D5F2F9172E762CE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
+		8372ACB40D7AB9397C009CE361EF4CC2 /* PasscodeLockStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9973DE15454660913FF8D51FA2F2F0E1 /* PasscodeLockStateType.swift */; };
 		8580D9552A33C5500179170A47C99564 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */; };
-		881B70B6500662B930C76A5DD70B7DA1 /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */; };
-		9AED35B7BA57E0D85CEC027F27447A36 /* NativeScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */; };
+		881B70B6500662B930C76A5DD70B7DA1 /* StepDefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99F6D25A23179D894E705EABFF8CFB /* StepDefiner.swift */; };
+		903997ABA0A1948AECB25A540CEEFAD5 /* SetPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FF48A221FB2D2CEE1B016E6F06019 /* SetPasscodeState.swift */; };
+		99036D5E7508A3C569A13732DFC98ED2 /* PasscodeSignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC553475670ECDAAB5E4BE9FADC436F5 /* PasscodeSignButton.swift */; };
+		9AED35B7BA57E0D85CEC027F27447A36 /* NativeScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921840051E55D7388B426DCFFD6F792F /* NativeScenario.swift */; };
+		9CACB56BA23DD0D53B664FAD9F41A5FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
 		9FB239A2255C606015B40D9FCE01067A /* Pods-PuzzleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B278CE97C4BAD97E460EB88DE9ED368A /* ConfirmPasscodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE78779459912479EE7992A7A5BB26FD /* ConfirmPasscodeState.swift */; };
+		B806E0698E6881BD22CD706700223391 /* PasscodeLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 8287893D8FA4791939E313F25F91BFEA /* PasscodeLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA82A1D22399C4830BA3C4E9FCAC5D38 /* Pods-PuzzleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */; };
-		C161AE5F573C2962FB6FA7571CC8713C /* ParseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BA1028CAED3397181082E30272D1DA /* ParseState.swift */; };
-		C2FAB539F3305675ECCCC8AE3EDA8AA3 /* Pods-Puzzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1E8271C0E31317241E72409046DC259 /* NativeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */; };
-		D8E6F9E7E51DB0AE1F597C6DD949FD22 /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */; };
-		E400D010981171A00A5658546BBC8F7A /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */; };
+		C161AE5F573C2962FB6FA7571CC8713C /* ParseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C98BBBBB518EE3F7F63A11DF6D6963 /* ParseState.swift */; };
+		C5D592C0B422192104873ACFF24127DC /* PasscodeLockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568EBB636048EDD61A4F591B18B74AC9 /* PasscodeLockPresenter.swift */; };
+		C6C2836398F93FFA29E4DFFBBD8DAF2A /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BA3D12F1E9D7A5F4364C54C5BEB30 /* Functions.swift */; };
+		C9A356A63BA8AC05D212837433543B40 /* PasscodeLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7586DC19A05B2C119CC0BC5A4B8AB584 /* PasscodeLock-dummy.m */; };
+		D1E8271C0E31317241E72409046DC259 /* NativeExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5715FEF11DE0AB146666F8F333E0C0E1 /* NativeExample.swift */; };
+		D8E6F9E7E51DB0AE1F597C6DD949FD22 /* XCTest-Gherkin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B993C9BC9FD0862E23260CCB29630AB /* XCTest-Gherkin-dummy.m */; };
+		E400D010981171A00A5658546BBC8F7A /* XCTestCase+Gherkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD840BA02F11AE08CE4B5506DCAE7137 /* XCTestCase+Gherkin.swift */; };
 		E5FA27E8062F038059F62E58A8E254F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
-		FD16F7D03A9A3E618064E91AE46F87B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3727C3FA665D077FA20C132828793D6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458D268E7EFBB5E0A971230D15DF24EA;
+			remoteInfo = PasscodeLock;
+		};
 		4D5D2ADE51060B51ACB53612A2B0493E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -47,15 +74,15 @@
 
 /* Begin PBXFileReference section */
 		00998C9C09C67D6A2D51166F153FB4AB /* Pods-PuzzleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-frameworks.sh"; sourceTree = "<group>"; };
-		066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHelperMethods.swift; path = Pod/Core/ClassHelperMethods.swift; sourceTree = "<group>"; };
+		02082F722C41878D02C07ADFE78E1CE0 /* NativeFeatureParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeatureParser.swift; path = Pod/Native/NativeFeatureParser.swift; sourceTree = "<group>"; };
 		09F09E0966A13B5E50EE94D9189B0E13 /* Pods-PuzzleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleUITests-resources.sh"; sourceTree = "<group>"; };
-		1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCTest_Gherkin.framework; path = "XCTest-Gherkin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Gherkin.swift"; path = "Pod/Core/XCTestCase+Gherkin.swift"; sourceTree = "<group>"; };
-		13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeature.swift; path = Pod/Native/NativeFeature.swift; sourceTree = "<group>"; };
+		106ACEDA5E422EA88F33A49DDE2E583D /* NativeFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeature.swift; path = Pod/Native/NativeFeature.swift; sourceTree = "<group>"; };
 		1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.release.xcconfig"; sourceTree = "<group>"; };
-		19B467D1FA8BC00321498920C21BF39C /* Step.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Step.swift; path = Pod/Core/Step.swift; sourceTree = "<group>"; };
-		1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Pod/Core/Example.swift; sourceTree = "<group>"; };
+		177811C2B5DCBA4859A0580AEDD953E6 /* XCTest-Gherkin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "XCTest-Gherkin.modulemap"; sourceTree = "<group>"; };
 		2292D2875ABB66B950045ECE1725EF19 /* Pods-PuzzleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26E8653AD576DCE8D3DDF7356BF454D8 /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleUITests.framework; path = "Pods-PuzzleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29D71B7FAF388A2D7650219422CB75CD /* ClassHelperMethods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassHelperMethods.swift; path = Pod/Core/ClassHelperMethods.swift; sourceTree = "<group>"; };
+		2A99F6D25A23179D894E705EABFF8CFB /* StepDefiner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepDefiner.swift; path = Pod/Core/StepDefiner.swift; sourceTree = "<group>"; };
 		2ACFD85B3710DF859A8F35232A45F8CE /* Pods-PuzzleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-frameworks.sh"; sourceTree = "<group>"; };
 		318C9A03EE311609CC05BC9FBE281A6E /* Pods-PuzzleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleUITests.modulemap"; sourceTree = "<group>"; };
 		32DF21EF8268E32D359CD23F2CF3EFE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,60 +91,84 @@
 		36628A081A3D86B42DF2BE40932D5D0A /* Pods-Puzzle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Puzzle-acknowledgements.plist"; sourceTree = "<group>"; };
 		36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		37101DE5BD6D27D1F895E2277194A06C /* Pods-Puzzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Puzzle-umbrella.h"; sourceTree = "<group>"; };
+		38B5C859581A0F73FF3F48D6640724D5 /* NativeTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTestCase.swift; path = Pod/Native/NativeTestCase.swift; sourceTree = "<group>"; };
 		3A6C03E4B1F77EF062E068233C1FE824 /* Pods-PuzzleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleUITests-umbrella.h"; sourceTree = "<group>"; };
+		40C98BBBBB518EE3F7F63A11DF6D6963 /* ParseState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseState.swift; path = Pod/Native/ParseState.swift; sourceTree = "<group>"; };
 		45118D96DA2F7121387F4CF404FB3202 /* Pods-PuzzleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PuzzleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		478B905D12BF6607D4962114C744EAE4 /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleTests.framework; path = "Pods-PuzzleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Puzzle.debug.xcconfig"; sourceTree = "<group>"; };
+		4C99A5070C79F3272488B2316C842CE3 /* PasscodeLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PasscodeLock.framework; path = PasscodeLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E18BAAA2423326BD72D80CC493589AC /* Pods-PuzzleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PuzzleTests-umbrella.h"; sourceTree = "<group>"; };
+		4EA83CC81435906570EACE41C31B0CB4 /* PasscodeLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasscodeLock-prefix.pch"; sourceTree = "<group>"; };
 		5363D8D3D9C24BAA2D2E959E62D74FFD /* Pods-PuzzleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleTests.release.xcconfig"; sourceTree = "<group>"; };
 		563FEE32ACDECF77CF07DFAF237B1CC0 /* Pods-Puzzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Puzzle.modulemap"; sourceTree = "<group>"; };
+		568EBB636048EDD61A4F591B18B74AC9 /* PasscodeLockPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockPresenter.swift; path = PasscodeLock/PasscodeLockPresenter.swift; sourceTree = "<group>"; };
+		5715FEF11DE0AB146666F8F333E0C0E1 /* NativeExample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeExample.swift; path = Pod/Native/NativeExample.swift; sourceTree = "<group>"; };
 		5777D7076AAEB978CE3B120BE9830C0B /* Pods-PuzzleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PuzzleTests.modulemap"; sourceTree = "<group>"; };
-		58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorLog.swift; path = Pod/Core/ColorLog.swift; sourceTree = "<group>"; };
+		57A074683549B9A676CB1FEBA47526DF /* PasscodeSignPlaceholderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeSignPlaceholderView.swift; path = PasscodeLock/Views/PasscodeSignPlaceholderView.swift; sourceTree = "<group>"; };
 		61650A059351273281DF9461584109E2 /* Pods-PuzzleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleTests-dummy.m"; sourceTree = "<group>"; };
 		641CB69EC8E2D4823EBF10B3D7A69FB7 /* Pods-PuzzleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PuzzleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69C701BDF28DA57A8E859FA9EEAF2129 /* XCTest-Gherkin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "XCTest-Gherkin.modulemap"; sourceTree = "<group>"; };
-		71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeScenario.swift; path = Pod/Native/NativeScenario.swift; sourceTree = "<group>"; };
-		73BA1028CAED3397181082E30272D1DA /* ParseState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseState.swift; path = Pod/Native/ParseState.swift; sourceTree = "<group>"; };
-		76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringGherkinExtension.swift; path = Pod/Core/StringGherkinExtension.swift; sourceTree = "<group>"; };
+		73161E8F23B47E25E03F49604A81100D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7586DC19A05B2C119CC0BC5A4B8AB584 /* PasscodeLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasscodeLock-dummy.m"; sourceTree = "<group>"; };
 		76CAD1248CDF552E06B0F2F9718ACB00 /* Pods-PuzzleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PuzzleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeFeatureParser.swift; path = Pod/Native/NativeFeatureParser.swift; sourceTree = "<group>"; };
-		79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepDefiner.swift; path = Pod/Core/StepDefiner.swift; sourceTree = "<group>"; };
-		795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-umbrella.h"; sourceTree = "<group>"; };
+		79EB4A7ED5939340094986B789B23B1C /* Example.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Example.swift; path = Pod/Core/Example.swift; sourceTree = "<group>"; };
+		812AF900A5F1B483DD006BCD1DDE2766 /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Puzzle.framework; path = "Pods-Puzzle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8287893D8FA4791939E313F25F91BFEA /* PasscodeLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PasscodeLock.h; path = PasscodeLock/PasscodeLock.h; sourceTree = "<group>"; };
+		847FDACD8AD91D56E003D44DEF4916C4 /* XCTest_Gherkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCTest_Gherkin.framework; path = "XCTest-Gherkin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F7FADF8AAE8767CA8A5C5B5E47C9C3 /* Pods-Puzzle-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-resources.sh"; sourceTree = "<group>"; };
-		8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCTest-Gherkin-dummy.m"; sourceTree = "<group>"; };
-		91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeTestCase.swift; path = Pod/Native/NativeTestCase.swift; sourceTree = "<group>"; };
+		8B993C9BC9FD0862E23260CCB29630AB /* XCTest-Gherkin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCTest-Gherkin-dummy.m"; sourceTree = "<group>"; };
+		90037226D9249E2950D757CABEF3F172 /* PasscodeLockViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockViewController.swift; path = PasscodeLock/PasscodeLockViewController.swift; sourceTree = "<group>"; };
+		908051756E3E4070125CD315F5BE6FBB /* XCTest-Gherkin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-prefix.pch"; sourceTree = "<group>"; };
+		90FC3E4C9EDAE80C0253EB383D1B8D2C /* ColorLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorLog.swift; path = Pod/Core/ColorLog.swift; sourceTree = "<group>"; };
+		921840051E55D7388B426DCFFD6F792F /* NativeScenario.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeScenario.swift; path = Pod/Native/NativeScenario.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleUITests.framework; path = "Pods-PuzzleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Puzzle.framework; path = "Pods-Puzzle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		957466FF98138326BE8C34129993350A /* Step.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Step.swift; path = Pod/Core/Step.swift; sourceTree = "<group>"; };
+		9973DE15454660913FF8D51FA2F2F0E1 /* PasscodeLockStateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockStateType.swift; path = PasscodeLock/Protocols/PasscodeLockStateType.swift; sourceTree = "<group>"; };
 		9F3A2744AD9E67B613A4AE0958B00039 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23426650778DB877F40659B3069B8D4 /* XCTest-Gherkin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.xcconfig"; sourceTree = "<group>"; };
+		A66FF48A221FB2D2CEE1B016E6F06019 /* SetPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetPasscodeState.swift; path = PasscodeLock/PasscodeLock/SetPasscodeState.swift; sourceTree = "<group>"; };
+		A91531FBC6143C6B03F0BADFE31CEB1A /* PasscodeLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLock.swift; path = PasscodeLock/PasscodeLock/PasscodeLock.swift; sourceTree = "<group>"; };
+		A99BA3D12F1E9D7A5F4364C54C5BEB30 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = PasscodeLock/Functions.swift; sourceTree = "<group>"; };
+		AD7303601109D974F7B28B7EC8197B90 /* PasscodeLockView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = PasscodeLockView.xib; path = PasscodeLock/Views/PasscodeLockView.xib; sourceTree = "<group>"; };
+		ADD4D91926B4210A67F96CDB8F12A425 /* PasscodeLockType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockType.swift; path = PasscodeLock/Protocols/PasscodeLockType.swift; sourceTree = "<group>"; };
 		AECEA2EDA41473899EE391CA038EDC38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B3B374E0657614FE0BD83ACBBB1C3D02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68870ED441CB3FA6A4DF3361D799AA0 /* EnterPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnterPasscodeState.swift; path = PasscodeLock/PasscodeLock/EnterPasscodeState.swift; sourceTree = "<group>"; };
 		B721E2D7DCCBC006F7CF032C2CD7B6D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9D95A5D64FECF83D4CF58FEAA0D09B4 /* Pods-Puzzle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Puzzle-frameworks.sh"; sourceTree = "<group>"; };
 		BC84CA3D52ADBA4CD797CC5AD12D2A3D /* Pods-PuzzleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PuzzleUITests-dummy.m"; sourceTree = "<group>"; };
 		BD105220D63E47C139A629FE9498275B /* Pods-Puzzle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Puzzle-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PuzzleTests.framework; path = "Pods-PuzzleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeExample.swift; path = Pod/Native/NativeExample.swift; sourceTree = "<group>"; };
-		DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCTest-Gherkin.xcconfig"; sourceTree = "<group>"; };
+		CE78779459912479EE7992A7A5BB26FD /* ConfirmPasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmPasscodeState.swift; path = PasscodeLock/PasscodeLock/ConfirmPasscodeState.swift; sourceTree = "<group>"; };
+		D3434299B97AC40086A9BB834F738528 /* ChangePasscodeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChangePasscodeState.swift; path = PasscodeLock/PasscodeLock/ChangePasscodeState.swift; sourceTree = "<group>"; };
+		D4706F7DF40751B36432FFB7AFBD99F4 /* PasscodeLock.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = PasscodeLock.strings; path = en.lproj/PasscodeLock.strings; sourceTree = "<group>"; };
+		D5C6956ABEABB3E16BFAAFEE32B9E8CB /* StringGherkinExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringGherkinExtension.swift; path = Pod/Core/StringGherkinExtension.swift; sourceTree = "<group>"; };
+		DD840BA02F11AE08CE4B5506DCAE7137 /* XCTestCase+Gherkin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XCTestCase+Gherkin.swift"; path = "Pod/Core/XCTestCase+Gherkin.swift"; sourceTree = "<group>"; };
 		E3C75FF1522023680361F8972B812716 /* Pods-PuzzleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PuzzleTests-resources.sh"; sourceTree = "<group>"; };
+		E41191FC6449F45BDC5823D44CBF3BF0 /* XCTest-Gherkin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-umbrella.h"; sourceTree = "<group>"; };
+		E63919D74F551D7522DC73B1ACEDD67F /* PasscodeLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasscodeLock-umbrella.h"; sourceTree = "<group>"; };
 		E92BD06C11E2636196D932E54883ED0F /* Pods-Puzzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Puzzle-dummy.m"; sourceTree = "<group>"; };
-		EB9697E47F790F73B9F297602061B74F /* XCTest-Gherkin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCTest-Gherkin-prefix.pch"; sourceTree = "<group>"; };
+		EC553475670ECDAAB5E4BE9FADC436F5 /* PasscodeSignButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeSignButton.swift; path = PasscodeLock/Views/PasscodeSignButton.swift; sourceTree = "<group>"; };
+		F40693922C1A5E43DBAD9C2F3EC29AD8 /* PasscodeRepositoryType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeRepositoryType.swift; path = PasscodeLock/Protocols/PasscodeRepositoryType.swift; sourceTree = "<group>"; };
 		FA84A4FF0C7BC2A1C925525261447C13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB09CEE4A4414650A8D2B19E610C2E8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7CE16D7E7F16A103EF195898C36961 /* PasscodeLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PasscodeLock.modulemap; sourceTree = "<group>"; };
+		FDD831459B40859088E5B32C669D5A5D /* PasscodeLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasscodeLock.xcconfig; sourceTree = "<group>"; };
+		FE154F3C1A79F0D0B097313F3041DC83 /* PasscodeLockConfigurationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasscodeLockConfigurationType.swift; path = PasscodeLock/Protocols/PasscodeLockConfigurationType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02141A4C57BDFDF05B1B17555CF8889F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CACB56BA23DD0D53B664FAD9F41A5FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2109690D3E6AE06EB360BE988678DAF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				83559E07239AC084D5F2F9172E762CE2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D83FE305B3954AEED15274841BDA4DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD16F7D03A9A3E618064E91AE46F87B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +178,14 @@
 			files = (
 				2904E37C2FA06B9B154F23090873B51F /* Foundation.framework in Frameworks */,
 				8580D9552A33C5500179170A47C99564 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA908D2B49F9BF59FDC8E4DCDC291156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2356433AB15D2CE9DF5174DA613368 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +200,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02043DFF637DAB8B205331FC6762A572 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				29D71B7FAF388A2D7650219422CB75CD /* ClassHelperMethods.swift */,
+				90FC3E4C9EDAE80C0253EB383D1B8D2C /* ColorLog.swift */,
+				79EB4A7ED5939340094986B789B23B1C /* Example.swift */,
+				957466FF98138326BE8C34129993350A /* Step.swift */,
+				2A99F6D25A23179D894E705EABFF8CFB /* StepDefiner.swift */,
+				D5C6956ABEABB3E16BFAAFEE32B9E8CB /* StringGherkinExtension.swift */,
+				DD840BA02F11AE08CE4B5506DCAE7137 /* XCTestCase+Gherkin.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0306754EAF281A977F8129BF3BD20C99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73161E8F23B47E25E03F49604A81100D /* Info.plist */,
+				177811C2B5DCBA4859A0580AEDD953E6 /* XCTest-Gherkin.modulemap */,
+				A23426650778DB877F40659B3069B8D4 /* XCTest-Gherkin.xcconfig */,
+				8B993C9BC9FD0862E23260CCB29630AB /* XCTest-Gherkin-dummy.m */,
+				908051756E3E4070125CD315F5BE6FBB /* XCTest-Gherkin-prefix.pch */,
+				E41191FC6449F45BDC5823D44CBF3BF0 /* XCTest-Gherkin-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
+		1568F6AC772CF19F37E524EA0384A336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C99A5070C79F3272488B2316C842CE3 /* PasscodeLock.framework */,
+				812AF900A5F1B483DD006BCD1DDE2766 /* Pods_Puzzle.framework */,
+				478B905D12BF6607D4962114C744EAE4 /* Pods_PuzzleTests.framework */,
+				26E8653AD576DCE8D3DDF7356BF454D8 /* Pods_PuzzleUITests.framework */,
+				847FDACD8AD91D56E003D44DEF4916C4 /* XCTest_Gherkin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,31 +250,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		22ED8FC337F1D0EC8A1F98DDF349F488 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				066EBCA8CA95B15847BFC2B618B10B19 /* ClassHelperMethods.swift */,
-				58283780D5ABC0A1407ABB824DAA1042 /* ColorLog.swift */,
-				1CDB0AD2F788DB6CD8774BBC403D26A5 /* Example.swift */,
-				19B467D1FA8BC00321498920C21BF39C /* Step.swift */,
-				79480C7C67529CE85B71025F39B3F416 /* StepDefiner.swift */,
-				76A1C295BD5CB1DA0588B83D28C6D4E7 /* StringGherkinExtension.swift */,
-				11AB48312BC1D5C63751430038C85562 /* XCTestCase+Gherkin.swift */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		23E88E5C50CDC39500F61BC7555F96E1 /* XCTest-Gherkin */ = {
-			isa = PBXGroup;
-			children = (
-				22ED8FC337F1D0EC8A1F98DDF349F488 /* Core */,
-				C9B8F0EDCEF3BA0B712C2524A9E00B7E /* Native */,
-				731F0EF4CAF4CCDDB64D1FD4B1B0E6CF /* Support Files */,
-			);
-			name = "XCTest-Gherkin";
-			path = "XCTest-Gherkin";
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,15 +258,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		64A220D6BE51911ADCEACF8055B0D73A /* Products */ = {
+		5349F681CF7B015A84ABC12DBEE58AF8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */,
-				C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */,
-				93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */,
-				1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */,
+				B3B374E0657614FE0BD83ACBBB1C3D02 /* Info.plist */,
+				FD7CE16D7E7F16A103EF195898C36961 /* PasscodeLock.modulemap */,
+				FDD831459B40859088E5B32C669D5A5D /* PasscodeLock.xcconfig */,
+				7586DC19A05B2C119CC0BC5A4B8AB584 /* PasscodeLock-dummy.m */,
+				4EA83CC81435906570EACE41C31B0CB4 /* PasscodeLock-prefix.pch */,
+				E63919D74F551D7522DC73B1ACEDD67F /* PasscodeLock-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/PasscodeLock";
 			sourceTree = "<group>";
 		};
 		67479F845730D1C8187005B86E487770 /* Pods-PuzzleTests */ = {
@@ -211,28 +288,6 @@
 			);
 			name = "Pods-PuzzleTests";
 			path = "Target Support Files/Pods-PuzzleTests";
-			sourceTree = "<group>";
-		};
-		731F0EF4CAF4CCDDB64D1FD4B1B0E6CF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FB09CEE4A4414650A8D2B19E610C2E8F /* Info.plist */,
-				69C701BDF28DA57A8E859FA9EEAF2129 /* XCTest-Gherkin.modulemap */,
-				DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */,
-				8B4EE07D61AAEDE87FA71D1D6E6F8734 /* XCTest-Gherkin-dummy.m */,
-				EB9697E47F790F73B9F297602061B74F /* XCTest-Gherkin-prefix.pch */,
-				795DA5FD4E886D8429F8B4C8D363DF1B /* XCTest-Gherkin-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/XCTest-Gherkin";
-			sourceTree = "<group>";
-		};
-		748CB0A1639AAF63BE3C569DC452A8A1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				23E88E5C50CDC39500F61BC7555F96E1 /* XCTest-Gherkin */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		7A3D4CB6043AE778D69FF3593A7ECC57 /* Pods-Puzzle */ = {
@@ -258,10 +313,19 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				748CB0A1639AAF63BE3C569DC452A8A1 /* Pods */,
-				64A220D6BE51911ADCEACF8055B0D73A /* Products */,
+				8C5A99ACFC625FB999C8F649DB827F4E /* Pods */,
+				1568F6AC772CF19F37E524EA0384A336 /* Products */,
 				1A94A0755EB5EA4C5DE24FE5ECD27F6C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8C5A99ACFC625FB999C8F649DB827F4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA908B7BD7616E8D33673DDA0E772B85 /* PasscodeLock */,
+				FE27EF8D8F92817605EE2C09D892C9C7 /* XCTest-Gherkin */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9D9CFF97A2D41D7CB20A427D5386C7A6 /* iOS */ = {
@@ -273,17 +337,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C9B8F0EDCEF3BA0B712C2524A9E00B7E /* Native */ = {
+		B6E1716FC9C579C572FD769E76495262 /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				CAF127B4FE5F60ED6A84986FB4D56EBB /* NativeExample.swift */,
-				13D13117383A8D7D04177F14E6CA2588 /* NativeFeature.swift */,
-				77E8C773B9418D448FC11A0FFE899560 /* NativeFeatureParser.swift */,
-				71DCA3806ED5302E1A4E7619963FA5A0 /* NativeScenario.swift */,
-				91D7A656F6906708CB2DA540E64D9C09 /* NativeTestCase.swift */,
-				73BA1028CAED3397181082E30272D1DA /* ParseState.swift */,
+				5715FEF11DE0AB146666F8F333E0C0E1 /* NativeExample.swift */,
+				106ACEDA5E422EA88F33A49DDE2E583D /* NativeFeature.swift */,
+				02082F722C41878D02C07ADFE78E1CE0 /* NativeFeatureParser.swift */,
+				921840051E55D7388B426DCFFD6F792F /* NativeScenario.swift */,
+				38B5C859581A0F73FF3F48D6640724D5 /* NativeTestCase.swift */,
+				40C98BBBBB518EE3F7F63A11DF6D6963 /* ParseState.swift */,
 			);
 			name = Native;
+			sourceTree = "<group>";
+		};
+		CA908B7BD7616E8D33673DDA0E772B85 /* PasscodeLock */ = {
+			isa = PBXGroup;
+			children = (
+				D3434299B97AC40086A9BB834F738528 /* ChangePasscodeState.swift */,
+				CE78779459912479EE7992A7A5BB26FD /* ConfirmPasscodeState.swift */,
+				B68870ED441CB3FA6A4DF3361D799AA0 /* EnterPasscodeState.swift */,
+				A99BA3D12F1E9D7A5F4364C54C5BEB30 /* Functions.swift */,
+				8287893D8FA4791939E313F25F91BFEA /* PasscodeLock.h */,
+				A91531FBC6143C6B03F0BADFE31CEB1A /* PasscodeLock.swift */,
+				FE154F3C1A79F0D0B097313F3041DC83 /* PasscodeLockConfigurationType.swift */,
+				568EBB636048EDD61A4F591B18B74AC9 /* PasscodeLockPresenter.swift */,
+				9973DE15454660913FF8D51FA2F2F0E1 /* PasscodeLockStateType.swift */,
+				ADD4D91926B4210A67F96CDB8F12A425 /* PasscodeLockType.swift */,
+				90037226D9249E2950D757CABEF3F172 /* PasscodeLockViewController.swift */,
+				F40693922C1A5E43DBAD9C2F3EC29AD8 /* PasscodeRepositoryType.swift */,
+				EC553475670ECDAAB5E4BE9FADC436F5 /* PasscodeSignButton.swift */,
+				57A074683549B9A676CB1FEBA47526DF /* PasscodeSignPlaceholderView.swift */,
+				A66FF48A221FB2D2CEE1B016E6F06019 /* SetPasscodeState.swift */,
+				D16CBF4D2548155501949083E7B80CD2 /* Resources */,
+				5349F681CF7B015A84ABC12DBEE58AF8 /* Support Files */,
+			);
+			name = PasscodeLock;
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+		D16CBF4D2548155501949083E7B80CD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A59D8EEC759910BD707D59AB7F393DF3 /* PasscodeLock.strings */,
+				AD7303601109D974F7B28B7EC8197B90 /* PasscodeLockView.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E690934EF1952B8D22CB227CFAAC97B3 /* Pods-PuzzleUITests */ = {
@@ -304,9 +402,37 @@
 			path = "Target Support Files/Pods-PuzzleUITests";
 			sourceTree = "<group>";
 		};
+		FE27EF8D8F92817605EE2C09D892C9C7 /* XCTest-Gherkin */ = {
+			isa = PBXGroup;
+			children = (
+				02043DFF637DAB8B205331FC6762A572 /* Core */,
+				B6E1716FC9C579C572FD769E76495262 /* Native */,
+				0306754EAF281A977F8129BF3BD20C99 /* Support Files */,
+			);
+			name = "XCTest-Gherkin";
+			path = "XCTest-Gherkin";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		217EC8A07AD013914D7D0B19E7668D3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EB43B831A064E1849E1473607E5219 /* PasscodeLock-umbrella.h in Headers */,
+				B806E0698E6881BD22CD706700223391 /* PasscodeLock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F8563D37C549225C622C3AE050E5967 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7033E86C830D2817F3F427B7F7A6DC5B /* Pods-Puzzle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4963DE646D8EA22E5DC01C51418A19C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -331,14 +457,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C67AA2426276F3841470B8B3662F11B5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2FAB539F3305675ECCCC8AE3EDA8AA3 /* Pods-Puzzle-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -357,7 +475,43 @@
 			);
 			name = "Pods-PuzzleTests";
 			productName = "Pods-PuzzleTests";
-			productReference = C391C5588AA8A1FCB5275D0611E740E8 /* Pods_PuzzleTests.framework */;
+			productReference = 478B905D12BF6607D4962114C744EAE4 /* Pods_PuzzleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		458D268E7EFBB5E0A971230D15DF24EA /* PasscodeLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A131552A623C8DEB4A9C98C41E7499 /* Build configuration list for PBXNativeTarget "PasscodeLock" */;
+			buildPhases = (
+				CB7F320974AAE0054D9B548B7C187F22 /* Sources */,
+				AA908D2B49F9BF59FDC8E4DCDC291156 /* Frameworks */,
+				217EC8A07AD013914D7D0B19E7668D3D /* Headers */,
+				DF77EBA5B676774CE7C7DB2F341CBE3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasscodeLock;
+			productName = PasscodeLock;
+			productReference = 4C99A5070C79F3272488B2316C842CE3 /* PasscodeLock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77CDC4A3962F2DF50A59B8DF3E3FF0BA /* Pods-Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41EC09A10B98CCB664E616C0EE49429 /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */;
+			buildPhases = (
+				88867851922CF534FDF7036B46261B81 /* Sources */,
+				02141A4C57BDFDF05B1B17555CF8889F /* Frameworks */,
+				2F8563D37C549225C622C3AE050E5967 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F58C7331E6ECED2903A55C9033821B2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Puzzle";
+			productName = "Pods-Puzzle";
+			productReference = 812AF900A5F1B483DD006BCD1DDE2766 /* Pods_Puzzle.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */ = {
@@ -374,24 +528,7 @@
 			);
 			name = "Pods-PuzzleUITests";
 			productName = "Pods-PuzzleUITests";
-			productReference = 93E10BC744F48A926ABC0BE8672AD8D9 /* Pods_PuzzleUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DAB1020FC8311A9B3DDE6A3C1B060F35 /* Pods-Puzzle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 718B89649657362346307312BA22D97D /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */;
-			buildPhases = (
-				D7918E15B7013F928181A3BDE2886E57 /* Sources */,
-				2D83FE305B3954AEED15274841BDA4DF /* Frameworks */,
-				C67AA2426276F3841470B8B3662F11B5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Puzzle";
-			productName = "Pods-Puzzle";
-			productReference = 9A2B1C182F9A210EA8D485124C8A48AF /* Pods_Puzzle.framework */;
+			productReference = 26E8653AD576DCE8D3DDF7356BF454D8 /* Pods_PuzzleUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F33ABF592A20F16E45B8503EC7A61B4E /* XCTest-Gherkin */ = {
@@ -408,7 +545,7 @@
 			);
 			name = "XCTest-Gherkin";
 			productName = "XCTest-Gherkin";
-			productReference = 1010E7B27336016142F7284EDB6C1ECF /* XCTest_Gherkin.framework */;
+			productReference = 847FDACD8AD91D56E003D44DEF4916C4 /* XCTest_Gherkin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -428,17 +565,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 64A220D6BE51911ADCEACF8055B0D73A /* Products */;
+			productRefGroup = 1568F6AC772CF19F37E524EA0384A336 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAB1020FC8311A9B3DDE6A3C1B060F35 /* Pods-Puzzle */,
+				458D268E7EFBB5E0A971230D15DF24EA /* PasscodeLock */,
+				77CDC4A3962F2DF50A59B8DF3E3FF0BA /* Pods-Puzzle */,
 				2A8D177310752E02502CAC3AB95FB8C5 /* Pods-PuzzleTests */,
 				D74C2A933716D64ECA3BB7AD6B30FF8F /* Pods-PuzzleUITests */,
 				F33ABF592A20F16E45B8503EC7A61B4E /* XCTest-Gherkin */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF77EBA5B676774CE7C7DB2F341CBE3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7DEED50858018D346A17124AD5A192 /* PasscodeLock.strings in Resources */,
+				17D2117D7DBAFCAF649154794E725585 /* PasscodeLockView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A3ED44128EE0855AD82FA6514C22D50 /* Sources */ = {
@@ -454,6 +604,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				166A506B877227A181738FD106129F2B /* Pods-PuzzleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88867851922CF534FDF7036B46261B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812C114A89453F36CEA110B648437E32 /* Pods-Puzzle-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,17 +636,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7918E15B7013F928181A3BDE2886E57 /* Sources */ = {
+		CB7F320974AAE0054D9B548B7C187F22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23250B042DC2FB477CA29C01F4C6FC83 /* Pods-Puzzle-dummy.m in Sources */,
+				4B224D8D2488B0EC2EDCF12D20DACC55 /* ChangePasscodeState.swift in Sources */,
+				B278CE97C4BAD97E460EB88DE9ED368A /* ConfirmPasscodeState.swift in Sources */,
+				1CF62B0F616EDDF03869F8BD747C11F3 /* EnterPasscodeState.swift in Sources */,
+				C6C2836398F93FFA29E4DFFBBD8DAF2A /* Functions.swift in Sources */,
+				C9A356A63BA8AC05D212837433543B40 /* PasscodeLock-dummy.m in Sources */,
+				7AF138645893649033CD271F107666C0 /* PasscodeLock.swift in Sources */,
+				5B9500EAF79E29F411F27910BE857AF5 /* PasscodeLockConfigurationType.swift in Sources */,
+				C5D592C0B422192104873ACFF24127DC /* PasscodeLockPresenter.swift in Sources */,
+				8372ACB40D7AB9397C009CE361EF4CC2 /* PasscodeLockStateType.swift in Sources */,
+				2A188343A5CEB7FA338B1E1EC48BC070 /* PasscodeLockType.swift in Sources */,
+				72B903246D6863EE52A09F984FE72446 /* PasscodeLockViewController.swift in Sources */,
+				37FD35E0949E678C7C2A3552B8354BAC /* PasscodeRepositoryType.swift in Sources */,
+				99036D5E7508A3C569A13732DFC98ED2 /* PasscodeSignButton.swift in Sources */,
+				1488D3722A4355A13C3110EC99300658 /* PasscodeSignPlaceholderView.swift in Sources */,
+				903997ABA0A1948AECB25A540CEEFAD5 /* SetPasscodeState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6F58C7331E6ECED2903A55C9033821B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PasscodeLock;
+			target = 458D268E7EFBB5E0A971230D15DF24EA /* PasscodeLock */;
+			targetProxy = 3727C3FA665D077FA20C132828793D6E /* PBXContainerItemProxy */;
+		};
 		F83466308E980C59FF9A6E4461F403DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "XCTest-Gherkin";
@@ -497,10 +675,22 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		A59D8EEC759910BD707D59AB7F393DF3 /* PasscodeLock.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4706F7DF40751B36432FFB7AFBD99F4 /* PasscodeLock.strings */,
+			);
+			name = PasscodeLock.strings;
+			path = PasscodeLock;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		003B415B1F32A22EFFF07EA21A5E8C14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */;
+			baseConfigurationReference = A23426650778DB877F40659B3069B8D4 /* XCTest-Gherkin.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -524,41 +714,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1BE98E3D97C0C4D0BDBD7A2148E9F5DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Puzzle;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -600,15 +755,15 @@
 			};
 			name = Release;
 		};
-		409209589E04F555C030C0999B0C2152 /* Debug */ = {
+		4C14559C564D5EC02E08AD6725F88770 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */;
+			baseConfigurationReference = 1708B34E965AE56E28C2B2A027404CE3 /* Pods-Puzzle.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -621,7 +776,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -633,7 +788,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -710,6 +865,39 @@
 			};
 			name = Release;
 		};
+		6FF7F4F9FAD278201F6641743CC841DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD831459B40859088E5B32C669D5A5D /* PasscodeLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PasscodeLock/PasscodeLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasscodeLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PasscodeLock/PasscodeLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PasscodeLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9D879382E197C88FC06027C788168F11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36CAE54A2B3168986E84E44F724D0EEA /* Pods-PuzzleUITests.debug.xcconfig */;
@@ -744,6 +932,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A204533F388013FD51F2C9D680A262AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD831459B40859088E5B32C669D5A5D /* PasscodeLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PasscodeLock/PasscodeLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasscodeLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PasscodeLock/PasscodeLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PasscodeLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		A937E6BDF5B7BF3A092181698A532D01 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -783,7 +1003,7 @@
 		};
 		CF9AAA8083CBD259FD601D103A201F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCAB6854E4C48772CE977D209631691C /* XCTest-Gherkin.xcconfig */;
+			baseConfigurationReference = A23426650778DB877F40659B3069B8D4 /* XCTest-Gherkin.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -808,6 +1028,42 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB41AC2333CB248186B239B95EF32935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D32C9D3B59E1A2B09D96EEEEC017D5 /* Pods-Puzzle.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Puzzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Puzzle/Pods-Puzzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Puzzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -888,11 +1144,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		718B89649657362346307312BA22D97D /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */ = {
+		55A131552A623C8DEB4A9C98C41E7499 /* Build configuration list for PBXNativeTarget "PasscodeLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				409209589E04F555C030C0999B0C2152 /* Debug */,
-				1BE98E3D97C0C4D0BDBD7A2148E9F5DF /* Release */,
+				6FF7F4F9FAD278201F6641743CC841DB /* Debug */,
+				A204533F388013FD51F2C9D680A262AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -902,6 +1158,15 @@
 			buildConfigurations = (
 				CF9AAA8083CBD259FD601D103A201F89 /* Debug */,
 				003B415B1F32A22EFFF07EA21A5E8C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41EC09A10B98CCB664E616C0EE49429 /* Build configuration list for PBXNativeTarget "Pods-Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB41AC2333CB248186B239B95EF32935 /* Debug */,
+				4C14559C564D5EC02E08AD6725F88770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

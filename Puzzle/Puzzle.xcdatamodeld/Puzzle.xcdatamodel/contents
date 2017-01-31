@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Children" representedClassName=".Children" syncable="YES">
         <attribute name="birthdate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,7 +8,7 @@
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="hasUser" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="hasChildren" inverseEntity="User" syncable="YES"/>
+        <relationship name="user_relation" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="children_relation" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName=".User" syncable="YES">
         <attribute name="children" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -19,7 +19,7 @@
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="hasChildren" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Children" inverseName="hasUser" inverseEntity="Children" syncable="YES"/>
+        <relationship name="children_relation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Children" inverseName="user_relation" inverseEntity="Children" syncable="YES"/>
     </entity>
     <elements>
         <element name="Children" positionX="-63" positionY="-40" width="128" height="165"/>

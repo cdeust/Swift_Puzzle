@@ -50,6 +50,8 @@
 		B1D05AF81E36C5E400AB0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */; };
 		B1D05AFB1E36CC0A00AB0D87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF91E36CC0A00AB0D87 /* Localizable.strings */; };
 		B3380680E7BA085A56A2207F /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */; };
+		B410F6B01E40FCB200598D36 /* PasscodeLockConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6AF1E40FCB200598D36 /* PasscodeLockConfiguration.swift */; };
+		B410F6B21E40FD6100598D36 /* PasscodeLockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6B11E40FD6000598D36 /* PasscodeLockRepository.swift */; };
 		B41447801E37B7B4003064C0 /* XCUIElement+Paste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */; };
 		B457EBA41E38C2C200A72CF3 /* ChildSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA31E38C2C200A72CF3 /* ChildSelectionVC.swift */; };
 		B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B457EBA51E38C5F200A72CF3 /* ChildSelectionVM.swift */; };
@@ -130,6 +132,8 @@
 		B1D05AD21E36BADD00AB0D87 /* AccountCreationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVC.swift; path = Puzzle/Controllers/AccountCreationVC.swift; sourceTree = "<group>"; };
 		B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Puzzle/Assets.xcassets; sourceTree = "<group>"; };
 		B1D05AFA1E36CC0A00AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Puzzle/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B410F6AF1E40FCB200598D36 /* PasscodeLockConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeLockConfiguration.swift; path = Puzzle/Utils/Libraries/PasscodeLockConfiguration.swift; sourceTree = "<group>"; };
+		B410F6B11E40FD6000598D36 /* PasscodeLockRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeLockRepository.swift; path = Puzzle/Utils/Libraries/PasscodeLockRepository.swift; sourceTree = "<group>"; };
 		B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCUIElement+Paste.swift"; path = "Extensions/XCUIElement+Paste.swift"; sourceTree = "<group>"; };
 		B457EBA31E38C2C200A72CF3 /* ChildSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildSelectionVC.swift; path = Puzzle/Controllers/ChildSelectionVC.swift; sourceTree = "<group>"; };
 		B457EBA51E38C5F200A72CF3 /* ChildSelectionVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildSelectionVM.swift; path = Puzzle/Models/ChildSelectionVM.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 		B1D05A6F1E36A6C300AB0D87 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B410F69C1E40992300598D36 /* Libraries */,
 				B1D05A701E36A6E000AB0D87 /* Extensions */,
 			);
 			name = Utils;
@@ -419,6 +424,15 @@
 			children = (
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B410F69C1E40992300598D36 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B410F6AF1E40FCB200598D36 /* PasscodeLockConfiguration.swift */,
+				B410F6B11E40FD6000598D36 /* PasscodeLockRepository.swift */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 		B414477E1E37B77B003064C0 /* Extensions */ = {
@@ -786,6 +800,7 @@
 				B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */,
 				B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */,
 				B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */,
+				B410F6B01E40FCB200598D36 /* PasscodeLockConfiguration.swift in Sources */,
 				B1673D2E1E3CF0C9004600AB /* UITextField+Design.swift in Sources */,
 				B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */,
 				B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift in Sources */,
@@ -801,6 +816,7 @@
 				B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
 				B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */,
+				B410F6B21E40FD6100598D36 /* PasscodeLockRepository.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
 				B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */,

@@ -36,4 +36,8 @@ extension AccountCreationVC: AccountCreationVCDelegate {
         self.password.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         self.lock.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
     }
+    
+    func didSetLockCodeSuccessfully(lockCode: String) {
+        self.lock.text = lockCode
+    }
 }

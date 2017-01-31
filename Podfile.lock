@@ -1,4 +1,5 @@
 PODS:
+  - PasscodeLock (1.0.2)
   - XCTest-Gherkin (0.9.0):
     - XCTest-Gherkin/Core (= 0.9.0)
   - XCTest-Gherkin/Core (0.9.0)
@@ -6,12 +7,14 @@ PODS:
     - XCTest-Gherkin/Core
 
 DEPENDENCIES:
+  - PasscodeLock (~> 1.0.2)
   - XCTest-Gherkin
   - XCTest-Gherkin/Native
 
 SPEC CHECKSUMS:
+  PasscodeLock: 4ae42c094224a01de3773fcd69ae33886394d959
   XCTest-Gherkin: 1b4a3a1ee6e464f2223dea67fbea16bb58cf0c07
 
-PODFILE CHECKSUM: a9abaf2b09da152355bcf7268bd4dfd8c8ace0cf
+PODFILE CHECKSUM: 8b6f69e88861c916d28a734f1b8d8e1e3d25fb92
 
 COCOAPODS: 1.1.1
