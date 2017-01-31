@@ -61,20 +61,27 @@ class AccountCreationUITests: XCTestCase {
         password.typeText("testme")
         password.typeText("\n")
         
-        let lock = app.secureTextFields.element(matching: .secureTextField, identifier: "lock")
+        let lock = app.buttons.element(matching: .button, identifier: "lockCode")
         lock.tap()
-        lock.typeText("1234")
-        lock.typeText("\n")
         
-        let errorMessage = self.app.staticTexts["Your account was successfully created !"]
-        let exists = NSPredicate(format: "exists == true")
-        expectation(for: exists, evaluatedWith: errorMessage, handler: nil)
+        app.buttons["1"].tap()
+        app.buttons["2"].tap()
+        app.buttons["3"].tap()
+        app.buttons["4"].tap()
+        
+        app.buttons["1"].tap()
+        app.buttons["2"].tap()
+        app.buttons["3"].tap()
+        app.buttons["4"].tap()
         
         app.buttons["Create"].tap()
         
-        waitForExpectations(timeout: 5, handler: nil)
-        
-        XCTAssert(errorMessage.exists)
+        XCTAssert(app.staticTexts["Birthdate"].exists)
+        XCTAssert(app.staticTexts["Firstname"].exists)
+        XCTAssert(app.staticTexts["Lastname"].exists)
+        XCTAssert(app.staticTexts["Sex"].exists)
+        XCTAssert(app.buttons["Add"].exists)
+        XCTAssert(app.buttons["End"].exists)
     }
     
     override func tearDown() {
