@@ -104,13 +104,13 @@ class AccountCreationVM: NSObject {
         self._errorText = ""
     }
     
-    init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate:AccountCreationVCDelegate)
+    init(userObject: UserObject, delegate:AccountCreationVCDelegate)
     {
-        self._firstnameText = firstname
-        self._lastnameText = lastname
-        self._emailText = email
-        self._passwordText = password
-        self._lockText = lock
+        self._firstnameText = userObject.firstname
+        self._lastnameText = userObject.lastname
+        self._emailText = userObject.email
+        self._passwordText = userObject.password
+        self._lockText = userObject.lock
         self._delegate = delegate
         self._uidText = String().uid()
         
