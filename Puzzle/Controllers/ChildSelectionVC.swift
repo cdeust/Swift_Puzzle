@@ -82,7 +82,7 @@ extension ChildSelectionVC {
     func initializeMenuChildren(sender: UIButton)
     {
         self.children = child[sender.tag] as! Children
-        self.performSegue(withIdentifier: "loadMenu", sender: self)
+        self.performSegue(withIdentifier: "loadGameMenu", sender: self)
     }
     
     func showChildCreation(sender: UIButton)
@@ -102,13 +102,11 @@ extension ChildSelectionVC {
 extension ChildSelectionVC {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.identifier == "loadMenu"
+        if segue.identifier == "loadGameMenu"
         {
-            /*
-            let menu = segue.destination as! MenuVC
-            menu.user = self.user
-            menu.children = self.children
-            */
+            let gameMenu = segue.destination as! GameMenuVC
+            gameMenu.user = self.user
+            gameMenu.child = self.children
         }
         if segue.identifier == "loadChildCreation"
         {

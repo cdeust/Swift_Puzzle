@@ -110,17 +110,17 @@ public class PasscodeLockViewController: UIViewController, PasscodeLockTypeDeleg
     
     private func setupEvents() {
         
-        notificationCenter?.addObserver(self, selector: "appWillEnterForegroundHandler:", name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        notificationCenter?.addObserver(self, selector: "tryAccessingMenu:", name: NSNotification.Name(rawValue: "tryAccessingMenu"), object: nil)
         notificationCenter?.addObserver(self, selector: "appDidEnterBackgroundHandler:", name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
     private func clearEvents() {
         
-        notificationCenter?.removeObserver(self, name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        notificationCenter?.removeObserver(self, name: NSNotification.Name(rawValue: "tryAccessingMenu"), object: nil)
         notificationCenter?.removeObserver(self, name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
-    public func appWillEnterForegroundHandler(notification: NSNotification) {
+    public func tryAccessingMenu(notification: NSNotification) {
         
         authenticateWithBiometrics()
     }

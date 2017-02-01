@@ -107,9 +107,8 @@ extension AccountCreationVC {
     
     @IBAction func createLockCode(sender: UIButton)
     {
-        let configuration = PasscodeLockConfiguration()
-        let passcodeViewController = PasscodeLockViewController(state: .SetPasscode, configuration: configuration)
-        self.present(passcodeViewController, animated: true, completion: nil)
+        let lockScreen = LockScreenVC(nibName: "LockScreen", bundle: nil)
+        
     }
 }
 
