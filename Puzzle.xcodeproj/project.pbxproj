@@ -30,6 +30,7 @@
 		B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D331E3CF0FE004600AB /* String+Validation.swift */; };
 		B1673D371E3CF0FE004600AB /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */; };
 		B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D351E3CF0FE004600AB /* String+Uid.swift */; };
+		B1673D3A1E41445A004600AB /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D391E41445A004600AB /* UserObject.swift */; };
 		B1D05A551E36953500AB0D87 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A541E36953500AB0D87 /* Login.swift */; };
 		B1D05A571E36953C00AB0D87 /* AccountCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A561E36953C00AB0D87 /* AccountCreation.swift */; };
 		B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A581E36956D00AB0D87 /* LoginSteps.swift */; };
@@ -113,6 +114,7 @@
 		B1673D331E3CF0FE004600AB /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Validation.swift"; path = "Puzzle/Utils/Extensions/String/String+Validation.swift"; sourceTree = "<group>"; };
 		B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B1673D351E3CF0FE004600AB /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String/String+Uid.swift"; sourceTree = "<group>"; };
+		B1673D391E41445A004600AB /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserObject.swift; path = Puzzle/Utils/UserObject.swift; sourceTree = "<group>"; };
 		B1D05A541E36953500AB0D87 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Features/Login.swift; sourceTree = "<group>"; };
 		B1D05A561E36953C00AB0D87 /* AccountCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreation.swift; path = Features/AccountCreation.swift; sourceTree = "<group>"; };
 		B1D05A581E36956D00AB0D87 /* LoginSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSteps.swift; path = StepDefinitions/LoginSteps.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 			children = (
 				B410F69C1E40992300598D36 /* Libraries */,
 				B1D05A701E36A6E000AB0D87 /* Extensions */,
+				B1673D391E41445A004600AB /* UserObject.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -817,6 +820,7 @@
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
 				B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */,
 				B410F6B21E40FD6100598D36 /* PasscodeLockRepository.swift in Sources */,
+				B1673D3A1E41445A004600AB /* UserObject.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
 				B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */,

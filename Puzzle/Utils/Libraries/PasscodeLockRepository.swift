@@ -14,8 +14,10 @@ class PasscodeRepository: PasscodeRepositoryType {
     
     var hasPasscode: Bool = false
     var passcode: [String]?
+    var user: UserObject!
     
     var lockCode = ""
+    
     
     func savePasscode(passcode: [String])
     {
@@ -24,16 +26,14 @@ class PasscodeRepository: PasscodeRepositoryType {
             lockCode += "\(passcode[i])"
         }
         
-        let userConfig = UserDefaults.init()
-        userConfig.setValue(lockCode, forKey: "lockCode")
-        userConfig.synchronize()
+        self.user = UserObject.shared
+        self.user.lock = lockCode
     }
     
     func deletePasscode()
     {
         lockCode = ""
-        let userConfig = UserDefaults.init()
-        userConfig.setValue(lockCode, forKey: "lockCode")
-        userConfig.synchronize()
+        self.user = UserObject.shared
+        self.user.lock = lockCode
     }
 }

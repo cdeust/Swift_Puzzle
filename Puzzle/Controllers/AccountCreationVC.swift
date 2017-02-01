@@ -15,6 +15,7 @@ import PasscodeLock
 class AccountCreationVC: UIViewController {
     var activeField: UITextField!
     var user: User?
+    var userObject: UserObject!
     var viewModel: AccountCreationVM!
     var delegate: AccountCreationVCDelegate!
     
@@ -38,6 +39,8 @@ extension AccountCreationVC {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
+        self.userObject = UserObject.shared
+        
         self.initView()
         
         self.registerForKeyboardNotifications()
@@ -51,11 +54,9 @@ extension AccountCreationVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        // TODO create user singleton
-        
-        let userConfig = UserDefaults.init()
-        if let lockCode = userConfig.object(forKey: "lockCode") as? String {
-            self.lock.text = lockCode
+        if self.userObject.lock != nil
+        {
+            self.lock.text = self.userObject.lock
         }
     }
 }
@@ -89,7 +90,12 @@ extension AccountCreationVC {
                 String().isNotEmptyNorNil(string: password) == true &&
                 String().isNotEmptyNorNil(string: lock) == true
             {
-                self.viewModel = AccountCreationVM.init(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self)
+                self.userObject.firstname = firstname
+                self.userObject.lastname = lastname
+                self.userObject.email = email
+                self.userObject.password = password
+                self.userObject.lock = lock
+                self.viewModel = AccountCreationVM.init(userObject: self.userObject, delegate: self)
                 self.viewModel.createAccount()
             }
             else
