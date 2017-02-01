@@ -1,0 +1,6 @@
+framework module PasscodeLock {
+  umbrella header "PasscodeLock-umbrella.h"
+
+  export *
+  module * { export * }
+}
