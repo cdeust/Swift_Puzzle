@@ -1,5 +1,5 @@
 PODS:
-  - PasscodeLock (1.0.2)
+  - SmileLock (2.0.0)
   - XCTest-Gherkin (0.9.0):
     - XCTest-Gherkin/Core (= 0.9.0)
   - XCTest-Gherkin/Core (0.9.0)
@@ -7,14 +7,14 @@ PODS:
     - XCTest-Gherkin/Core
 
 DEPENDENCIES:
-  - PasscodeLock (~> 1.0.2)
+  - SmileLock
   - XCTest-Gherkin
   - XCTest-Gherkin/Native
 
 SPEC CHECKSUMS:
-  PasscodeLock: 4ae42c094224a01de3773fcd69ae33886394d959
+  SmileLock: ee34bf37e824c8afc71217fccc2b2bee5510db64
   XCTest-Gherkin: 1b4a3a1ee6e464f2223dea67fbea16bb58cf0c07
 
-PODFILE CHECKSUM: 8b6f69e88861c916d28a734f1b8d8e1e3d25fb92
+PODFILE CHECKSUM: 67355727c625f7ea21d3d06e7f42ef833ca70325
 
 COCOAPODS: 1.1.1

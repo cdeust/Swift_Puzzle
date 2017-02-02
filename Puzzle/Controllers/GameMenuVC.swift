@@ -8,15 +8,12 @@
 
 import Foundation
 import UIKit
-import PasscodeLock
 
 class GameMenuVC: UIViewController {
     
     var user: User!
     var child: Children!
     var userObject: UserObject!
-    var childObject: ChildObject!
-    var lockScreenVC: LockScreenVC!
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var puzzleLabel: UILabel!
@@ -34,9 +31,6 @@ extension GameMenuVC {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        self.userObject = UserObject.shared
-        self.childObject = ChildObject.shared
         
         self.initView()
     }
@@ -71,7 +65,24 @@ extension GameMenuVC {
 extension GameMenuVC {
     @IBAction func goBackToMenu(sender: UIButton)
     {
-        lockScreenVC = LockScreenVC(nibName: "LockScreen", bundle: nil)
-        
+        guard let storyboard = self.storyboard else { return }
+        let passcodeVC = storyboard.instantiateViewController(withIdentifier: "PasscodeVC") as! PasscodeVC
+        passcodeVC.modalTransitionStyle = .crossDissolve
+        passcodeVC.modalPresentationStyle = .overCurrentContext
+        passcodeVC.userObject = self.userObject
+        passcodeVC.comingFrom = "gameMenu"
+        passcodeVC.delegate = self
+        present(passcodeVC, animated: true, completion: nil)
     }
+}
+
+extension GameMenuVC: PasscodeVCDelegate {
+    func successSessionEnded()
+    {
+        guard let navigationController = self.navigationController else { return }
+        navigationController.popViewController(animated: true)
+    }
+    
+    func fail() { }
+    func successCreation(userObject: UserObject) { }
 }

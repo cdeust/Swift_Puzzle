@@ -19,6 +19,13 @@ extension LoginVC: LoginVCDelegate {
         
         self.user = user;
         
+        self.userObject = UserObject.shared
+        self.userObject.email = user.email
+        self.userObject.firstname = user.firstname
+        self.userObject.lastname = user.lastname
+        self.userObject.password = user.password
+        self.userObject.lock = user.lock
+        
         self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         

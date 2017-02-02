@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PasscodeLock
+import SmileLock
 
 extension GameMenuVC: LockScreenDelegate {
     

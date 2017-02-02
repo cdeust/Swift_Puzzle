@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import PasscodeLock
+import SmileLock
 
 // MARK: Vars & Outlets
 
@@ -51,13 +51,14 @@ extension AccountCreationVC {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)
+    {
         super.viewDidAppear(animated)
-        
-        if self.userObject.lock != nil
-        {
-            self.lock.text = self.userObject.lock
-        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
     }
 }
 
@@ -107,8 +108,14 @@ extension AccountCreationVC {
     
     @IBAction func createLockCode(sender: UIButton)
     {
-        let lockScreen = LockScreenVC(nibName: "LockScreen", bundle: nil)
-        
+        guard let storyboard = self.storyboard else { return }
+        let passcodeVC = storyboard.instantiateViewController(withIdentifier: "PasscodeVC") as! PasscodeVC
+        passcodeVC.modalTransitionStyle = .crossDissolve
+        passcodeVC.modalPresentationStyle = .overCurrentContext
+        passcodeVC.delegate = self
+        passcodeVC.comingFrom = "accountCreation"
+        passcodeVC.userObject = self.userObject
+        present(passcodeVC, animated: true, completion: nil)
     }
 }
 
@@ -123,6 +130,22 @@ extension AccountCreationVC {
         
         self.present(errorPopup, animated: true, completion: nil)
     }
+}
+
+extension AccountCreationVC: PasscodeVCDelegate {
+    func successCreation(userObject: UserObject)
+    {
+        if self.userObject.lock != nil
+        {
+            self.lock.text = userObject.lock
+        }
+    }
+
+    func fail() {
+        self.lock.text = ""
+    }
+    
+    func successSessionEnded() { }
 }
 
 // MARK: Navigation

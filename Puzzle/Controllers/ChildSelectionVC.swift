@@ -15,6 +15,7 @@ class ChildSelectionVC: UIViewController {
     var child: NSArray!
     var activeField: UITextField!
     var user: User!
+    var userObject: UserObject!
     var children: Children!
     var viewModel: ChildSelectionVM!
     
@@ -106,6 +107,7 @@ extension ChildSelectionVC {
         {
             let gameMenu = segue.destination as! GameMenuVC
             gameMenu.user = self.user
+            gameMenu.userObject = self.userObject
             gameMenu.child = self.children
         }
         if segue.identifier == "loadChildCreation"

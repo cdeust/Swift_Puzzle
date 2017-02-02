@@ -14,6 +14,7 @@ import UIKit
 class LoginVC: UIViewController {
     var activeField: UITextField!
     var user: User!
+    var userObject: UserObject!
     var viewModel: LoginVM!
     
     @IBOutlet weak var email: UITextField!
@@ -33,6 +34,8 @@ extension LoginVC {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         self.initView()
+        
+        self.userObject = UserObject.shared
         
         self.registerForKeyboardNotifications()
     }
@@ -99,6 +102,7 @@ extension LoginVC {
         {
             let childSelection = segue.destination as! ChildSelectionVC
             childSelection.user = self.user
+            childSelection.userObject = self.userObject
         }
     }
 }

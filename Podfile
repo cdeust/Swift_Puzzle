@@ -6,7 +6,7 @@ target 'Puzzle' do
   use_frameworks!
 
   # Pods for Puzzle  
-     pod 'PasscodeLock', '~> 1.0.2'
+     pod 'SmileLock'
 
   target 'PuzzleTests' do
     inherit! :search_paths

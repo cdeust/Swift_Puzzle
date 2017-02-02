@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/PasscodeLock/PasscodeLock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SmileLock/SmileLock.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/PasscodeLock/PasscodeLock.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SmileLock/SmileLock.framework"
 fi
