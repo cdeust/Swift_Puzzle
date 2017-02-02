@@ -13,7 +13,8 @@ import UIKit
 
 class ChildCreationVC: UIViewController {
     var activeField: UITextField!
-    var user: User!
+    var userObject: UserObject!
+    var childObject: ChildObject!
     var viewModel: ChildCreationVM!
 
     @IBOutlet weak var birthdate: UITextField!
@@ -35,8 +36,9 @@ extension ChildCreationVC {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         self.initView()
-        
         self.registerForKeyboardNotifications()
+        
+        self.childObject = ChildObject.shared
     }
     
     override func didReceiveMemoryWarning()
@@ -57,7 +59,7 @@ extension ChildCreationVC {
         self.add = UIButton.designButton(button: self.add)
         self.end = UIButton.designButton(button: self.end)
         
-        if let user = self.user
+        if let user = self.userObject
         {
             if let lastname = user.lastname
             {
@@ -77,16 +79,14 @@ extension ChildCreationVC {
 extension ChildCreationVC {
     @IBAction func addChild(sender: UIButton)
     {
-        if let firstname = self.firstname.text, let lastname = self.lastname.text, let email = self.user.email, let sex = self.sex.text, let birthdate = self.birthdate.text, let uid = self.user.uid
+        if let firstname = self.firstname.text, let lastname = self.lastname.text, let sex = self.sex.text, let birthdate = self.birthdate.text
         {
             if  String().isNotEmptyNorNil(string: firstname) &&
                 String().isNotEmptyNorNil(string: lastname) &&
-                String().isNotEmptyNorNil(string: email) &&
                 String().isNotEmptyNorNil(string: sex) &&
-                String().isNotEmptyNorNil(string: birthdate) &&
-                String().isNotEmptyNorNil(string: uid)
+                String().isNotEmptyNorNil(string: birthdate)
             {
-                self.viewModel = ChildCreationVM.init(firstname: firstname, lastname: lastname, email: email, sex: sex, birthdate: birthdate, uid: uid, delegate: self)
+                self.viewModel = ChildCreationVM.init(firstname: firstname, lastname: lastname, birthdate: birthdate, sex: sex, userObject: self.userObject, delegate: self)
                 self.viewModel.createChild()
             }
             else
@@ -128,7 +128,7 @@ extension ChildCreationVC {
         if segue.identifier == "loadChildSelection"
         {
             let childSelection = segue.destination as! ChildSelectionVC
-            childSelection.user = self.user
+            childSelection.userObject = self.userObject
         }
     }
 }

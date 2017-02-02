@@ -26,7 +26,8 @@ class PasscodeVC: UIViewController {
     
     @IBOutlet weak var passcodeStackView: UIStackView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         passcodeContainerView = PasswordContainerView.create(in: passcodeStackView, digit: kPasswordDigit)
@@ -35,41 +36,14 @@ class PasscodeVC: UIViewController {
         //customize password UI
         passcodeContainerView.tintColor = UIColor.black
         passcodeContainerView.highlightedColor = UIColor.black
-    }
-}
-
-extension PasscodeVC: PasswordInputCompleteProtocol {
-    public func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: NSError?)
-    {
-        if success
+        if comingFrom == "accountCreation"
         {
-            self.validationSuccess()
+            passcodeContainerView.touchAuthenticationEnabled = false
         }
-        else
+        else if comingFrom == "gameMenu"
         {
-            passcodeContainerView.clearInput()
-        }
-    }
-
-    func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String)
-    {
-        if (comingFrom == "accountCreation")
-        {
-            self.userObject.lock = input
-            self.delegate.successCreation(userObject: self.userObject)
-            validationSuccess()
-        }
-        else if (comingFrom == "gameMenu")
-        {
-            if validation(input)
-            {
-                self.delegate.successSessionEnded()
-                validationSuccess()
-            }
-            else
-            {
-                validationFail()
-            }
+            passcodeContainerView.touchAuthenticationEnabled = true
+            passcodeContainerView.touchAuthenticationReason = NSLocalizedString("touch_id_required_end_session", comment: "Authentication is needed to prevent your child from ending his game session")
         }
     }
 }

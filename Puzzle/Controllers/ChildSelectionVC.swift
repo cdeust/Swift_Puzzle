@@ -12,11 +12,11 @@ import UIKit
 // MARK: iVars & Outlets
 
 class ChildSelectionVC: UIViewController {
-    var child: NSArray!
+    var children: NSArray!
     var activeField: UITextField!
-    var user: User!
     var userObject: UserObject!
-    var children: Children!
+    var childObject: ChildObject!
+    var child: Children!
     var viewModel: ChildSelectionVM!
     
     @IBOutlet weak var welcome: UILabel!
@@ -32,8 +32,9 @@ extension ChildSelectionVC {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         self.initView()
+        self.presentMenuWithUser(user: self.userObject)
         
-        self.presentMenuWithUser(user: self.user)
+        self.childObject = ChildObject.shared
     }
 
     override func didReceiveMemoryWarning()
@@ -54,16 +55,16 @@ extension ChildSelectionVC {
 // MARK: Dynamic design initialization
 
 extension ChildSelectionVC {
-    func presentMenuWithUser(user: User)
+    func presentMenuWithUser(user: UserObject)
     {
-        self.viewModel = ChildSelectionVM.init(user: self.user)
+        self.viewModel = ChildSelectionVM.init(userObject: self.userObject)
         self.welcome.text = self.viewModel.welcomeText
-        self.child = self.viewModel.getChildrenForPresentAccount()
+        self.children = self.viewModel.getChildrenForPresentAccount()
         
         var origin = 120
-        for i in 0..<child.count
+        for i in 0..<children.count
         {
-            let c = child[i] as! Children
+            let c = children[i] as! Children
             let btn = UIButton.createWithTitleTargetAction(title: c.firstname!, target: self, action: #selector(ChildSelectionVC.initializeMenuChildren(sender:)))
             btn.tag = i
             self.view.addSubview(btn)
@@ -71,18 +72,24 @@ extension ChildSelectionVC {
         }
         origin += 50
         
-        let addBtn = UIButton.createWithTitleTargetAction(title: "Add children", target: self, action: #selector(ChildSelectionVC.showChildCreation(sender:)))
+        let addBtn = UIButton.createWithTitleTargetAction(title: NSLocalizedString("add_children", comment: "Add children"), target: self, action: #selector(ChildSelectionVC.showChildCreation(sender:)))
         self.view.addSubview(addBtn)
         self.setConstraintsForUIElementWithParentView(element: addBtn, parentView: self.view, verticalAlign: "top")
         
-        let logoutBtn = UIButton.createWithTitleTargetAction(title: "Log out", target: self, action: #selector(ChildSelectionVC.showLogin(sender:)))
+        let logoutBtn = UIButton.createWithTitleTargetAction(title: NSLocalizedString("log_out", comment: "Log out"), target: self, action: #selector(ChildSelectionVC.showLogin(sender:)))
         self.view.addSubview(logoutBtn)
         self.setConstraintsForUIElementWithParentView(element: logoutBtn, parentView: self.view, verticalAlign: "bottom")
     }
     
     func initializeMenuChildren(sender: UIButton)
     {
-        self.children = child[sender.tag] as! Children
+        self.child = children[sender.tag] as! Children
+        self.childObject.firstname = self.child.firstname
+        self.childObject.lastname = self.child.lastname
+        self.childObject.birthdate = self.child.birthdate
+        self.childObject.sex = self.child.sex
+        self.childObject.email = self.userObject.email
+        self.childObject.uid = self.userObject.uid
         self.performSegue(withIdentifier: "loadGameMenu", sender: self)
     }
     
@@ -106,14 +113,13 @@ extension ChildSelectionVC {
         if segue.identifier == "loadGameMenu"
         {
             let gameMenu = segue.destination as! GameMenuVC
-            gameMenu.user = self.user
             gameMenu.userObject = self.userObject
-            gameMenu.child = self.children
+            gameMenu.childObject = self.childObject
         }
         if segue.identifier == "loadChildCreation"
         {
             let childCreation = segue.destination as! ChildCreationVC
-            childCreation.user = self.user
+            childCreation.userObject = self.userObject
         }
     }
 }

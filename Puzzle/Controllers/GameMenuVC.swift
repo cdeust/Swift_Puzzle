@@ -11,8 +11,7 @@ import UIKit
 
 class GameMenuVC: UIViewController {
     
-    var user: User!
-    var child: Children!
+    var childObject: ChildObject!
     var userObject: UserObject!
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -74,15 +73,4 @@ extension GameMenuVC {
         passcodeVC.delegate = self
         present(passcodeVC, animated: true, completion: nil)
     }
-}
-
-extension GameMenuVC: PasscodeVCDelegate {
-    func successSessionEnded()
-    {
-        guard let navigationController = self.navigationController else { return }
-        navigationController.popViewController(animated: true)
-    }
-    
-    func fail() { }
-    func successCreation(userObject: UserObject) { }
 }

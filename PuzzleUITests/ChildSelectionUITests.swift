@@ -58,6 +58,26 @@ class ChildSelectionUITests: XCTestCase {
         XCTAssert(app.buttons["Login"].exists)
     }
     
+    func testChildSelectionRandomChildSelection() {
+        let email = app.textFields.element(matching: .textField, identifier: "email")
+        email.tap()
+        email.typeText("test@integration.com")
+        email.typeText("\n")
+        
+        let password = app.secureTextFields.element(matching: .secureTextField, identifier: "password")
+        password.tap()
+        password.typeText("testme")
+        password.typeText("\n")
+        
+        app.buttons["Login"].tap()
+        app.buttons["Chloe"].tap()
+        
+        XCTAssert(app.buttons["Puzzle"].exists)
+        XCTAssert(app.buttons["Memory"].exists)
+        XCTAssert(app.buttons["Abc"].exists)
+        XCTAssert(app.buttons["Number"].exists)
+    }
+    
     override func tearDown() {
         super.tearDown()
     }

@@ -11,7 +11,7 @@ import UIKit
 
 class ChildSelectionVM: NSObject {
     private var _welcomeText: String!
-    private var _user: User!
+    private var _userObject: UserObject!
     
     var welcomeText: String {
         get {
@@ -22,20 +22,20 @@ class ChildSelectionVM: NSObject {
         }
     }
     
-    var user: User {
+    var userObject: UserObject {
         get {
-            return _user
+            return _userObject
         }
         set {
-            _user = newValue
+            _userObject = newValue
         }
     }
     
     
-    init(user: User)
+    init(userObject: UserObject)
     {
-        self._user = user
-        if let firstname = user.firstname
+        self._userObject = userObject
+        if let firstname = userObject.firstname
         {
             self._welcomeText = "Welcome \(firstname)!"
         }
@@ -46,7 +46,7 @@ class ChildSelectionVM: NSObject {
         let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         
-        if let uid = self.user.uid {
+        if let uid = self.userObject.uid {
             let results = Children.fetchChildrenWithUid(uid: uid, managedObjectContext: managedObjectContext)
             let children = NSMutableArray()
             if results.count > 0

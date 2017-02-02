@@ -11,7 +11,7 @@ import UIKit
 
 protocol AccountCreationVCDelegate
 {
-    func didSuccessfullyCreateAccount(user: User) -> Void
+    func didSuccessfullyCreateAccount() -> Void
     func didFailedToCreateAccount() -> Void
     func didSetLockCodeSuccessfully(lockCode: String)
 }
@@ -98,21 +98,19 @@ class AccountCreationVM: NSObject {
         }
     }
     
-    init(delegate:AccountCreationVCDelegate)
+    init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate: AccountCreationVCDelegate)
     {
-        self._delegate = delegate
-        self._errorText = ""
-    }
-    
-    init(userObject: UserObject, delegate:AccountCreationVCDelegate)
-    {
+        super.init()
+        
+        let userObject = self.instantiateUserObject(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock)
+        
         self._firstnameText = userObject.firstname
         self._lastnameText = userObject.lastname
         self._emailText = userObject.email
         self._passwordText = userObject.password
         self._lockText = userObject.lock
+        self._uidText = userObject.uid
         self._delegate = delegate
-        self._uidText = String().uid()
         
         self._errorText = ""
     }
@@ -138,13 +136,25 @@ class AccountCreationVM: NSObject {
         if (result.count > 0)
         {
             self.errorText = NSLocalizedString("created_account", comment: "Your account was successfully created !")
-            let user = result[0] as! User
-            self.delegate.didSuccessfullyCreateAccount(user: user)
+            self.delegate.didSuccessfullyCreateAccount()
         }
         else
         {
             self.errorText = NSLocalizedString("creation_failed", comment: "Your account failed to create !")
             self.delegate.didFailedToCreateAccount()
         }
+    }
+    
+    func instantiateUserObject(firstname: String, lastname: String, email: String, password: String, lock: String) -> UserObject
+    {
+        let userObject = UserObject.shared
+        userObject.firstname = firstname
+        userObject.lastname = lastname
+        userObject.email = email
+        userObject.password = password
+        userObject.lock = lock
+        userObject.uid = String().uid()
+        
+        return userObject
     }
 }

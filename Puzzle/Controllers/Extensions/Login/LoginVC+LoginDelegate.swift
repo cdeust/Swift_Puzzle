@@ -12,19 +12,13 @@ import UIKit
 // MARK: Delegate methods
 
 extension LoginVC: LoginVCDelegate {
-    func didSuccessfullyLogin(user: User) -> Void
+    func didSuccessfullyLogin(userObject: UserObject) -> Void
     {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForSuccess()
         
-        self.user = user;
-        
         self.userObject = UserObject.shared
-        self.userObject.email = user.email
-        self.userObject.firstname = user.firstname
-        self.userObject.lastname = user.lastname
-        self.userObject.password = user.password
-        self.userObject.lock = user.lock
+        self.userObject = userObject;
         
         self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor

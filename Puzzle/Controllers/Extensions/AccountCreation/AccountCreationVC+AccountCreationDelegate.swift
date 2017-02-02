@@ -10,12 +10,10 @@ import Foundation
 import UIKit
 
 extension AccountCreationVC: AccountCreationVCDelegate {
-    func didSuccessfullyCreateAccount(user: User)
+    func didSuccessfullyCreateAccount()
     {
         self.error.text = self.viewModel.errorText;
         self.error.textColor = UIColor.getColorForSuccess()
-        
-        self.user = user;
         
         self.firstname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor
         self.lastname.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor

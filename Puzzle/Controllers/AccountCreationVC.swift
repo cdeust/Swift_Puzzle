@@ -39,11 +39,10 @@ extension AccountCreationVC {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-        self.userObject = UserObject.shared
-        
         self.initView()
-        
         self.registerForKeyboardNotifications()
+        
+        self.userObject = UserObject.shared
     }
     
     override func didReceiveMemoryWarning()
@@ -91,12 +90,7 @@ extension AccountCreationVC {
                 String().isNotEmptyNorNil(string: password) == true &&
                 String().isNotEmptyNorNil(string: lock) == true
             {
-                self.userObject.firstname = firstname
-                self.userObject.lastname = lastname
-                self.userObject.email = email
-                self.userObject.password = password
-                self.userObject.lock = lock
-                self.viewModel = AccountCreationVM.init(userObject: self.userObject, delegate: self)
+                self.viewModel = AccountCreationVM.init(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self)
                 self.viewModel.createAccount()
             }
             else
@@ -132,22 +126,6 @@ extension AccountCreationVC {
     }
 }
 
-extension AccountCreationVC: PasscodeVCDelegate {
-    func successCreation(userObject: UserObject)
-    {
-        if self.userObject.lock != nil
-        {
-            self.lock.text = userObject.lock
-        }
-    }
-
-    func fail() {
-        self.lock.text = ""
-    }
-    
-    func successSessionEnded() { }
-}
-
 // MARK: Navigation
 
 extension AccountCreationVC {
@@ -156,7 +134,7 @@ extension AccountCreationVC {
         if segue.identifier == "loadChildCreation"
         {
             let childCreation = segue.destination as! ChildCreationVC
-            childCreation.user = self.user
+            childCreation.userObject = self.userObject
         }
     }
 }

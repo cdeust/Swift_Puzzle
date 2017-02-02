@@ -15,6 +15,7 @@ class UserObject {
     private var _email: String?
     private var _password: String?
     private var _lock: String?
+    private var _uid: String?
     
     var firstname: String? {
         get {
@@ -58,6 +59,15 @@ class UserObject {
         }
         set {
             _lock = newValue
+        }
+    }
+    
+    var uid: String? {
+        get {
+            return _uid
+        }
+        set {
+            _uid = newValue
         }
     }
     

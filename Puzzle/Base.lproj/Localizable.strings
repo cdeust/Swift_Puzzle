@@ -16,10 +16,17 @@
 "logged_in" = "You're connected !";
 "failed_to_login" = "Email or password mismatched.";
 
-//Register
+//Account creation
 "created_account" = "Your account was successfully created !";
 "creation_failed" = "Your account failed to create !";
 
-//Child
+//Child creation
 "children_added" = "Your child was successfully added to your account !";
 "children_failed_adding" = "Your child was not added due to an error.";
+
+//Child selection
+"add_children" = "Add children";
+"log_out" = "Log out";
+
+//Passcode
+"touch_id_required_end_session" = "Authentication is needed to prevent your child from ending his game session";

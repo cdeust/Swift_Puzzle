@@ -14,6 +14,8 @@ class ChildObject {
     private var _lastname: String?
     private var _birthdate: String?
     private var _sex: String?
+    private var _email: String?
+    private var _uid: String?
     
     var firstname: String? {
         get {
@@ -48,6 +50,24 @@ class ChildObject {
         }
         set {
             _sex = newValue
+        }
+    }
+    
+    var email: String? {
+        get {
+            return _email
+        }
+        set {
+            _email = newValue
+        }
+    }
+    
+    var uid: String? {
+        get {
+            return _uid
+        }
+        set {
+            _uid = newValue
         }
     }
     

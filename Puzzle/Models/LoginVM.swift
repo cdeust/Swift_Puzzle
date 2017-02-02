@@ -11,7 +11,7 @@ import UIKit
 
 protocol LoginVCDelegate
 {
-    func didSuccessfullyLogin(user: User) -> Void
+    func didSuccessfullyLogin(userObject: UserObject) -> Void
     func didFailedToLogin() -> Void
 }
 
@@ -90,12 +90,26 @@ class LoginVM: NSObject {
             self.errorText = NSLocalizedString("logged_in", comment:"You're connected !")
             
             let user: User = result[0] as! User
-            self.delegate.didSuccessfullyLogin(user: user)
+            let userObject = self.instantiateUserObject(user: user)
+            self.delegate.didSuccessfullyLogin(userObject: userObject)
         }
         else
         {
             self.errorText = NSLocalizedString("failed_to_login", comment:"Email or password mismatched.")
             self.delegate.didFailedToLogin()
         }
+    }
+    
+    func instantiateUserObject(user: User) -> UserObject
+    {
+        let userObject = UserObject.shared
+        userObject.firstname = user.firstname
+        userObject.lastname = user.lastname
+        userObject.email = user.email
+        userObject.password = user.password
+        userObject.lock = user.lock
+        userObject.uid = user.uid
+        
+        return userObject
     }
 }

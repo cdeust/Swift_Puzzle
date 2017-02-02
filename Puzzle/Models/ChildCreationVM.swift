@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ChildCreationVCDelegate {
-    func didSuccessfullyCreateAccount(user: Children)
+    func didSuccessfullyCreateAccount()
     func didFailToCreateAccount()
 }
 
@@ -96,15 +96,20 @@ class ChildCreationVM: NSObject {
         }
     }
     
-    init(firstname: String, lastname: String, email: String, sex: String, birthdate: String, uid: String, delegate: ChildCreationVCDelegate)
+    init(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject, delegate: ChildCreationVCDelegate)
     {
-        self._firstnameText = firstname
-        self._lastnameText = lastname
-        self._emailText = email
-        self._sexText = sex
-        self._birthdateText = birthdate
-        self._uidText = uid
+        super.init()
+        
+        let childObject = self.instantiateChildObject(firstname: firstname, lastname: lastname, birthdate: birthdate, sex: sex, userObject: userObject)
+        self._firstnameText = childObject.firstname
+        self._lastnameText = childObject.lastname
+        self._emailText = childObject.email
+        self._sexText = childObject.sex
+        self._birthdateText = childObject.birthdate
+        self._uidText = childObject.uid
         self._delegate = delegate
+        
+        self.errorText = ""
     }
     
     func createChild()
@@ -127,15 +132,26 @@ class ChildCreationVM: NSObject {
         
         if results.count > 0
         {
-            self.errorText = NSLocalizedString("children_added", comment: "Your children was successfully added to your account !")
-            
-            let user = results[0] as! Children
-            self.delegate.didSuccessfullyCreateAccount(user: user)
+            self.errorText = NSLocalizedString("children_added", comment: "Your child was successfully added to your account !")
+            self.delegate.didSuccessfullyCreateAccount()
         }
         else
         {
-            self.errorText = NSLocalizedString("children_failed_adding", comment: "Your children was not added due to error")
+            self.errorText = NSLocalizedString("children_failed_adding", comment: "Your child was not added due to error")
             self.delegate.didFailToCreateAccount()
         }
+    }
+    
+    func instantiateChildObject(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject) -> ChildObject
+    {
+        let childObject = ChildObject.shared
+        childObject.firstname = firstname
+        childObject.lastname = lastname
+        childObject.birthdate = birthdate
+        childObject.sex = sex
+        childObject.email = userObject.email
+        childObject.uid = userObject.uid
+        
+        return childObject
     }
 }
