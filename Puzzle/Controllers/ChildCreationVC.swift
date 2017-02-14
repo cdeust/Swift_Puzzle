@@ -14,7 +14,6 @@ import UIKit
 class ChildCreationVC: UIViewController {
     var activeField: UITextField!
     var userObject: UserObject!
-    var childObject: ChildObject!
     var viewModel: ChildCreationVM!
 
     @IBOutlet weak var birthdate: UITextField!
@@ -37,8 +36,6 @@ extension ChildCreationVC {
         
         self.initView()
         self.registerForKeyboardNotifications()
-        
-        self.childObject = ChildObject.shared
     }
     
     override func didReceiveMemoryWarning()

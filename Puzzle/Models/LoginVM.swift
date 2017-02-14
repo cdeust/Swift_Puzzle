@@ -21,6 +21,7 @@ class LoginVM: NSObject {
     private var _errorText: String!
     private var _createText: String!
     private var _delegate: LoginVCDelegate!
+    private var _userObject: UserObject!
     
     var loginText: String {
         get {
@@ -67,6 +68,15 @@ class LoginVM: NSObject {
         }
     }
     
+    var userObject: UserObject {
+        get {
+            return _userObject
+        }
+        set {
+            _userObject = newValue
+        }
+    }
+    
     init(delegate:LoginVCDelegate)
     {
         self._delegate = delegate
@@ -90,8 +100,8 @@ class LoginVM: NSObject {
             self.errorText = NSLocalizedString("logged_in", comment:"You're connected !")
             
             let user: User = result[0] as! User
-            let userObject = self.instantiateUserObject(user: user)
-            self.delegate.didSuccessfullyLogin(userObject: userObject)
+            self._userObject = self.instantiateUserObject(user: user)
+            self.delegate.didSuccessfullyLogin(userObject: self.userObject)
         }
         else
         {
@@ -102,13 +112,7 @@ class LoginVM: NSObject {
     
     func instantiateUserObject(user: User) -> UserObject
     {
-        let userObject = UserObject.shared
-        userObject.firstname = user.firstname
-        userObject.lastname = user.lastname
-        userObject.email = user.email
-        userObject.password = user.password
-        userObject.lock = user.lock
-        userObject.uid = user.uid
+        let userObject = UserObject(firstname: user.firstname!, lastname: user.lastname!, email: user.email!, password: user.password!, uid: user.uid!, role: Role.parent, lock: user.lock!)
         
         return userObject
     }

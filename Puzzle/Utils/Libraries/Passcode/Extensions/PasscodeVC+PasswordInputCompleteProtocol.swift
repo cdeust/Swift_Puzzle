@@ -31,8 +31,7 @@ extension PasscodeVC: PasswordInputCompleteProtocol {
     {
         if (comingFrom == "accountCreation")
         {
-            self.userObject.lock = input
-            self.delegate.successCreation(userObject: self.userObject)
+            self.delegate.successCreation(lock: input)
             validationSuccess()
         }
         else if (comingFrom == "gameMenu")

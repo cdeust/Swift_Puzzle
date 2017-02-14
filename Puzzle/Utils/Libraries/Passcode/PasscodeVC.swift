@@ -11,7 +11,7 @@ import UIKit
 import SmileLock
 
 protocol PasscodeVCDelegate {
-    func successCreation(userObject: UserObject)
+    func successCreation(lock: String)
     func successSessionEnded()
     func fail()
 }

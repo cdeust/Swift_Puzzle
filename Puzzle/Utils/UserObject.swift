@@ -8,14 +8,15 @@
 
 import Foundation
 
-class UserObject {
+struct UserObject {
     
     private var _firstname: String?
     private var _lastname: String?
     private var _email: String?
     private var _password: String?
-    private var _lock: String?
     private var _uid: String?
+    private var _role: Role?
+    private var _lock: String?
     
     var firstname: String? {
         get {
@@ -53,15 +54,6 @@ class UserObject {
         }
     }
     
-    var lock: String? {
-        get {
-            return _lock
-        }
-        set {
-            _lock = newValue
-        }
-    }
-    
     var uid: String? {
         get {
             return _uid
@@ -71,7 +63,31 @@ class UserObject {
         }
     }
     
-    static let shared = UserObject()
+    var role: Role? {
+        get {
+            return _role
+        }
+        set {
+            _role = newValue
+        }
+    }
     
-    private init() {}
+    var lock: String?  {
+        get {
+            return _lock
+        }
+        set {
+            _lock = newValue
+        }
+    }
+    
+    init(firstname: String, lastname: String, email: String, password: String, uid: String, role: Role, lock: String) {
+        _firstname = firstname
+        _lastname = lastname
+        _email = email
+        _password = password
+        _uid = uid
+        _role = role
+        _lock = lock
+    }
 }

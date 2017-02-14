@@ -8,14 +8,16 @@
 
 import Foundation
 
-class ChildObject {
+struct ChildObject {
     
     private var _firstname: String?
     private var _lastname: String?
-    private var _birthdate: String?
-    private var _sex: String?
     private var _email: String?
+    private var _password: String?
     private var _uid: String?
+    private var _role: Role?
+    private var _sex: String?
+    private var _birthdate: String?
     
     var firstname: String? {
         get {
@@ -35,30 +37,21 @@ class ChildObject {
         }
     }
     
-    var birthdate: String? {
-        get {
-            return _birthdate
-        }
-        set {
-            _birthdate = newValue
-        }
-    }
-    
-    var sex: String? {
-        get {
-            return _sex
-        }
-        set {
-            _sex = newValue
-        }
-    }
-    
     var email: String? {
         get {
             return _email
         }
         set {
             _email = newValue
+        }
+    }
+    
+    var password: String? {
+        get {
+            return _password
+        }
+        set {
+            _password = newValue
         }
     }
     
@@ -71,7 +64,41 @@ class ChildObject {
         }
     }
     
-    static let shared = ChildObject()
+    var role: Role? {
+        get {
+            return _role
+        }
+        set {
+            _role = newValue
+        }
+    }
+    
+    var sex: String? {
+        get {
+            return _sex
+        }
+        set {
+            _sex = newValue
+        }
+    }
+    
+    var birthdate: String? {
+        get {
+            return _birthdate
+        }
+        set {
+            _birthdate = newValue
+        }
+    }
 
-    private init() {}
+    init(firstname: String, lastname: String, email: String, password: String, uid: String, role: Role, sex: String, birthdate: String) {
+        _firstname = firstname
+        _lastname = lastname
+        _email = email
+        _password = password
+        _uid = uid
+        _role = role
+        _sex = sex
+        _birthdate = birthdate
+    }
 }

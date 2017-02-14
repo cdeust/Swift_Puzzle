@@ -10,12 +10,9 @@ import Foundation
 import UIKit
 
 extension AccountCreationVC: PasscodeVCDelegate {
-    func successCreation(userObject: UserObject)
+    func successCreation(lock: String)
     {
-        if self.userObject.lock != nil
-        {
-            self.lock.text = userObject.lock
-        }
+        self.lock.text = lock
     }
     
     func fail()

@@ -11,7 +11,7 @@ import UIKit
 
 protocol AccountCreationVCDelegate
 {
-    func didSuccessfullyCreateAccount() -> Void
+    func didSuccessfullyCreateAccount(userObject: UserObject) -> Void
     func didFailedToCreateAccount() -> Void
     func didSetLockCodeSuccessfully(lockCode: String)
 }
@@ -25,6 +25,7 @@ class AccountCreationVM: NSObject {
     private var _uidText: String!
     private var _errorText: String!
     private var _delegate: AccountCreationVCDelegate!
+    private var _userObject: UserObject!
     
     var firstnameText: String {
         get {
@@ -98,12 +99,20 @@ class AccountCreationVM: NSObject {
         }
     }
     
+    var userObject: UserObject {
+        get {
+            return _userObject
+        }
+        set {
+            _userObject = newValue
+        }
+    }
+    
     init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate: AccountCreationVCDelegate)
     {
         super.init()
         
-        let userObject = self.instantiateUserObject(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock)
-        
+        self._userObject = self.instantiateUserObject(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock)
         self._firstnameText = userObject.firstname
         self._lastnameText = userObject.lastname
         self._emailText = userObject.email
@@ -136,7 +145,7 @@ class AccountCreationVM: NSObject {
         if (result.count > 0)
         {
             self.errorText = NSLocalizedString("created_account", comment: "Your account was successfully created !")
-            self.delegate.didSuccessfullyCreateAccount()
+            self.delegate.didSuccessfullyCreateAccount(userObject: userObject)
         }
         else
         {
@@ -147,13 +156,7 @@ class AccountCreationVM: NSObject {
     
     func instantiateUserObject(firstname: String, lastname: String, email: String, password: String, lock: String) -> UserObject
     {
-        let userObject = UserObject.shared
-        userObject.firstname = firstname
-        userObject.lastname = lastname
-        userObject.email = email
-        userObject.password = password
-        userObject.lock = lock
-        userObject.uid = String().uid()
+        let userObject = UserObject(firstname: firstname, lastname: lastname, email: email, password: password, uid: String().uid(), role: Role.parent, lock: lock)
         
         return userObject
     }

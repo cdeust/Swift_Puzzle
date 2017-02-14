@@ -41,8 +41,6 @@ extension AccountCreationVC {
         
         self.initView()
         self.registerForKeyboardNotifications()
-        
-        self.userObject = UserObject.shared
     }
     
     override func didReceiveMemoryWarning()

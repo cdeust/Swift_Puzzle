@@ -17,5 +17,5 @@ extension GameMenuVC: PasscodeVCDelegate {
     }
     
     func fail() { }
-    func successCreation(userObject: UserObject) { }
+    func successCreation(lock: String) { }
 }

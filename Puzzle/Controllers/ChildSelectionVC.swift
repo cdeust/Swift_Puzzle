@@ -33,8 +33,6 @@ extension ChildSelectionVC {
         
         self.initView()
         self.presentMenuWithUser(user: self.userObject)
-        
-        self.childObject = ChildObject.shared
     }
 
     override func didReceiveMemoryWarning()
@@ -69,8 +67,9 @@ extension ChildSelectionVC {
             btn.tag = i
             self.view.addSubview(btn)
             self.setConstraintsForUIElementWithParentView(element: btn, parentView: self.view, verticalValue: origin)
+            
+            origin += 50
         }
-        origin += 50
         
         let addBtn = UIButton.createWithTitleTargetAction(title: NSLocalizedString("add_children", comment: "Add children"), target: self, action: #selector(ChildSelectionVC.showChildCreation(sender:)))
         self.view.addSubview(addBtn)
@@ -84,12 +83,8 @@ extension ChildSelectionVC {
     func initializeMenuChildren(sender: UIButton)
     {
         self.child = children[sender.tag] as! Children
-        self.childObject.firstname = self.child.firstname
-        self.childObject.lastname = self.child.lastname
-        self.childObject.birthdate = self.child.birthdate
-        self.childObject.sex = self.child.sex
-        self.childObject.email = self.userObject.email
-        self.childObject.uid = self.userObject.uid
+        self.childObject = self.viewModel.instantiateChildren(child: self.child, userObject: self.userObject)
+        
         self.performSegue(withIdentifier: "loadGameMenu", sender: self)
     }
     

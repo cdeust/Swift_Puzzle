@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 
 extension AccountCreationVC: AccountCreationVCDelegate {
-    func didSuccessfullyCreateAccount()
+    func didSuccessfullyCreateAccount(userObject: UserObject)
     {
+        self.userObject = userObject
+        
         self.error.text = self.viewModel.errorText;
         self.error.textColor = UIColor.getColorForSuccess()
         

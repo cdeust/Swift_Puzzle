@@ -17,7 +17,6 @@ extension LoginVC: LoginVCDelegate {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForSuccess()
         
-        self.userObject = UserObject.shared
         self.userObject = userObject;
         
         self.email.layer.borderColor = UIColor.designTextfieldWithOkColor().cgColor

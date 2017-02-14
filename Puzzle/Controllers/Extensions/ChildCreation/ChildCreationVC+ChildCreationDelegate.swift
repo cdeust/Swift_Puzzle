@@ -10,14 +10,14 @@ import Foundation
 import UIKit
 
 extension ChildCreationVC: ChildCreationVCDelegate {
-    func didSuccessfullyCreateAccount()
+    func didSuccessfullyCreateAccount(childObject: ChildObject)
     {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForSuccess()
         
         self.birthdate.text = ""
         self.firstname.text = ""
-        self.lastname.text = self.userObject.lastname
+        self.lastname.text = childObject.lastname
         self.sex.text = ""
         
         self.firstname.becomeFirstResponder()

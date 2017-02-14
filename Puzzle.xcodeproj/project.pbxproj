@@ -50,6 +50,7 @@
 		B1D05AD31E36BADD00AB0D87 /* AccountCreationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05AD21E36BADD00AB0D87 /* AccountCreationVC.swift */; };
 		B1D05AF81E36C5E400AB0D87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */; };
 		B1D05AFB1E36CC0A00AB0D87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1D05AF91E36CC0A00AB0D87 /* Localizable.strings */; };
+		B1E8A8C41E52890F00115B52 /* EnumObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E8A8C31E52890F00115B52 /* EnumObject.swift */; };
 		B3380680E7BA085A56A2207F /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */; };
 		B410F6B41E4206B700598D36 /* GameMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6B31E4206B700598D36 /* GameMenuVC.swift */; };
 		B410F6B61E420E1F00598D36 /* ChildObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6B51E420E1F00598D36 /* ChildObject.swift */; };
@@ -138,6 +139,7 @@
 		B1D05AD21E36BADD00AB0D87 /* AccountCreationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVC.swift; path = Puzzle/Controllers/AccountCreationVC.swift; sourceTree = "<group>"; };
 		B1D05AF71E36C5E400AB0D87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Puzzle/Assets.xcassets; sourceTree = "<group>"; };
 		B1D05AFA1E36CC0A00AB0D87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Puzzle/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1E8A8C31E52890F00115B52 /* EnumObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumObject.swift; path = Puzzle/Utils/EnumObject.swift; sourceTree = "<group>"; };
 		B410F6B31E4206B700598D36 /* GameMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameMenuVC.swift; path = Puzzle/Controllers/GameMenuVC.swift; sourceTree = "<group>"; };
 		B410F6B51E420E1F00598D36 /* ChildObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildObject.swift; path = Puzzle/Utils/ChildObject.swift; sourceTree = "<group>"; };
 		B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+PasscodeDelegate.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+PasscodeDelegate.swift"; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 				B1D05A701E36A6E000AB0D87 /* Extensions */,
 				B1673D391E41445A004600AB /* UserObject.swift */,
 				B410F6B51E420E1F00598D36 /* ChildObject.swift */,
+				B1E8A8C31E52890F00115B52 /* EnumObject.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */,
 				B1673D2E1E3CF0C9004600AB /* UITextField+Design.swift in Sources */,
 				B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */,
+				B1E8A8C41E52890F00115B52 /* EnumObject.swift in Sources */,
 				B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift in Sources */,
 				B1673D121E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift in Sources */,
 				B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */,

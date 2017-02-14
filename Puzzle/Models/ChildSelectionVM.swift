@@ -34,8 +34,10 @@ class ChildSelectionVM: NSObject {
     
     init(userObject: UserObject)
     {
+        super.init()
+        
         self._userObject = userObject
-        if let firstname = userObject.firstname
+        if let firstname  = self.userObject.firstname
         {
             self._welcomeText = "Welcome \(firstname)!"
         }
@@ -59,5 +61,11 @@ class ChildSelectionVM: NSObject {
             return children
         }
         return NSMutableArray()
+    }
+    
+    func instantiateChildren(child: Children, userObject: UserObject) -> ChildObject {
+        let childObject = ChildObject(firstname: child.firstname!, lastname: child.lastname!, email: userObject.email!, password: userObject.password!, uid: userObject.uid!, role: Role.child, sex: child.sex!, birthdate: child.birthdate!)
+        
+        return childObject
     }
 }

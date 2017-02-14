@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ChildCreationVCDelegate {
-    func didSuccessfullyCreateAccount()
+    func didSuccessfullyCreateAccount(childObject: ChildObject)
     func didFailToCreateAccount()
 }
 
@@ -23,6 +23,7 @@ class ChildCreationVM: NSObject {
     private var _uidText: String!
     private var _errorText: String!
     private var _delegate: ChildCreationVCDelegate!
+    private var _childObject: ChildObject!
     
     var birthdateText: String {
         get {
@@ -96,11 +97,20 @@ class ChildCreationVM: NSObject {
         }
     }
     
+    var childObject: ChildObject {
+        get {
+            return _childObject
+        }
+        set {
+            _childObject = newValue
+        }
+    }
+    
     init(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject, delegate: ChildCreationVCDelegate)
     {
         super.init()
         
-        let childObject = self.instantiateChildObject(firstname: firstname, lastname: lastname, birthdate: birthdate, sex: sex, userObject: userObject)
+        self._childObject = self.instantiateChildObject(firstname: firstname, lastname: lastname, birthdate: birthdate, sex: sex, userObject: userObject)
         self._firstnameText = childObject.firstname
         self._lastnameText = childObject.lastname
         self._emailText = childObject.email
@@ -133,7 +143,7 @@ class ChildCreationVM: NSObject {
         if results.count > 0
         {
             self.errorText = NSLocalizedString("children_added", comment: "Your child was successfully added to your account !")
-            self.delegate.didSuccessfullyCreateAccount()
+            self.delegate.didSuccessfullyCreateAccount(childObject: self.childObject)
         }
         else
         {
@@ -144,13 +154,7 @@ class ChildCreationVM: NSObject {
     
     func instantiateChildObject(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject) -> ChildObject
     {
-        let childObject = ChildObject.shared
-        childObject.firstname = firstname
-        childObject.lastname = lastname
-        childObject.birthdate = birthdate
-        childObject.sex = sex
-        childObject.email = userObject.email
-        childObject.uid = userObject.uid
+        let childObject = ChildObject(firstname: firstname, lastname: lastname, email: userObject.email!, password: userObject.password!, uid: userObject.uid!, role: Role.child, sex: sex, birthdate: birthdate)
         
         return childObject
     }
