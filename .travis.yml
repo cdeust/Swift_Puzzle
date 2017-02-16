@@ -1,5 +1,4 @@
 language: objective-c
-before_install:
-    - brew update
-    - brew install xctool
-script: xctool -workspace Puzzle.xcworkspace -scheme Puzzle test
+xcode_workspace: Puzzle.xcworkspace
+xcode_scheme: PuzzleTests
+osx_image: xcode8.2
