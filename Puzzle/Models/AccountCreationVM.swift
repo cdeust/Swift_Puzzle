@@ -145,7 +145,7 @@ class AccountCreationVM: NSObject {
         if (result.count > 0)
         {
             self.errorText = NSLocalizedString("created_account", comment: "Your account was successfully created !")
-            self.delegate.didSuccessfullyCreateAccount(userObject: userObject)
+            self.delegate.didSuccessfullyCreateAccount(userObject: self.userObject)
         }
         else
         {
