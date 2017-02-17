@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8DDE6A06D8267105746C7E050C1B8CB9"
-               BuildableName = "SmileLock.framework"
-               BlueprintName = "SmileLock"
+               BlueprintIdentifier = "2A8D177310752E02502CAC3AB95FB8C5"
+               BuildableName = "Pods_PuzzleTests.framework"
+               BlueprintName = "Pods-PuzzleTests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,9 +56,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F33ABF592A20F16E45B8503EC7A61B4E"
-               BuildableName = "XCTest_Gherkin.framework"
-               BlueprintName = "XCTest-Gherkin"
+               BlueprintIdentifier = "D74C2A933716D64ECA3BB7AD6B30FF8F"
+               BuildableName = "Pods_PuzzleUITests.framework"
+               BlueprintName = "Pods-PuzzleUITests"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
