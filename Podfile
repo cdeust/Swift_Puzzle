@@ -12,7 +12,7 @@ target 'Puzzle' do
     inherit! :search_paths
     # Pods for testing
        pod 'XCTest-Gherkin'
-       pod 'XCTest-Gherkin/Native'
+       pod 'XCTest-Gherkin/Native', '~> 0.9.0'
   end
 
   target 'PuzzleUITests' do
