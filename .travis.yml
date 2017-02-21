@@ -2,7 +2,7 @@ language: objective-c
 
 osx_image: xcode8.2
 xcode_workspace: Puzzle.xcworkspace
-xcode_scheme: PuzzleTests
+xcode_scheme: Puzzle
 xcode_sdk: iphonesimulator10.1
 
 before_install:
