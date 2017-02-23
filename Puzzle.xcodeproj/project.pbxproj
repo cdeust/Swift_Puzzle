@@ -31,7 +31,7 @@
 		B1673D371E3CF0FE004600AB /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */; };
 		B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D351E3CF0FE004600AB /* String+Uid.swift */; };
 		B1673D3A1E41445A004600AB /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D391E41445A004600AB /* UserObject.swift */; };
-		B17C059B1E5F4B7100721FF6 /* AccountVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */; };
+		B17C059B1E5F4B7100721FF6 /* AccountCreationVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059A1E5F4B7100721FF6 /* AccountCreationVMProtocol.swift */; };
 		B17C059D1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059C1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift */; };
 		B17C059F1E5F55DB00721FF6 /* LoginVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */; };
 		B17C05A11E5F560500721FF6 /* LoginVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A01E5F560500721FF6 /* LoginVCProtocol.swift */; };
@@ -128,7 +128,7 @@
 		B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B1673D351E3CF0FE004600AB /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String/String+Uid.swift"; sourceTree = "<group>"; };
 		B1673D391E41445A004600AB /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserObject.swift; path = Puzzle/Utils/UserObject.swift; sourceTree = "<group>"; };
-		B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountVMProtocol.swift; path = Puzzle/Models/AccountVMProtocol.swift; sourceTree = "<group>"; };
+		B17C059A1E5F4B7100721FF6 /* AccountCreationVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVMProtocol.swift; path = Puzzle/Models/AccountCreationVMProtocol.swift; sourceTree = "<group>"; };
 		B17C059C1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVCProtocol.swift; path = Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVCProtocol.swift; sourceTree = "<group>"; };
 		B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVMProtocol.swift; path = Puzzle/Models/LoginVMProtocol.swift; sourceTree = "<group>"; };
 		B17C05A01E5F560500721FF6 /* LoginVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVCProtocol.swift; path = Puzzle/Controllers/Extensions/Login/LoginVCProtocol.swift; sourceTree = "<group>"; };
@@ -409,7 +409,7 @@
 		B1D05A6E1E36A6BB00AB0D87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */,
+				B17C059A1E5F4B7100721FF6 /* AccountCreationVMProtocol.swift */,
 				B1D05ACA1E36BAC700AB0D87 /* AccountCreationVM.swift */,
 				B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */,
 				B1D05A841E36A73400AB0D87 /* LoginVM.swift */,
@@ -905,7 +905,7 @@
 				B410F6B41E4206B700598D36 /* GameMenuVC.swift in Sources */,
 				B1673D251E3CF091004600AB /* UIButton+Design.swift in Sources */,
 				B1D05A8D1E36A73D00AB0D87 /* Children+Properties.swift in Sources */,
-				B17C059B1E5F4B7100721FF6 /* AccountVMProtocol.swift in Sources */,
+				B17C059B1E5F4B7100721FF6 /* AccountCreationVMProtocol.swift in Sources */,
 				B1D05A7F1E36A72800AB0D87 /* Puzzle.xcdatamodeld in Sources */,
 				B410F6B61E420E1F00598D36 /* ChildObject.swift in Sources */,
 				B1673D191E3CC88A004600AB /* LoginVC+KeyboardNotification.swift in Sources */,
