@@ -9,19 +9,13 @@
 import Foundation
 import UIKit
 
-protocol LoginVCDelegate
-{
-    func didSuccessfullyLogin(userObject: UserObject) -> Void
-    func didFailedToLogin() -> Void
-}
-
-class LoginVM: NSObject {
-    private var _loginText: String!
-    private var _passwordText: String!
-    private var _errorText: String!
-    private var _createText: String!
-    private var _delegate: LoginVCDelegate!
-    private var _userObject: UserObject!
+class LoginVM: LoginVMProtocol {
+    internal var _loginText: String!
+    internal var _passwordText: String!
+    internal var _errorText: String!
+    internal var _createText: String!
+    internal var _delegate: LoginVCProtocol!
+    internal var _userObject: UserObject!
     
     var loginText: String {
         get {
@@ -77,12 +71,12 @@ class LoginVM: NSObject {
         }
     }
     
-    init(delegate:LoginVCDelegate)
+    required init(delegate:LoginVCProtocol)
     {
         self._delegate = delegate
     }
     
-    init(email: String, password: String, delegate: LoginVCDelegate)
+    required init(email: String, password: String, delegate: LoginVCProtocol)
     {
         self._loginText = email
         self._passwordText = password

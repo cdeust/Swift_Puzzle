@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension AccountCreationVC: PasscodeVCDelegate {
+extension AccountCreationVC: PasscodeVCProtocol {
     func successCreation(lock: String)
     {
         self.lock.text = lock

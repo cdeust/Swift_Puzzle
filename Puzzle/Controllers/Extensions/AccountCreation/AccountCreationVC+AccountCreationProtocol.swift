@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension AccountCreationVC: AccountCreationVCDelegate {
+extension AccountCreationVC: AccountCreationVCProtocol {
     func didSuccessfullyCreateAccount(userObject: UserObject)
     {
         self.userObject = userObject

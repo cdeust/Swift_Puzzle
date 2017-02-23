@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		814A182F2C3DA19B235589E6 /* Pods_PuzzleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD062B87F60170F3BBF6C2 /* Pods_PuzzleUITests.framework */; };
 		9A8637A94D21498BC7E280AC /* Pods_Puzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24BE8BE35716B54E82453D /* Pods_Puzzle.framework */; };
-		B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift */; };
+		B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationProtocol.swift */; };
 		B1673D0B1E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D081E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift */; };
 		B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D091E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift */; };
 		B1673D0E1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D0D1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift */; };
 		B1673D121E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D0F1E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift */; };
 		B1673D131E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D101E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift */; };
 		B1673D141E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D111E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift */; };
-		B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D151E3CC88A004600AB /* LoginVC+LoginDelegate.swift */; };
+		B1673D181E3CC88A004600AB /* LoginVC+LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D151E3CC88A004600AB /* LoginVC+LoginProtocol.swift */; };
 		B1673D191E3CC88A004600AB /* LoginVC+KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D161E3CC88A004600AB /* LoginVC+KeyboardNotification.swift */; };
 		B1673D1A1E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D171E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift */; };
 		B1673D251E3CF091004600AB /* UIButton+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D231E3CF091004600AB /* UIButton+Design.swift */; };
@@ -31,6 +31,14 @@
 		B1673D371E3CF0FE004600AB /* String+VisualFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */; };
 		B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D351E3CF0FE004600AB /* String+Uid.swift */; };
 		B1673D3A1E41445A004600AB /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1673D391E41445A004600AB /* UserObject.swift */; };
+		B17C059B1E5F4B7100721FF6 /* AccountVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */; };
+		B17C059D1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059C1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift */; };
+		B17C059F1E5F55DB00721FF6 /* LoginVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */; };
+		B17C05A11E5F560500721FF6 /* LoginVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A01E5F560500721FF6 /* LoginVCProtocol.swift */; };
+		B17C05A31E5F580400721FF6 /* ChildSelectionVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A21E5F580400721FF6 /* ChildSelectionVMProtocol.swift */; };
+		B17C05A51E5F590400721FF6 /* ChildCreationVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A41E5F590400721FF6 /* ChildCreationVCProtocol.swift */; };
+		B17C05A71E5F599200721FF6 /* ChildCreationVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A61E5F599200721FF6 /* ChildCreationVMProtocol.swift */; };
+		B17C05A91E5F5A9300721FF6 /* PasscodeVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A81E5F5A9300721FF6 /* PasscodeVCProtocol.swift */; };
 		B1D05A551E36953500AB0D87 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A541E36953500AB0D87 /* Login.swift */; };
 		B1D05A571E36953C00AB0D87 /* AccountCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A561E36953C00AB0D87 /* AccountCreation.swift */; };
 		B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A581E36956D00AB0D87 /* LoginSteps.swift */; };
@@ -54,8 +62,8 @@
 		B3380680E7BA085A56A2207F /* Pods_PuzzleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8F1F5F7FB5B095018E5C4F /* Pods_PuzzleTests.framework */; };
 		B410F6B41E4206B700598D36 /* GameMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6B31E4206B700598D36 /* GameMenuVC.swift */; };
 		B410F6B61E420E1F00598D36 /* ChildObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6B51E420E1F00598D36 /* ChildObject.swift */; };
-		B410F6C21E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift */; };
-		B410F6C51E4346C900598D36 /* GameMenuVC+PasscodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeDelegate.swift */; };
+		B410F6C21E433B0200598D36 /* AccountCreationVC+PasscodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeProtocol.swift */; };
+		B410F6C51E4346C900598D36 /* GameMenuVC+PasscodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeProtocol.swift */; };
 		B410F6CA1E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6C91E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift */; };
 		B410F6CC1E4347EC00598D36 /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B410F6CB1E4347EC00598D36 /* PasscodeVC.swift */; };
 		B41447801E37B7B4003064C0 /* XCUIElement+Paste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */; };
@@ -98,14 +106,14 @@
 		887E4A1CF3EDBECA75F5343B /* Pods-Puzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Puzzle/Pods-Puzzle.release.xcconfig"; sourceTree = "<group>"; };
 		8C24BE8BE35716B54E82453D /* Pods_Puzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FD062B87F60170F3BBF6C2 /* Pods_PuzzleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+AccountCreationDelegate.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+AccountCreationDelegate.swift"; sourceTree = "<group>"; };
+		B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+AccountCreationProtocol.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+AccountCreationProtocol.swift"; sourceTree = "<group>"; };
 		B1673D081E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B1673D091E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		B1673D0D1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildSelectionVC+AutoLayout.swift"; path = "Puzzle/Controllers/Extensions/ChildSelection/ChildSelectionVC+AutoLayout.swift"; sourceTree = "<group>"; };
 		B1673D0F1E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+ChildCreationDelegate.swift"; path = "Puzzle/Controllers/Extensions/ChildCreation/ChildCreationVC+ChildCreationDelegate.swift"; sourceTree = "<group>"; };
 		B1673D101E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/ChildCreation/ChildCreationVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B1673D111E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ChildCreationVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/ChildCreation/ChildCreationVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
-		B1673D151E3CC88A004600AB /* LoginVC+LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+LoginDelegate.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+LoginDelegate.swift"; sourceTree = "<group>"; };
+		B1673D151E3CC88A004600AB /* LoginVC+LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+LoginProtocol.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+LoginProtocol.swift"; sourceTree = "<group>"; };
 		B1673D161E3CC88A004600AB /* LoginVC+KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+KeyboardNotification.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+KeyboardNotification.swift"; sourceTree = "<group>"; };
 		B1673D171E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LoginVC+TextFieldDelegate.swift"; path = "Puzzle/Controllers/Extensions/Login/LoginVC+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		B1673D231E3CF091004600AB /* UIButton+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Design.swift"; path = "Puzzle/Utils/Extensions/UIButton/UIButton+Design.swift"; sourceTree = "<group>"; };
@@ -120,6 +128,14 @@
 		B1673D341E3CF0FE004600AB /* String+VisualFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+VisualFormat.swift"; path = "Puzzle/Utils/Extensions/String/String+VisualFormat.swift"; sourceTree = "<group>"; };
 		B1673D351E3CF0FE004600AB /* String+Uid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Uid.swift"; path = "Puzzle/Utils/Extensions/String/String+Uid.swift"; sourceTree = "<group>"; };
 		B1673D391E41445A004600AB /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserObject.swift; path = Puzzle/Utils/UserObject.swift; sourceTree = "<group>"; };
+		B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountVMProtocol.swift; path = Puzzle/Models/AccountVMProtocol.swift; sourceTree = "<group>"; };
+		B17C059C1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreationVCProtocol.swift; path = Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVCProtocol.swift; sourceTree = "<group>"; };
+		B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVMProtocol.swift; path = Puzzle/Models/LoginVMProtocol.swift; sourceTree = "<group>"; };
+		B17C05A01E5F560500721FF6 /* LoginVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVCProtocol.swift; path = Puzzle/Controllers/Extensions/Login/LoginVCProtocol.swift; sourceTree = "<group>"; };
+		B17C05A21E5F580400721FF6 /* ChildSelectionVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildSelectionVMProtocol.swift; path = Puzzle/Models/ChildSelectionVMProtocol.swift; sourceTree = "<group>"; };
+		B17C05A41E5F590400721FF6 /* ChildCreationVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVCProtocol.swift; path = Puzzle/Controllers/Extensions/ChildCreation/ChildCreationVCProtocol.swift; sourceTree = "<group>"; };
+		B17C05A61E5F599200721FF6 /* ChildCreationVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVMProtocol.swift; path = Puzzle/Models/ChildCreationVMProtocol.swift; sourceTree = "<group>"; };
+		B17C05A81E5F5A9300721FF6 /* PasscodeVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeVCProtocol.swift; path = Puzzle/Utils/Libraries/Passcode/Extensions/PasscodeVCProtocol.swift; sourceTree = "<group>"; };
 		B1D05A541E36953500AB0D87 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Features/Login.swift; sourceTree = "<group>"; };
 		B1D05A561E36953C00AB0D87 /* AccountCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreation.swift; path = Features/AccountCreation.swift; sourceTree = "<group>"; };
 		B1D05A581E36956D00AB0D87 /* LoginSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSteps.swift; path = StepDefinitions/LoginSteps.swift; sourceTree = "<group>"; };
@@ -142,8 +158,8 @@
 		B1E8A8C31E52890F00115B52 /* EnumObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnumObject.swift; path = Puzzle/Utils/EnumObject.swift; sourceTree = "<group>"; };
 		B410F6B31E4206B700598D36 /* GameMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameMenuVC.swift; path = Puzzle/Controllers/GameMenuVC.swift; sourceTree = "<group>"; };
 		B410F6B51E420E1F00598D36 /* ChildObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildObject.swift; path = Puzzle/Utils/ChildObject.swift; sourceTree = "<group>"; };
-		B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+PasscodeDelegate.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+PasscodeDelegate.swift"; sourceTree = "<group>"; };
-		B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameMenuVC+PasscodeDelegate.swift"; path = "Puzzle/Controllers/Extensions/GameMenu/GameMenuVC+PasscodeDelegate.swift"; sourceTree = "<group>"; };
+		B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccountCreationVC+PasscodeProtocol.swift"; path = "Puzzle/Controllers/Extensions/AccountCreation/AccountCreationVC+PasscodeProtocol.swift"; sourceTree = "<group>"; };
+		B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GameMenuVC+PasscodeProtocol.swift"; path = "Puzzle/Controllers/Extensions/GameMenu/GameMenuVC+PasscodeProtocol.swift"; sourceTree = "<group>"; };
 		B410F6C91E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PasscodeVC+PasswordInputCompleteProtocol.swift"; path = "Puzzle/Utils/Libraries/Passcode/Extensions/PasscodeVC+PasswordInputCompleteProtocol.swift"; sourceTree = "<group>"; };
 		B410F6CB1E4347EC00598D36 /* PasscodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeVC.swift; path = Puzzle/Utils/Libraries/Passcode/PasscodeVC.swift; sourceTree = "<group>"; };
 		B414477F1E37B7B4003064C0 /* XCUIElement+Paste.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCUIElement+Paste.swift"; path = "Extensions/XCUIElement+Paste.swift"; sourceTree = "<group>"; };
@@ -207,7 +223,8 @@
 		B1673CFD1E3CC7D7004600AB /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B1673D151E3CC88A004600AB /* LoginVC+LoginDelegate.swift */,
+				B17C05A01E5F560500721FF6 /* LoginVCProtocol.swift */,
+				B1673D151E3CC88A004600AB /* LoginVC+LoginProtocol.swift */,
 				B1673D161E3CC88A004600AB /* LoginVC+KeyboardNotification.swift */,
 				B1673D171E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift */,
 			);
@@ -217,6 +234,7 @@
 		B1673CFE1E3CC7DF004600AB /* ChildCreation */ = {
 			isa = PBXGroup;
 			children = (
+				B17C05A41E5F590400721FF6 /* ChildCreationVCProtocol.swift */,
 				B1673D0F1E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift */,
 				B1673D101E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift */,
 				B1673D111E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift */,
@@ -227,10 +245,11 @@
 		B1673CFF1E3CC7ED004600AB /* AccountCreation */ = {
 			isa = PBXGroup;
 			children = (
-				B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift */,
+				B17C059C1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift */,
+				B1673D071E3CC85F004600AB /* AccountCreationVC+AccountCreationProtocol.swift */,
 				B1673D081E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift */,
 				B1673D091E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift */,
-				B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift */,
+				B410F6C11E433B0200598D36 /* AccountCreationVC+PasscodeProtocol.swift */,
 			);
 			name = AccountCreation;
 			sourceTree = "<group>";
@@ -390,9 +409,13 @@
 		B1D05A6E1E36A6BB00AB0D87 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B17C059A1E5F4B7100721FF6 /* AccountVMProtocol.swift */,
 				B1D05ACA1E36BAC700AB0D87 /* AccountCreationVM.swift */,
+				B17C059E1E5F55DB00721FF6 /* LoginVMProtocol.swift */,
 				B1D05A841E36A73400AB0D87 /* LoginVM.swift */,
+				B17C05A21E5F580400721FF6 /* ChildSelectionVMProtocol.swift */,
 				B457EBA51E38C5F200A72CF3 /* ChildSelectionVM.swift */,
+				B17C05A61E5F599200721FF6 /* ChildCreationVMProtocol.swift */,
 				B46626411E3B6A9F00B372CB /* ChildCreationVM.swift */,
 			);
 			name = Models;
@@ -464,7 +487,7 @@
 		B410F6C31E43469F00598D36 /* GameMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeDelegate.swift */,
+				B410F6C41E4346C900598D36 /* GameMenuVC+PasscodeProtocol.swift */,
 			);
 			name = GameMenu;
 			sourceTree = "<group>";
@@ -472,6 +495,7 @@
 		B410F6C61E43470200598D36 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B17C05A81E5F5A9300721FF6 /* PasscodeVCProtocol.swift */,
 				B410F6C91E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift */,
 			);
 			name = Extensions;
@@ -837,18 +861,21 @@
 				B1673D281E3CF09F004600AB /* UIColor+Design.swift in Sources */,
 				B1673D2C1E3CF0BC004600AB /* UILabel+Design.swift in Sources */,
 				B1673D301E3CF0D8004600AB /* UIView+Constraints.swift in Sources */,
+				B17C05A51E5F590400721FF6 /* ChildCreationVCProtocol.swift in Sources */,
 				B1673D0B1E3CC85F004600AB /* AccountCreationVC+KeyboardNotification.swift in Sources */,
 				B1673D1A1E3CC88A004600AB /* LoginVC+TextFieldDelegate.swift in Sources */,
 				B46626401E3B61EB00B372CB /* ChildCreationVC.swift in Sources */,
 				B1673D381E3CF0FE004600AB /* String+Uid.swift in Sources */,
+				B17C05A71E5F599200721FF6 /* ChildCreationVMProtocol.swift in Sources */,
 				B49B07021E3B95CF009A1B1B /* CoreDataStack.swift in Sources */,
 				B1673D2E1E3CF0C9004600AB /* UITextField+Design.swift in Sources */,
-				B1673D181E3CC88A004600AB /* LoginVC+LoginDelegate.swift in Sources */,
+				B1673D181E3CC88A004600AB /* LoginVC+LoginProtocol.swift in Sources */,
 				B1E8A8C41E52890F00115B52 /* EnumObject.swift in Sources */,
-				B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationDelegate.swift in Sources */,
+				B1673D0A1E3CC85F004600AB /* AccountCreationVC+AccountCreationProtocol.swift in Sources */,
+				B17C05A31E5F580400721FF6 /* ChildSelectionVMProtocol.swift in Sources */,
 				B1673D121E3CC87E004600AB /* ChildCreationVC+ChildCreationDelegate.swift in Sources */,
 				B46626421E3B6A9F00B372CB /* ChildCreationVM.swift in Sources */,
-				B410F6C21E433B0200598D36 /* AccountCreationVC+PasscodeDelegate.swift in Sources */,
+				B410F6C21E433B0200598D36 /* AccountCreationVC+PasscodeProtocol.swift in Sources */,
 				B1673D141E3CC87E004600AB /* ChildCreationVC+TextFieldDelegate.swift in Sources */,
 				B1D05A801E36A72800AB0D87 /* AppDelegate.swift in Sources */,
 				B410F6CC1E4347EC00598D36 /* PasscodeVC.swift in Sources */,
@@ -858,22 +885,27 @@
 				B1673D0E1E3CC874004600AB /* ChildSelectionVC+AutoLayout.swift in Sources */,
 				B1D05A8B1E36A73D00AB0D87 /* Children.swift in Sources */,
 				B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */,
+				B17C059F1E5F55DB00721FF6 /* LoginVMProtocol.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
 				B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */,
 				B410F6CA1E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift in Sources */,
+				B17C05A91E5F5A9300721FF6 /* PasscodeVCProtocol.swift in Sources */,
 				B1673D3A1E41445A004600AB /* UserObject.swift in Sources */,
 				B1D05A961E36A75000AB0D87 /* LoginVC.swift in Sources */,
 				B1D05A8C1E36A73D00AB0D87 /* User+Properties.swift in Sources */,
-				B410F6C51E4346C900598D36 /* GameMenuVC+PasscodeDelegate.swift in Sources */,
+				B410F6C51E4346C900598D36 /* GameMenuVC+PasscodeProtocol.swift in Sources */,
 				B457EBA61E38C5F200A72CF3 /* ChildSelectionVM.swift in Sources */,
 				B1D05AD31E36BADD00AB0D87 /* AccountCreationVC.swift in Sources */,
 				B457EBA41E38C2C200A72CF3 /* ChildSelectionVC.swift in Sources */,
+				B17C05A11E5F560500721FF6 /* LoginVCProtocol.swift in Sources */,
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
 				B1673D131E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift in Sources */,
+				B17C059D1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift in Sources */,
 				B1673D261E3CF091004600AB /* UIButton+IntrinsicContentSize.swift in Sources */,
 				B410F6B41E4206B700598D36 /* GameMenuVC.swift in Sources */,
 				B1673D251E3CF091004600AB /* UIButton+Design.swift in Sources */,
 				B1D05A8D1E36A73D00AB0D87 /* Children+Properties.swift in Sources */,
+				B17C059B1E5F4B7100721FF6 /* AccountVMProtocol.swift in Sources */,
 				B1D05A7F1E36A72800AB0D87 /* Puzzle.xcdatamodeld in Sources */,
 				B410F6B61E420E1F00598D36 /* ChildObject.swift in Sources */,
 				B1673D191E3CC88A004600AB /* LoginVC+KeyboardNotification.swift in Sources */,

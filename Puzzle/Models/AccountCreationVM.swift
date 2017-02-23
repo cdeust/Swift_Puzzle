@@ -9,23 +9,16 @@
 import Foundation
 import UIKit
 
-protocol AccountCreationVCDelegate
-{
-    func didSuccessfullyCreateAccount(userObject: UserObject) -> Void
-    func didFailedToCreateAccount() -> Void
-    func didSetLockCodeSuccessfully(lockCode: String)
-}
-
-class AccountCreationVM: NSObject {
-    private var _firstnameText: String!
-    private var _lastnameText: String!
-    private var _emailText: String!
-    private var _passwordText: String!
-    private var _lockText: String!
-    private var _uidText: String!
-    private var _errorText: String!
-    private var _delegate: AccountCreationVCDelegate!
-    private var _userObject: UserObject!
+class AccountCreationVM: AccountCreationVMProtocol {
+    internal var _firstnameText: String!
+    internal var _lastnameText: String!
+    internal var _emailText: String!
+    internal var _passwordText: String!
+    internal var _lockText: String!
+    internal var _uidText: String!
+    internal var _errorText: String!
+    internal var _delegate: AccountCreationVCProtocol!
+    internal var _userObject: UserObject!
     
     var firstnameText: String {
         get {
@@ -90,7 +83,7 @@ class AccountCreationVM: NSObject {
         }
     }
     
-    var delegate: AccountCreationVCDelegate {
+    var delegate: AccountCreationVCProtocol {
         get {
             return _delegate
         }
@@ -108,10 +101,8 @@ class AccountCreationVM: NSObject {
         }
     }
     
-    init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate: AccountCreationVCDelegate)
+    required init(firstname: String, lastname: String, email: String, password: String, lock: String, delegate: AccountCreationVCProtocol)
     {
-        super.init()
-        
         self._userObject = self.instantiateUserObject(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock)
         self._firstnameText = userObject.firstname
         self._lastnameText = userObject.lastname

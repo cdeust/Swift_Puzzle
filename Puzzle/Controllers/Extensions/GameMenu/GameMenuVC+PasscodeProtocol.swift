@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension GameMenuVC: PasscodeVCDelegate {
+extension GameMenuVC: PasscodeVCProtocol {
     func successSessionEnded()
     {
         guard let navigationController = self.navigationController else { return }

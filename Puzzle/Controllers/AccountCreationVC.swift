@@ -17,7 +17,7 @@ class AccountCreationVC: UIViewController {
     var user: User?
     var userObject: UserObject!
     var viewModel: AccountCreationVM!
-    var delegate: AccountCreationVCDelegate!
+    var delegate: AccountCreationVCProtocol!
     
     @IBOutlet weak var firstname: UITextField!
     @IBOutlet weak var lastname: UITextField!

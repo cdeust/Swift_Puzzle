@@ -9,21 +9,16 @@
 import Foundation
 import UIKit
 
-protocol ChildCreationVCDelegate {
-    func didSuccessfullyCreateAccount(childObject: ChildObject)
-    func didFailToCreateAccount()
-}
-
-class ChildCreationVM: NSObject {
-    private var _birthdateText: String!
-    private var _firstnameText: String!
-    private var _lastnameText: String!
-    private var _emailText: String!
-    private var _sexText: String!
-    private var _uidText: String!
-    private var _errorText: String!
-    private var _delegate: ChildCreationVCDelegate!
-    private var _childObject: ChildObject!
+class ChildCreationVM: ChildCreationVMProtocol {
+    internal var _birthdateText: String!
+    internal var _firstnameText: String!
+    internal var _lastnameText: String!
+    internal var _emailText: String!
+    internal var _sexText: String!
+    internal var _uidText: String!
+    internal var _errorText: String!
+    internal var _delegate: ChildCreationVCProtocol!
+    internal var _childObject: ChildObject!
     
     var birthdateText: String {
         get {
@@ -88,7 +83,7 @@ class ChildCreationVM: NSObject {
         }
     }
     
-    var delegate: ChildCreationVCDelegate {
+    var delegate: ChildCreationVCProtocol {
         get {
             return _delegate
         }
@@ -106,10 +101,8 @@ class ChildCreationVM: NSObject {
         }
     }
     
-    init(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject, delegate: ChildCreationVCDelegate)
+    required init(firstname: String, lastname: String, birthdate: String, sex: String, userObject: UserObject, delegate: ChildCreationVCProtocol)
     {
-        super.init()
-        
         self._childObject = self.instantiateChildObject(firstname: firstname, lastname: lastname, birthdate: birthdate, sex: sex, userObject: userObject)
         self._firstnameText = childObject.firstname
         self._lastnameText = childObject.lastname
@@ -122,7 +115,7 @@ class ChildCreationVM: NSObject {
         self.errorText = ""
     }
     
-    func createChild()
+    func createChild() -> Void
     {
         let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext

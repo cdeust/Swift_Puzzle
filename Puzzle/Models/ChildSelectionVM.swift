@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class ChildSelectionVM: NSObject {
-    private var _welcomeText: String!
-    private var _userObject: UserObject!
+class ChildSelectionVM: ChildSelectionVMProtocol {
+    internal var _welcomeText: String!
+    internal var _userObject: UserObject!
     
     var welcomeText: String {
         get {
@@ -32,10 +32,8 @@ class ChildSelectionVM: NSObject {
     }
     
     
-    init(userObject: UserObject)
+    required init(userObject: UserObject)
     {
-        super.init()
-        
         self._userObject = userObject
         if let firstname  = self.userObject.firstname
         {
@@ -63,7 +61,8 @@ class ChildSelectionVM: NSObject {
         return NSMutableArray()
     }
     
-    func instantiateChildren(child: Children, userObject: UserObject) -> ChildObject {
+    func instantiateChildren(child: Children, userObject: UserObject) -> ChildObject
+    {
         let childObject = ChildObject(firstname: child.firstname!, lastname: child.lastname!, email: userObject.email!, password: userObject.password!, uid: userObject.uid!, role: Role.child, sex: child.sex!, birthdate: child.birthdate!)
         
         return childObject

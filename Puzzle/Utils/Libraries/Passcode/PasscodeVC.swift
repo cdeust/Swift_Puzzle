@@ -10,18 +10,12 @@ import Foundation
 import UIKit
 import SmileLock
 
-protocol PasscodeVCDelegate {
-    func successCreation(lock: String)
-    func successSessionEnded()
-    func fail()
-}
-
 class PasscodeVC: UIViewController {
     let kPasswordDigit = 4
     
     var comingFrom: String!
     var userObject: UserObject!
-    var delegate: PasscodeVCDelegate!
+    var delegate: PasscodeVCProtocol!
     var passcodeContainerView: PasswordContainerView!
     
     @IBOutlet weak var passcodeStackView: UIStackView!
