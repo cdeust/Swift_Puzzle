@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension ChildCreationVC: ChildCreationVCDelegate {
+extension ChildCreationVC: ChildCreationVCProtocol {
     func didSuccessfullyCreateAccount(childObject: ChildObject)
     {
         self.error.text = self.viewModel.errorText

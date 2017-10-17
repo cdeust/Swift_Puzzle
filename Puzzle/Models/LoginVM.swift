@@ -53,7 +53,7 @@ class LoginVM: LoginVMProtocol {
         }
     }
     
-    var delegate: LoginVCDelegate {
+    var delegate: LoginVCProtocol {
         get {
             return _delegate
         }

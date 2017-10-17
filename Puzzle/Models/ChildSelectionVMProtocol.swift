@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ChildSelectionVM {
+protocol ChildSelectionVMProtocol {
     var _welcomeText: String! { get set }
     var _userObject: UserObject! { get set }
     

@@ -12,7 +12,7 @@ import XCTest_Gherkin
 @testable import Puzzle
 class Login : XCTestCase {
  
-    let register = Register()
+    let register = AccountCreation()
     
     override func setUp() {
         super.setUp()

@@ -27,4 +27,39 @@ extension UIFont {
         let font = UIFont(name: "HelveticaNeue-Bold", size: 12)
         return font!
     }
+    
+    public class func helveticaNeueRegular(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue", size: size)!
+    }
+    
+    public class func helveticaNeueItalic(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-Italic", size: size)!
+    }
+    
+    public class func helveticaNeueBold(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-Bold", size: size)!
+    }
+    
+    public class func helveticaNeueMedium(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-Medium", size: size)!
+    }
+    
+    public class func helveticaNeueLight(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-Light", size: size)!
+    }
+    
+    public class func helveticaNeueThin(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-Thin", size: size)!
+    }
+    
+    public class func helveticaNeueUltraLight(size: CGFloat) -> UIFont
+    {
+        return UIFont(name: "HelveticaNeue-UltraLight", size: size)!
+    }
 }

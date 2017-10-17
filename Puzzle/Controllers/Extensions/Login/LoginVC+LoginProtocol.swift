@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: Delegate methods
 
-extension LoginVC: LoginVCDelegate {
+extension LoginVC: LoginVCProtocol {
     func didSuccessfullyLogin(userObject: UserObject) -> Void
     {
         self.error.text = self.viewModel.errorText
