@@ -10,18 +10,15 @@ import Foundation
 import UIKit
 
 extension String {
-    public func isEmptyOrNil(string: String) -> Bool
-    {
+    public func isEmptyOrNil(string: String) -> Bool {
         return string.isEmpty || "" == string.trim()
     }
     
-    public func isNotEmptyNorNil(string: String) -> Bool
-    {
+    public func isNotEmptyNorNil(string: String) -> Bool {
         return !isEmptyOrNil(string: string)
     }
     
-    public func trim() -> String
-    {
+    public func trim() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 }

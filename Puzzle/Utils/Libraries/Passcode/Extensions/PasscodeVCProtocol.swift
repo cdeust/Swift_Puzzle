@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol PasscodeVCProtocol
-{
+protocol PasscodeVCProtocol {
     func successCreation(lock: String)
     func successSessionEnded()
     func fail()

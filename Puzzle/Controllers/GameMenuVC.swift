@@ -27,43 +27,38 @@ class GameMenuVC: UIViewController {
 }
 
 extension GameMenuVC {
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         self.initView()
     }
     
-    override func didReceiveMemoryWarning()
-    {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
 extension GameMenuVC {
-    func initView()
-    {
+    func initView() {
         self.puzzleLabel = UILabel.designLabel(label: self.puzzleLabel)
         self.memoryLabel = UILabel.designLabel(label: self.memoryLabel)
         self.abcLabel = UILabel.designLabel(label: self.abcLabel)
         self.numberLabel = UILabel.designLabel(label: self.numberLabel)
-        self.puzzleButton = UIButton.designButton(button: self.puzzleButton)
-        self.memoryButton = UIButton.designButton(button: self.memoryButton)
-        self.abcButton = UIButton.designButton(button: self.abcButton)
-        self.numberButton = UIButton.designButton(button: self.numberButton)
+        self.puzzleButton = UIButton.designButtonNormal(button: self.puzzleButton)
+        self.memoryButton = UIButton.designButtonNormal(button: self.memoryButton)
+        self.abcButton = UIButton.designButtonNormal(button: self.abcButton)
+        self.numberButton = UIButton.designButtonNormal(button: self.numberButton)
     }
 }
 
 extension GameMenuVC {
-    func sessionDidEnd()
-    {
+    func sessionDidEnd() {
         // TODO present notification on Watch to tell the parents the game session is finished
     }
 }
 
 extension GameMenuVC {
-    @IBAction func goBackToMenu(sender: UIButton)
-    {
+    @IBAction func goBackToMenu(sender: UIButton) {
         guard let storyboard = self.storyboard else { return }
         let passcodeVC = storyboard.instantiateViewController(withIdentifier: "PasscodeVC") as! PasscodeVC
         passcodeVC.modalTransitionStyle = .crossDissolve

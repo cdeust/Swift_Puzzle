@@ -19,6 +19,7 @@ class AccountCreationVC: UIViewController {
     var viewModel: AccountCreationVM!
     var delegate: AccountCreationVCProtocol!
     
+    @IBOutlet weak var containerBox: UIView!
     @IBOutlet weak var firstname: UITextField!
     @IBOutlet weak var lastname: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -34,8 +35,7 @@ class AccountCreationVC: UIViewController {
 // MARK: View initialization
 
 extension AccountCreationVC {
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
@@ -43,18 +43,15 @@ extension AccountCreationVC {
         self.registerForKeyboardNotifications()
     }
     
-    override func didReceiveMemoryWarning()
-    {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func viewDidAppear(_ animated: Bool)
-    {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
-    override func viewWillAppear(_ animated: Bool)
-    {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 }
@@ -62,15 +59,15 @@ extension AccountCreationVC {
 // MARK: Design initialization
 
 extension AccountCreationVC {
-    func initView()
-    {
+    func initView() {
+        self.containerBox = UIView.designViewBox(view: self.containerBox)
         self.firstname = UITextField.designTextfield(textfield: self.firstname)
         self.lastname = UITextField.designTextfield(textfield: self.lastname)
         self.email = UITextField.designTextfield(textfield: self.email)
         self.lock = UITextField.designTextfield(textfield: self.lock)
         self.password = UITextField.designTextfield(textfield: self.password)
-        self.create = UIButton.designButton(button: self.create)
-        self.login = UIButton.designButton(button: self.login)
+        self.create = UIButton.designButtonNormal(button: self.create)
+        self.login = UIButton.designButtonNormal(button: self.login)
         self.error = UILabel.designLabel(label: self.error)
     }
 }
@@ -78,10 +75,8 @@ extension AccountCreationVC {
 // MARK: Action
 
 extension AccountCreationVC {
-    @IBAction func createAccount(sender: UIButton)
-    {
-        if let firstname = self.firstname.text, let lastname = self.lastname.text, let email = self.email.text, let password = self.password.text, let lock = self.lock.text
-        {
+    @IBAction func createAccount(sender: UIButton) {
+        if let firstname = self.firstname.text, let lastname = self.lastname.text, let email = self.email.text, let password = self.password.text, let lock = self.lock.text {
             if  String().isNotEmptyNorNil(string: firstname) == true &&
                 String().isNotEmptyNorNil(string: lastname) == true &&
                 String().isNotEmptyNorNil(string: email) == true &&
@@ -90,16 +85,13 @@ extension AccountCreationVC {
             {
                 self.viewModel = AccountCreationVM.init(firstname: firstname, lastname: lastname, email: email, password: password, lock: lock, delegate: self)
                 self.viewModel.createAccount()
-            }
-            else
-            {
+            } else {
                 self.presentErrorPopup()
             }
         }
     }
     
-    @IBAction func createLockCode(sender: UIButton)
-    {
+    @IBAction func createLockCode(sender: UIButton) {
         guard let storyboard = self.storyboard else { return }
         let passcodeVC = storyboard.instantiateViewController(withIdentifier: "PasscodeVC") as! PasscodeVC
         passcodeVC.modalTransitionStyle = .crossDissolve
@@ -114,8 +106,7 @@ extension AccountCreationVC {
 // MARK: Alert message
 
 extension AccountCreationVC {
-    func presentErrorPopup()
-    {
+    func presentErrorPopup() {
         let errorPopup = UIAlertController(title: NSLocalizedString("invalid_values", comment: "Invalid values sent"), message: NSLocalizedString("fill_form_correctly", comment: "Please make sure you filled the present form correctly."), preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: "OK"), style: UIAlertActionStyle.cancel) { UIAlertAction in }
         errorPopup.addAction(okAction)
@@ -127,10 +118,8 @@ extension AccountCreationVC {
 // MARK: Navigation
 
 extension AccountCreationVC {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.identifier == "loadChildCreation"
-        {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loadChildCreation" {
             let childCreation = segue.destination as! ChildCreationVC
             childCreation.userObject = self.userObject
         }

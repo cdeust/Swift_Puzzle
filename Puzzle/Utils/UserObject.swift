@@ -19,66 +19,38 @@ struct UserObject {
     private var _lock: String?
     
     var firstname: String? {
-        get {
-            return _firstname
-        }
-        set {
-            _firstname = newValue
-        }
+        get { return _firstname }
+        set { _firstname = newValue }
     }
     
     var lastname: String? {
-        get {
-            return _lastname
-        }
-        set {
-            _lastname = newValue
-        }
+        get { return _lastname }
+        set { _lastname = newValue }
     }
     
     var email: String? {
-        get {
-            return _email
-        }
-        set {
-            _email = newValue
-        }
+        get { return _email }
+        set { _email = newValue }
     }
     
     var password: String? {
-        get {
-            return _password
-        }
-        set {
-            _password = newValue
-        }
+        get { return _password }
+        set { _password = newValue }
     }
     
     var uid: String? {
-        get {
-            return _uid
-        }
-        set {
-            _uid = newValue
-        }
+        get { return _uid }
+        set { _uid = newValue }
     }
     
     var role: Role? {
-        get {
-            return _role
-        }
-        set {
-            _role = newValue
-        }
+        get { return _role }
+        set { _role = newValue }
     }
     
     var lock: String?  {
-        get {
-            return _lock
-        }
-        set {
-            _lock = newValue
-        }
+        get { return _lock }
+        set { _lock = newValue }
     }
     
     init(firstname: String, lastname: String, email: String, password: String, uid: String, role: Role, lock: String) {

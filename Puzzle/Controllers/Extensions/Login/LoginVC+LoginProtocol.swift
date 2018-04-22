@@ -12,8 +12,7 @@ import UIKit
 // MARK: Delegate methods
 
 extension LoginVC: LoginVCProtocol {
-    func didSuccessfullyLogin(userObject: UserObject) -> Void
-    {
+    func didSuccessfullyLogin(userObject: UserObject) -> Void {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForSuccess()
         
@@ -25,8 +24,7 @@ extension LoginVC: LoginVCProtocol {
         self.performSegue(withIdentifier: "loadChildSelection", sender:self)
     }
     
-    func didFailedToLogin() -> Void
-    {
+    func didFailedToLogin() -> Void {
         self.email.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         self.password.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor
         

@@ -10,23 +10,19 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    public class func getColorForSuccess() -> UIColor
-    {
+    public class func getColorForSuccess() -> UIColor {
         return UIColor.green
     }
     
-    public class func getColorForFailure() -> UIColor
-    {
+    public class func getColorForFailure() -> UIColor {
         return UIColor.red
     }
     
-    public class func designTextfieldWithOkColor() -> UIColor
-    {
+    public class func designTextfieldWithOkColor() -> UIColor {
         return UIColor.clear
     }
     
-    public class func designTextfieldWithErrorColor() -> UIColor
-    {
+    public class func designTextfieldWithErrorColor() -> UIColor {
         return UIColor.red
     }
 }

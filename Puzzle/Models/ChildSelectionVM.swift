@@ -14,45 +14,31 @@ class ChildSelectionVM: ChildSelectionVMProtocol {
     internal var _userObject: UserObject!
     
     var welcomeText: String {
-        get {
-            return _welcomeText
-        }
-        set {
-            _welcomeText = newValue
-        }
+        get { return _welcomeText }
+        set { _welcomeText = newValue }
     }
     
     var userObject: UserObject {
-        get {
-            return _userObject
-        }
-        set {
-            _userObject = newValue
-        }
+        get { return _userObject }
+        set { _userObject = newValue }
     }
     
-    
-    required init(userObject: UserObject)
-    {
+    required init(userObject: UserObject) {
         self._userObject = userObject
-        if let firstname  = self.userObject.firstname
-        {
+        if let firstname  = self.userObject.firstname {
             self._welcomeText = "Welcome \(firstname)!"
         }
     }
     
-    func getChildrenForPresentAccount() -> NSArray
-    {
+    func getChildrenForPresentAccount() -> NSArray {
         let coreDataStack = CoreDataStack.sharedStack
         let managedObjectContext = coreDataStack.persistentContainer.viewContext
         
         if let uid = self.userObject.uid {
             let results = Children.fetchChildrenWithUid(uid: uid, managedObjectContext: managedObjectContext)
             let children = NSMutableArray()
-            if results.count > 0
-            {
-                for object in results
-                {
+            if results.count > 0 {
+                for object in results {
                     children.add(object as! Children)
                 }
             }
@@ -61,8 +47,7 @@ class ChildSelectionVM: ChildSelectionVMProtocol {
         return NSMutableArray()
     }
     
-    func instantiateChildren(child: Children, userObject: UserObject) -> ChildObject
-    {
+    func instantiateChildren(child: Children, userObject: UserObject) -> ChildObject {
         let childObject = ChildObject(firstname: child.firstname!, lastname: child.lastname!, email: userObject.email!, password: userObject.password!, uid: userObject.uid!, role: Role.child, sex: child.sex!, birthdate: child.birthdate!)
         
         return childObject

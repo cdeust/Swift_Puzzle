@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol ChildCreationVCProtocol
-{
+protocol ChildCreationVCProtocol {
     func didSuccessfullyCreateAccount(childObject: ChildObject)
     func didFailToCreateAccount()
 }

@@ -79,11 +79,11 @@ class AccountCreationSteps : StepDefiner {
             self.user = user
             
             XCTAssertNotNil(self.user)
-            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(self.user.firstname) should be \(self.firstname)")
-            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(self.user.lastname) should be \(self.lastname)")
-            XCTAssertEqual(self.user.email, self.email, "Email \(self.user.email) should be \(self.email)")
-            XCTAssertGreaterThanOrEqual(self.user.password!.characters.count, 6)
-            XCTAssertEqual(self.user.lock, self.lock, "Lock code \(self.user.lock) should be \(self.lock)")
+            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(String(describing: self.user.firstname)) should be \(self.firstname)")
+            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(String(describing: self.user.lastname)) should be \(self.lastname)")
+            XCTAssertEqual(self.user.email, self.email, "Email \(String(describing: self.user.email)) should be \(self.email)")
+            XCTAssertGreaterThanOrEqual(self.user.password!.count, 6)
+            XCTAssertEqual(self.user.lock, self.lock, "Lock code \(String(describing: self.user.lock)) should be \(self.lock)")
         }
         
         /* Children step definition */
@@ -133,10 +133,10 @@ class AccountCreationSteps : StepDefiner {
             self.children = user
             
             XCTAssertNotNil(self.children)
-            XCTAssertEqual(self.children.firstname, self.firstname, "Firstname \(self.children.firstname) should be \(self.firstname)")
-            XCTAssertEqual(self.children.lastname, self.lastname, "Lastname \(self.children.lastname) should be \(self.lastname)")
-            XCTAssertEqual(self.children.sex, self.sex, "Sex \(self.children.sex) should be \(self.sex)")
-            XCTAssertEqual(self.children.birthdate, self.birthdate, "Birthdate \(self.children.birthdate) should be \(self.birthdate)")
+            XCTAssertEqual(self.children.firstname, self.firstname, "Firstname \(String(describing: self.children.firstname)) should be \(self.firstname)")
+            XCTAssertEqual(self.children.lastname, self.lastname, "Lastname \(String(describing: self.children.lastname)) should be \(self.lastname)")
+            XCTAssertEqual(self.children.sex, self.sex, "Sex \(String(describing: self.children.sex)) should be \(self.sex)")
+            XCTAssertEqual(self.children.birthdate, self.birthdate, "Birthdate \(String(describing: self.children.birthdate)) should be \(self.birthdate)")
         }
         
         /* Cleaning user database */

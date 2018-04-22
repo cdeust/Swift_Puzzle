@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension ChildCreationVC: ChildCreationVCProtocol {
-    func didSuccessfullyCreateAccount(childObject: ChildObject)
-    {
+    func didSuccessfullyCreateAccount(childObject: ChildObject) {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForSuccess()
         
@@ -23,8 +22,7 @@ extension ChildCreationVC: ChildCreationVCProtocol {
         self.firstname.becomeFirstResponder()
     }
     
-    func didFailToCreateAccount()
-    {
+    func didFailToCreateAccount() {
         self.error.text = self.viewModel.errorText
         self.error.textColor = UIColor.getColorForFailure()
         

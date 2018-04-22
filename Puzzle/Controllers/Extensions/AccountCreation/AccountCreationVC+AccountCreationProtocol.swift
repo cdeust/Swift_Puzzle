@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension AccountCreationVC: AccountCreationVCProtocol {
-    func didSuccessfullyCreateAccount(userObject: UserObject)
-    {
+    func didSuccessfullyCreateAccount(userObject: UserObject) {
         self.userObject = userObject
         
         self.error.text = self.viewModel.errorText;
@@ -26,8 +25,7 @@ extension AccountCreationVC: AccountCreationVCProtocol {
         self.performSegue(withIdentifier: "loadChildCreation", sender: self)
     }
     
-    func didFailedToCreateAccount()
-    {
+    func didFailedToCreateAccount() {
         self.error.text = self.viewModel.errorText;
         self.error.textColor = UIColor.getColorForFailure()
         self.firstname.layer.borderColor = UIColor.designTextfieldWithErrorColor().cgColor

@@ -11,17 +11,12 @@ import UIKit
 import SmileLock
 
 extension PasscodeVC: PasswordInputCompleteProtocol {
-    public func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: NSError?)
-    {
-        if (comingFrom == "gameMenu")
-        {
-            if success
-            {
+    public func touchAuthenticationComplete(_ passwordContainerView: PasswordContainerView, success: Bool, error: NSError?) {
+        if (comingFrom == kGameMenu) {
+            if success {
                 self.delegate.successSessionEnded()
                 self.validationSuccess()
-            }
-            else
-            {
+            } else {
                 passcodeContainerView.clearInput()
             }
         }
@@ -29,20 +24,14 @@ extension PasscodeVC: PasswordInputCompleteProtocol {
     
     func passwordInputComplete(_ passwordContainerView: PasswordContainerView, input: String)
     {
-        if (comingFrom == "accountCreation")
-        {
+        if (comingFrom == kAccountCreation) {
             self.delegate.successCreation(lock: input)
             validationSuccess()
-        }
-        else if (comingFrom == "gameMenu")
-        {
-            if validation(input)
-            {
+        } else if (comingFrom == kGameMenu) {
+            if validation(input) {
                 self.delegate.successSessionEnded()
                 validationSuccess()
-            }
-            else
-            {
+            } else {
                 validationFail()
             }
         }

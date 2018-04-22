@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    public func setupConstraintsUsingVisualFormatForUIElementWithParentView(element: Any, parentView: UIView, visualFormat: String)
-    {
+    public func setupConstraintsUsingVisualFormatForUIElementWithParentView(element: Any, parentView: UIView, visualFormat: String) {
         parentView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: visualFormat, options: .directionLeadingToTrailing, metrics: nil, views: [ "element" : element ]))
     }
 }

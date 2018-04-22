@@ -20,8 +20,7 @@ class PasscodeVC: UIViewController {
     
     @IBOutlet weak var passcodeStackView: UIStackView!
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         passcodeContainerView = PasswordContainerView.create(in: passcodeStackView, digit: kPasswordDigit)
@@ -30,12 +29,9 @@ class PasscodeVC: UIViewController {
         //customize password UI
         passcodeContainerView.tintColor = UIColor.black
         passcodeContainerView.highlightedColor = UIColor.black
-        if comingFrom == "accountCreation"
-        {
+        if comingFrom == kAccountCreation {
             passcodeContainerView.touchAuthenticationEnabled = false
-        }
-        else if comingFrom == "gameMenu"
-        {
+        } else if comingFrom == kGameMenu {
             passcodeContainerView.touchAuthenticationEnabled = true
             passcodeContainerView.touchAuthenticationReason = NSLocalizedString("touch_id_required_end_session", comment: "Authentication is needed to prevent your child from ending his game session")
         }
@@ -43,18 +39,15 @@ class PasscodeVC: UIViewController {
 }
 
 extension PasscodeVC {
-    func validation(_ input: String) -> Bool
-    {
+    func validation(_ input: String) -> Bool {
         return input == self.userObject.lock
     }
     
-    func validationSuccess()
-    {
+    func validationSuccess() {
         dismiss(animated: true, completion: nil)
     }
     
-    func validationFail()
-    {
+    func validationFail() {
         passcodeContainerView.wrongPassword()
     }
 }

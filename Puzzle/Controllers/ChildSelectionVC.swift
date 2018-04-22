@@ -26,17 +26,15 @@ class ChildSelectionVC: UIViewController {
 // MARK: View Initialization
 
 extension ChildSelectionVC {
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         self.initView()
         self.presentMenuWithUser(user: self.userObject)
     }
-
-    override func didReceiveMemoryWarning()
-    {
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
@@ -44,8 +42,7 @@ extension ChildSelectionVC {
 // MARK: Design initialization
 
 extension ChildSelectionVC {
-    func initView()
-    {
+    func initView() {
         self.welcome = UILabel.designLabel(label: self.welcome)
     }
 }
@@ -53,15 +50,13 @@ extension ChildSelectionVC {
 // MARK: Dynamic design initialization
 
 extension ChildSelectionVC {
-    func presentMenuWithUser(user: UserObject)
-    {
+    func presentMenuWithUser(user: UserObject) {
         self.viewModel = ChildSelectionVM.init(userObject: self.userObject)
         self.welcome.text = self.viewModel.welcomeText
         self.children = self.viewModel.getChildrenForPresentAccount()
         
         var origin = 120
-        for i in 0..<children.count
-        {
+        for i in 0..<children.count {
             let c = children[i] as! Children
             let btn = UIButton.createWithTitleTargetAction(title: c.firstname!, target: self, action: #selector(ChildSelectionVC.initializeMenuChildren(sender:)))
             btn.tag = i
@@ -80,21 +75,18 @@ extension ChildSelectionVC {
         self.setConstraintsForUIElementWithParentView(element: logoutBtn, parentView: self.view, verticalAlign: "bottom")
     }
     
-    func initializeMenuChildren(sender: UIButton)
-    {
+    func initializeMenuChildren(sender: UIButton) {
         self.child = children[sender.tag] as! Children
         self.childObject = self.viewModel.instantiateChildren(child: self.child, userObject: self.userObject)
         
         self.performSegue(withIdentifier: "loadGameMenu", sender: self)
     }
     
-    func showChildCreation(sender: UIButton)
-    {
+    func showChildCreation(sender: UIButton) {
         self.performSegue(withIdentifier: "loadChildCreation", sender: self)
     }
     
-    func showLogin(sender: UIButton)
-    {
+    func showLogin(sender: UIButton) {
         guard let navigationController = self.navigationController else { return }
         navigationController.popToRootViewController(animated: true)
     }
@@ -103,16 +95,13 @@ extension ChildSelectionVC {
 // MARK: Navigation
 
 extension ChildSelectionVC {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.identifier == "loadGameMenu"
-        {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loadGameMenu" {
             let gameMenu = segue.destination as! GameMenuVC
             gameMenu.userObject = self.userObject
             gameMenu.childObject = self.childObject
         }
-        if segue.identifier == "loadChildCreation"
-        {
+        if segue.identifier == "loadChildCreation" {
             let childCreation = segue.destination as! ChildCreationVC
             childCreation.userObject = self.userObject
         }

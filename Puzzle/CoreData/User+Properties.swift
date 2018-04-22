@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension User {
     @NSManaged public var children: Int16
     @NSManaged public var email: String?

@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol LoginVMProtocol
-{
+protocol LoginVMProtocol {
     var _loginText: String! { get set }
     var _passwordText: String! { get set }
     var _errorText: String! { get set }

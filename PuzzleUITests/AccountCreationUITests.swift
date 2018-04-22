@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SmileLock
 
 class AccountCreationUITests: XCTestCase {
         

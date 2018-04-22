@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol AccountCreationVMProtocol
-{
+protocol AccountCreationVMProtocol {
     var _firstnameText: String! { get set }
     var _lastnameText: String! { get set }
     var _emailText: String! { get set }

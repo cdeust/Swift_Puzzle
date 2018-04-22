@@ -10,13 +10,11 @@ import Foundation
 import UIKit
 
 extension AccountCreationVC: PasscodeVCProtocol {
-    func successCreation(lock: String)
-    {
+    func successCreation(lock: String) {
         self.lock.text = lock
     }
     
-    func fail()
-    {
+    func fail() {
         self.lock.text = ""
     }
     

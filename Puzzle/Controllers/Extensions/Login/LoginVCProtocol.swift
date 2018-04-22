@@ -8,8 +8,7 @@
 
 import Foundation
 
-protocol LoginVCProtocol
-{
+protocol LoginVCProtocol {
     func didSuccessfullyLogin(userObject: UserObject) -> Void
     func didFailedToLogin() -> Void
 }

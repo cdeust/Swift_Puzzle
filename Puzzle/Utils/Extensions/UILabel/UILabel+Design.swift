@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension UILabel {
-    public class func designLabel(label: UILabel) -> UILabel
-    {
+    public class func designLabel(label: UILabel) -> UILabel {
         label.font = UIFont.helveticaNeueRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.darkGray
@@ -19,8 +18,7 @@ extension UILabel {
         return label
     }
     
-    public class func designErrorLabel(label: UILabel) -> UILabel
-    {
+    public class func designErrorLabel(label: UILabel) -> UILabel {
         label.font = UIFont.helveticaNeueRegular()
         label.textAlignment = NSTextAlignment.center
         label.textColor = UIColor.red

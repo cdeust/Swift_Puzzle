@@ -16,6 +16,7 @@ class LoginVC: UIViewController {
     var userObject: UserObject!
     var viewModel: LoginVM!
     
+    @IBOutlet weak var containerBox: UIView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var create: UIButton!
@@ -27,8 +28,7 @@ class LoginVC: UIViewController {
 // MARK: View initialization
 
 extension LoginVC {
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
@@ -36,8 +36,7 @@ extension LoginVC {
         self.registerForKeyboardNotifications()
     }
     
-    override func didReceiveMemoryWarning()
-    {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
@@ -45,42 +44,39 @@ extension LoginVC {
 // MARK: Design initialization
 
 extension LoginVC {
-    func initView()
-    {
+    func initView() {
         self.email = UITextField.designTextfield(textfield: self.email)
         self.password = UITextField.designTextfield(textfield: self.password)
-        self.create = UIButton.designButton(button: self.create)
-        self.login = UIButton.designButton(button: self.login)
+        self.create = UIButton.designButtonNormal(button: self.create)
+        self.login = UIButton.designButtonNormal(button: self.login)
         self.error = UILabel.designErrorLabel(label: self.error)
+        self.containerBox = UIView.designViewBox(view: self.containerBox)
     }
 }
 
 // MARK: Action
 
 extension LoginVC {
-    @IBAction func tryToLogin(sender: UIButton)
-    {
-        if let email = self.email.text, let password = self.password.text
-        {
-            if  String().isNotEmptyNorNil(string: email) &&
-                String().isNotEmptyNorNil(string: password)
-            {
+    @IBAction func tryToLogin(sender: UIButton) {
+        if let email = self.email.text, let password = self.password.text {
+            if  String().isNotEmptyNorNil(string: email) && String().isNotEmptyNorNil(string: password) {
                 self.viewModel = LoginVM.init(email: email, password: password, delegate: self)
                 self.viewModel.login()
-            }
-            else
-            {
+            } else {
                 self.presentErrorPopup()
             }
         }
+    }
+    
+    @IBAction func createPressed(sender: UIButton) {
+        
     }
 }
 
 // MARK: Alert message
 
 extension LoginVC {
-    func presentErrorPopup()
-    {
+    func presentErrorPopup() {
         let errorPopup = UIAlertController(title: NSLocalizedString("invalid_values", comment: "Invalid values sent"), message: NSLocalizedString("fill_credentials_correctly", comment: "Please make sure your email and password are filled in."), preferredStyle: .alert)
         let okAction = UIAlertAction(title: NSLocalizedString("ok", comment: "OK"), style: UIAlertActionStyle.cancel) { UIAlertAction in }
         errorPopup.addAction(okAction)
@@ -92,10 +88,8 @@ extension LoginVC {
 // MARK: Navigation
 
 extension LoginVC {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.identifier == "loadChildSelection"
-        {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "loadChildSelection" {
             let childSelection = segue.destination as! ChildSelectionVC
             childSelection.userObject = self.userObject
         }

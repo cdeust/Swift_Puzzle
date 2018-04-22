@@ -9,8 +9,7 @@
 import Foundation
 
 
-protocol AccountCreationVCProtocol
-{
+protocol AccountCreationVCProtocol {
     func didSuccessfullyCreateAccount(userObject: UserObject) -> Void
     func didFailedToCreateAccount() -> Void
     func didSetLockCodeSuccessfully(lockCode: String)

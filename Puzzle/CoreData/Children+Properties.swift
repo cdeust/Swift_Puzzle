@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 extension Children {
     @NSManaged public var birthdate: String?
     @NSManaged public var firstname: String?

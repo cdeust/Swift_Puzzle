@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 extension GameMenuVC: PasscodeVCProtocol {
-    func successSessionEnded()
-    {
+    func successSessionEnded() {
         guard let navigationController = self.navigationController else { return }
         navigationController.popViewController(animated: true)
     }

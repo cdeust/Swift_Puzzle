@@ -9,8 +9,7 @@
 import Foundation
 
 extension String {
-    public func uid() -> String
-    {
+    public func uid() -> String {
         let uid = UUID().uuidString
         return uid
     }

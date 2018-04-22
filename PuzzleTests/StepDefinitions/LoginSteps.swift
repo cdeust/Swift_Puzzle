@@ -79,11 +79,11 @@ class LoginSteps : StepDefiner {
             self.user = user
             
             XCTAssertNotNil(self.user)
-            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(self.user.firstname) should be \(self.firstname)")
-            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(self.user.lastname) should be \(self.lastname)")
-            XCTAssertEqual(self.user.email, self.email, "Email \(self.user.email) should be \(self.email)")
-            XCTAssertGreaterThanOrEqual(self.user.password!.characters.count, 6)
-            XCTAssertEqual(self.user.lock, self.lock, "Lock code \(self.user.lock) should be \(self.lock)")
+            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(String(describing: self.user.firstname)) should be \(self.firstname)")
+            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(String(describing: self.user.lastname)) should be \(self.lastname)")
+            XCTAssertEqual(self.user.email, self.email, "Email \(String(describing: self.user.email)) should be \(self.email)")
+            XCTAssertGreaterThanOrEqual(self.user.password!.count, 6)
+            XCTAssertEqual(self.user.lock, self.lock, "Lock code \(String(describing: self.user.lock)) should be \(self.lock)")
         }
         
         /* Login step definition */
@@ -119,11 +119,11 @@ class LoginSteps : StepDefiner {
             self.user.lock = user.lock
             
             XCTAssertNotNil(self.user)
-            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(self.user.firstname) should be \(self.firstname)")
-            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(self.user.lastname) should be \(self.lastname)")
-            XCTAssertEqual(self.user.email, self.email, "Email \(self.user.email) should be \(self.email)")
-            XCTAssertGreaterThanOrEqual(self.user.password!.characters.count, 6)
-            XCTAssertEqual(self.user.lock, self.lock, "Lock \(self.user.lock) should be \(self.lock)")
+            XCTAssertEqual(self.user.firstname, self.firstname, "Firstname \(String(describing: self.user.firstname)) should be \(self.firstname)")
+            XCTAssertEqual(self.user.lastname, self.lastname, "Lastname \(String(describing: self.user.lastname)) should be \(self.lastname)")
+            XCTAssertEqual(self.user.email, self.email, "Email \(String(describing: self.user.email)) should be \(self.email)")
+            XCTAssertGreaterThanOrEqual(self.user.password!.count, 6)
+            XCTAssertEqual(self.user.lock, self.lock, "Lock \(String(describing: self.user.lock)) should be \(self.lock)")
         }
         
         /* Cleaning user database */

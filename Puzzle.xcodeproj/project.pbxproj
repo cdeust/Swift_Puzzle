@@ -39,6 +39,8 @@
 		B17C05A51E5F590400721FF6 /* ChildCreationVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A41E5F590400721FF6 /* ChildCreationVCProtocol.swift */; };
 		B17C05A71E5F599200721FF6 /* ChildCreationVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A61E5F599200721FF6 /* ChildCreationVMProtocol.swift */; };
 		B17C05A91E5F5A9300721FF6 /* PasscodeVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C05A81E5F5A9300721FF6 /* PasscodeVCProtocol.swift */; };
+		B1BE9F992089538100D7C15F /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE9F982089538100D7C15F /* StaticStrings.swift */; };
+		B1BE9F9B208BDEA900D7C15F /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BE9F9A208BDEA900D7C15F /* UIView+Design.swift */; };
 		B1D05A551E36953500AB0D87 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A541E36953500AB0D87 /* Login.swift */; };
 		B1D05A571E36953C00AB0D87 /* AccountCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A561E36953C00AB0D87 /* AccountCreation.swift */; };
 		B1D05A5A1E36956D00AB0D87 /* LoginSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D05A581E36956D00AB0D87 /* LoginSteps.swift */; };
@@ -136,6 +138,8 @@
 		B17C05A41E5F590400721FF6 /* ChildCreationVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVCProtocol.swift; path = Puzzle/Controllers/Extensions/ChildCreation/ChildCreationVCProtocol.swift; sourceTree = "<group>"; };
 		B17C05A61E5F599200721FF6 /* ChildCreationVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChildCreationVMProtocol.swift; path = Puzzle/Models/ChildCreationVMProtocol.swift; sourceTree = "<group>"; };
 		B17C05A81E5F5A9300721FF6 /* PasscodeVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeVCProtocol.swift; path = Puzzle/Utils/Libraries/Passcode/Extensions/PasscodeVCProtocol.swift; sourceTree = "<group>"; };
+		B1BE9F982089538100D7C15F /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
+		B1BE9F9A208BDEA900D7C15F /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Design.swift"; path = "Puzzle/Utils/Extensions/UIView/UIView+Design.swift"; sourceTree = "<group>"; };
 		B1D05A541E36953500AB0D87 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = Features/Login.swift; sourceTree = "<group>"; };
 		B1D05A561E36953C00AB0D87 /* AccountCreation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountCreation.swift; path = Features/AccountCreation.swift; sourceTree = "<group>"; };
 		B1D05A581E36956D00AB0D87 /* LoginSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSteps.swift; path = StepDefinitions/LoginSteps.swift; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				B1673D2F1E3CF0D8004600AB /* UIView+Constraints.swift */,
+				B1BE9F9A208BDEA900D7C15F /* UIView+Design.swift */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -327,6 +332,15 @@
 				B1673D291E3CF0AF004600AB /* UIFont+HelveticaNeue.swift */,
 			);
 			name = UIFont;
+			sourceTree = "<group>";
+		};
+		B1BE9F972089536A00D7C15F /* Statics */ = {
+			isa = PBXGroup;
+			children = (
+				B1BE9F982089538100D7C15F /* StaticStrings.swift */,
+			);
+			name = Statics;
+			path = Puzzle/Utils/Statics;
 			sourceTree = "<group>";
 		};
 		B1D05A511E3694FA00AB0D87 /* Specs */ = {
@@ -424,6 +438,7 @@
 		B1D05A6F1E36A6C300AB0D87 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B1BE9F972089536A00D7C15F /* Statics */,
 				B410F69C1E40992300598D36 /* Libraries */,
 				B1D05A701E36A6E000AB0D87 /* Extensions */,
 				B1673D391E41445A004600AB /* UserObject.swift */,
@@ -902,6 +917,7 @@
 				B1673D361E3CF0FE004600AB /* String+Validation.swift in Sources */,
 				B17C059F1E5F55DB00721FF6 /* LoginVMProtocol.swift in Sources */,
 				B1D05ACB1E36BAC700AB0D87 /* AccountCreationVM.swift in Sources */,
+				B1BE9F992089538100D7C15F /* StaticStrings.swift in Sources */,
 				B1673D0C1E3CC85F004600AB /* AccountCreationVC+TextFieldDelegate.swift in Sources */,
 				B410F6CA1E4347E200598D36 /* PasscodeVC+PasswordInputCompleteProtocol.swift in Sources */,
 				B17C05A91E5F5A9300721FF6 /* PasscodeVCProtocol.swift in Sources */,
@@ -914,6 +930,7 @@
 				B457EBA41E38C2C200A72CF3 /* ChildSelectionVC.swift in Sources */,
 				B17C05A11E5F560500721FF6 /* LoginVCProtocol.swift in Sources */,
 				B1D05A861E36A73400AB0D87 /* LoginVM.swift in Sources */,
+				B1BE9F9B208BDEA900D7C15F /* UIView+Design.swift in Sources */,
 				B1673D131E3CC87E004600AB /* ChildCreationVC+KeyboardNotification.swift in Sources */,
 				B17C059D1E5F4FD500721FF6 /* AccountCreationVCProtocol.swift in Sources */,
 				B1673D261E3CF091004600AB /* UIButton+IntrinsicContentSize.swift in Sources */,
@@ -1097,7 +1114,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 739FYFHB3R;
 				INFOPLIST_FILE = Puzzle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdeust.Puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1115,7 +1132,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 739FYFHB3R;
 				INFOPLIST_FILE = Puzzle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdeust.Puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
